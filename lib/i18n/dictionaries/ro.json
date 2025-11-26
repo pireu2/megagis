@@ -1,0 +1,140 @@
+{
+  "navigation": {
+    "home": "Acasă",
+    "services": "Servicii",
+    "about": "Despre Noi",
+    "contact": "Contact",
+    "governmentSolutions": "Soluții Guvernamentale",
+    "projects": "Proiecte",
+    "faq": "Întrebări Frecvente"
+  },
+  "hero": {
+    "title": "Precizie în Cadastru și Topografie",
+    "subtitle": "Soluții GIS Profesionale",
+    "description": "Oferim servicii complete de cadastru, topografie și sisteme informaționale geografice pentru sectorul privat și instituții publice din România.",
+    "primaryCta": "Solicită Ofertă",
+    "secondaryCta": "Descoperă Serviciile"
+  },
+  "servicesOverview": {
+    "title": "Serviciile Noastre",
+    "subtitle": "Soluții complete pentru toate nevoile dumneavoastră cadastrale și topografice",
+    "cadastral": {
+      "title": "Cadastru și Intabulare",
+      "description": "Documentații cadastrale complete pentru înscrierea în Cartea Funciară, dezmembrări, comasări și actualizări de date."
+    },
+    "topography": {
+      "title": "Ridicări Topografice",
+      "description": "Măsurători de precizie cu echipamente de ultimă generație pentru planuri de situație și proiecte de construcții."
+    },
+    "gis": {
+      "title": "Sisteme GIS",
+      "description": "Implementare și dezvoltare de sisteme informaționale geografice pentru administrație publică și companii private."
+    },
+    "urbanPlanning": {
+      "title": "Urbanism (PUG/PUZ/PUD)",
+      "description": "Documentații de urbanism și amenajare a teritoriului conform legislației în vigoare."
+    },
+    "viewAll": "Vezi Toate Serviciile"
+  },
+  "valueProps": {
+    "title": "De Ce Să Ne Alegeți",
+    "subtitle": "Partenerul dumneavoastră de încredere în servicii cadastrale și topografice",
+    "items": {
+      "precision": {
+        "title": "Precizie Maximă",
+        "description": "Utilizăm echipamente topografice de ultimă generație și software profesional pentru rezultate de cea mai înaltă calitate."
+      },
+      "compliance": {
+        "title": "Conformitate Legală",
+        "description": "Toate documentațiile sunt întocmite în conformitate cu legislația în vigoare și cerințele ANCPI."
+      },
+      "efficiency": {
+        "title": "Eficiență și Rapiditate",
+        "description": "Procese optimizate pentru livrarea la timp a documentațiilor, fără compromisuri în privința calității."
+      },
+      "expertise": {
+        "title": "Expertiză Dovedită",
+        "description": "Echipă de specialiști autorizați cu experiență vastă în proiecte diverse din sectorul public și privat."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Ce Spun Clienții",
+    "subtitle": "Feedback de la partenerii noștri de încredere",
+    "items": [
+      {
+        "quote": "Colaborarea cu Megagis a fost excelentă. Profesionalism, promptitudine și documentații impecabile.",
+        "author": "Alexandru Popescu",
+        "role": "Director General",
+        "company": "Construct Plus SRL"
+      },
+      {
+        "quote": "Parteneriatul nostru de lungă durată demonstrează calitatea serviciilor oferite. Recomandăm cu încredere.",
+        "author": "Maria Ionescu",
+        "role": "Secretar General",
+        "company": "Primăria Comunei Florești"
+      },
+      {
+        "quote": "Implementarea sistemului GIS a transformat modul în care gestionăm datele cadastrale ale UAT-ului nostru.",
+        "author": "Gheorghe Dumitrescu",
+        "role": "Primar",
+        "company": "Comuna Bragadiru"
+      }
+    ]
+  },
+  "ctaSection": {
+    "title": "Pregătiți să Începem?",
+    "description": "Contactați-ne astăzi pentru o consultație gratuită și o ofertă personalizată pentru proiectul dumneavoastră.",
+    "primaryButton": "Solicită Ofertă Gratuită",
+    "secondaryButton": "Sună Acum"
+  },
+  "footer": {
+    "description": "Megagis oferă servicii profesionale de cadastru, topografie și GIS pentru sectorul privat și instituții publice din România.",
+    "services": "Servicii",
+    "company": "Companie",
+    "contact": "Contact",
+    "navigation": {
+      "services": "Servicii",
+      "about": "Despre Noi",
+      "projects": "Proiecte",
+      "contact": "Contact",
+      "faq": "Întrebări Frecvente",
+      "privacy": "Politica de Confidențialitate",
+      "terms": "Termeni și Condiții"
+    },
+    "contactInfo": {
+      "address": "Strada Exemplu Nr. 123, București, România",
+      "phone": "+40 721 234 567",
+      "email": "contact@megagis.ro"
+    },
+    "copyright": "© 2025 Megagis. Toate drepturile rezervate."
+  },
+  "common": {
+    "learnMore": "Află Mai Multe",
+    "getStarted": "Începe Acum",
+    "contactUs": "Contactează-ne",
+    "readMore": "Citește Mai Mult",
+    "seeAll": "Vezi Tot",
+    "languageSwitch": "EN",
+    "openMenu": "Deschide Meniul",
+    "closeMenu": "Închide Meniul"
+  },
+  "metadata": {
+    "home": {
+      "title": "Megagis | Servicii Cadastru, Topografie și GIS România",
+      "description": "Servicii profesionale de cadastru, intabulare, ridicări topografice și sisteme GIS pentru sectorul privat și instituții publice din România."
+    },
+    "services": {
+      "title": "Servicii | Megagis",
+      "description": "Descoperă gama completă de servicii cadastrale, topografice și GIS oferite de Megagis."
+    },
+    "about": {
+      "title": "Despre Noi | Megagis",
+      "description": "Află mai multe despre echipa Megagis și experiența noastră în servicii cadastrale și topografice."
+    },
+    "contact": {
+      "title": "Contact | Megagis",
+      "description": "Contactează-ne pentru o consultație gratuită și o ofertă personalizată pentru proiectul tău."
+    }
+  }
+}

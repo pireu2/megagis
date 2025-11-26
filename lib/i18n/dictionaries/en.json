@@ -1,0 +1,140 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact",
+    "governmentSolutions": "Government Solutions",
+    "projects": "Projects",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title": "Precision in Cadastral & Surveying",
+    "subtitle": "Professional GIS Solutions",
+    "description": "We provide comprehensive cadastral, topographical surveying, and geographic information system services for the private sector and public institutions in Romania.",
+    "primaryCta": "Request a Quote",
+    "secondaryCta": "Explore Services"
+  },
+  "servicesOverview": {
+    "title": "Our Services",
+    "subtitle": "Complete solutions for all your cadastral and surveying needs",
+    "cadastral": {
+      "title": "Cadastre & Land Registration",
+      "description": "Complete cadastral documentation for Land Book registration, property divisions, consolidations, and data updates."
+    },
+    "topography": {
+      "title": "Topographical Surveys",
+      "description": "Precision measurements with state-of-the-art equipment for site plans and construction projects."
+    },
+    "gis": {
+      "title": "GIS Systems",
+      "description": "Implementation and development of geographic information systems for public administration and private companies."
+    },
+    "urbanPlanning": {
+      "title": "Urban Planning (PUG/PUZ/PUD)",
+      "description": "Urban planning and territorial development documentation in accordance with current legislation."
+    },
+    "viewAll": "View All Services"
+  },
+  "valueProps": {
+    "title": "Why Choose Us",
+    "subtitle": "Your trusted partner in cadastral and surveying services",
+    "items": {
+      "precision": {
+        "title": "Maximum Precision",
+        "description": "We use cutting-edge surveying equipment and professional software for the highest quality results."
+      },
+      "compliance": {
+        "title": "Legal Compliance",
+        "description": "All documentation is prepared in accordance with current legislation and ANCPI requirements."
+      },
+      "efficiency": {
+        "title": "Efficiency & Speed",
+        "description": "Optimized processes for timely delivery of documentation without compromising on quality."
+      },
+      "expertise": {
+        "title": "Proven Expertise",
+        "description": "Team of authorized specialists with extensive experience in diverse projects from public and private sectors."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What Clients Say",
+    "subtitle": "Feedback from our trusted partners",
+    "items": [
+      {
+        "quote": "Working with Megagis has been excellent. Professionalism, promptness, and impeccable documentation.",
+        "author": "Alexandru Popescu",
+        "role": "General Manager",
+        "company": "Construct Plus SRL"
+      },
+      {
+        "quote": "Our long-standing partnership demonstrates the quality of services provided. We recommend with confidence.",
+        "author": "Maria Ionescu",
+        "role": "General Secretary",
+        "company": "Florești Town Hall"
+      },
+      {
+        "quote": "The GIS system implementation has transformed how we manage cadastral data for our territorial unit.",
+        "author": "Gheorghe Dumitrescu",
+        "role": "Mayor",
+        "company": "Bragadiru Commune"
+      }
+    ]
+  },
+  "ctaSection": {
+    "title": "Ready to Get Started?",
+    "description": "Contact us today for a free consultation and a personalized quote for your project.",
+    "primaryButton": "Request Free Quote",
+    "secondaryButton": "Call Now"
+  },
+  "footer": {
+    "description": "Megagis provides professional cadastral, surveying, and GIS services for the private sector and public institutions in Romania.",
+    "services": "Services",
+    "company": "Company",
+    "contact": "Contact",
+    "navigation": {
+      "services": "Services",
+      "about": "About Us",
+      "projects": "Projects",
+      "contact": "Contact",
+      "faq": "FAQ",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions"
+    },
+    "contactInfo": {
+      "address": "Example Street No. 123, Bucharest, Romania",
+      "phone": "+40 721 234 567",
+      "email": "contact@megagis.ro"
+    },
+    "copyright": "© 2025 Megagis. All rights reserved."
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us",
+    "readMore": "Read More",
+    "seeAll": "See All",
+    "languageSwitch": "RO",
+    "openMenu": "Open Menu",
+    "closeMenu": "Close Menu"
+  },
+  "metadata": {
+    "home": {
+      "title": "Megagis | Cadastral, Surveying & GIS Services Romania",
+      "description": "Professional cadastral, land registration, topographical surveying, and GIS services for the private sector and public institutions in Romania."
+    },
+    "services": {
+      "title": "Services | Megagis",
+      "description": "Discover the full range of cadastral, topographical, and GIS services offered by Megagis."
+    },
+    "about": {
+      "title": "About Us | Megagis",
+      "description": "Learn more about the Megagis team and our experience in cadastral and surveying services."
+    },
+    "contact": {
+      "title": "Contact | Megagis",
+      "description": "Contact us for a free consultation and a personalized quote for your project."
+    }
+  }
+}
