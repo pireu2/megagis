@@ -11,7 +11,7 @@ interface CtaSectionProps {
 
 export function CtaSection({ lang, dict, contactInfo }: CtaSectionProps) {
   return (
-    <section className="py-20 md:py-28 bg-linear-to-br from-primary via-slate-800 to-slate-900 relative overflow-hidden">
+    <section className="py-20 md:py-28 bg-linear-to-br from-primary-900 via-primary-800 to-primary-950 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div

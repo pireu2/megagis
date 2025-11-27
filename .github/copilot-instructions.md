@@ -13,7 +13,7 @@
 
 ## 2. Tech Stack
 
-- **Framework:** Next.js 14+ (App Router).
+- **Framework:** Next.js 16+ (App Router).
 - **Language:** TypeScript (Strict mode).
 - **Styling:** Tailwind CSS.
 - **UI Library:** shadcn/ui (Radix UI primitives).

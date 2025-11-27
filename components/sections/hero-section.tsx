@@ -10,7 +10,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ lang, dict }: HeroSectionProps) {
   return (
-    <section className="relative overflow-hidden bg-linear-to-br from-slate-900 via-slate-800 to-primary/90 py-20 md:py-32 lg:py-40">
+    <section className="relative overflow-hidden bg-linear-to-br from-primary-950 via-primary-900 to-primary-800 py-20 md:py-32 lg:py-40">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div

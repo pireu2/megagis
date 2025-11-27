@@ -102,10 +102,16 @@
       "privacy": "Privacy Policy",
       "terms": "Terms & Conditions"
     },
+    "serviceLinks": {
+      "cadastral": "Cadastre & Land Registration",
+      "topography": "Topographical Surveys",
+      "gis": "GIS Systems",
+      "governmentSolutions": "Government Solutions"
+    },
     "contactInfo": {
-      "address": "Example Street No. 123, Bucharest, Romania",
-      "phone": "+40 721 234 567",
-      "email": "contact@megagis.ro"
+      "address": "Str. Nifon nr. 16, Târgoviște, Romania",
+      "phone": "+40 345 401 035",
+      "email": "office@megagis.ro"
     },
     "copyright": "© 2025 Megagis. All rights reserved."
   },

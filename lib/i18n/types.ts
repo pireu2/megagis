@@ -95,6 +95,12 @@ export interface FooterDict {
     privacy: string;
     terms: string;
   };
+  serviceLinks: {
+    cadastral: string;
+    topography: string;
+    gis: string;
+    governmentSolutions: string;
+  };
   contactInfo: {
     address: string;
     phone: string;

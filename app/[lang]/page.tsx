@@ -1,4 +1,4 @@
-import { getDictionary, type Locale } from "@/lib/i18n";
+import { getDictionary, i18n, type Locale } from "@/lib/i18n";
 import {
   HeroSection,
   ServicesOverviewSection,
@@ -7,22 +7,25 @@ import {
   CtaSection,
 } from "@/components/sections";
 
-interface PageProps {
-  params: Promise<{ lang: Locale }>;
-}
-
-export default async function HomePage({ params }: PageProps) {
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const locale = (
+    i18n.locales.includes(lang as Locale) ? lang : i18n.defaultLocale
+  ) as Locale;
+  const dict = await getDictionary(locale);
 
   return (
     <>
-      <HeroSection lang={lang} dict={dict.hero} />
-      <ServicesOverviewSection lang={lang} dict={dict.servicesOverview} />
+      <HeroSection lang={locale} dict={dict.hero} />
+      <ServicesOverviewSection lang={locale} dict={dict.servicesOverview} />
       <ValuePropsSection dict={dict.valueProps} />
       <TestimonialsSection dict={dict.testimonials} />
       <CtaSection
-        lang={lang}
+        lang={locale}
         dict={dict.ctaSection}
         contactInfo={dict.footer.contactInfo}
       />

@@ -17,18 +17,16 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
-interface LayoutProps {
-  children: React.ReactNode;
-  params: Promise<{ lang: Locale }>;
-}
-
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const locale = (
+    i18n.locales.includes(lang as Locale) ? lang : i18n.defaultLocale
+  ) as Locale;
+  const dict = await getDictionary(locale);
 
   return {
     title: {
@@ -38,7 +36,7 @@ export async function generateMetadata({
     description: dict.metadata.home.description,
     metadataBase: new URL("https://megagis.ro"),
     alternates: {
-      canonical: `/${lang}`,
+      canonical: `/${locale}`,
       languages: {
         "ro-RO": "/ro",
         "en-US": "/en",
@@ -46,27 +44,36 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "website",
-      locale: lang === "ro" ? "ro_RO" : "en_US",
+      locale: locale === "ro" ? "ro_RO" : "en_US",
       siteName: "Megagis",
     },
   };
 }
 
-export default async function LocaleLayout({ children, params }: LayoutProps) {
+export default async function LocaleLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ lang: string }>;
+}) {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const locale = (
+    i18n.locales.includes(lang as Locale) ? lang : i18n.defaultLocale
+  ) as Locale;
+  const dict = await getDictionary(locale);
 
   return (
-    <html lang={lang} suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body
         className={`${GeistSans.variable} ${GeistMono.variable} ${lora.variable} antialiased min-h-screen flex flex-col`}
       >
         <Header
-          lang={lang}
+          lang={locale}
           dict={{ navigation: dict.navigation, common: dict.common }}
         />
         <main className="flex-1">{children}</main>
-        <Footer lang={lang} dict={dict.footer} />
+        <Footer lang={locale} dict={dict.footer} />
       </body>
     </html>
   );

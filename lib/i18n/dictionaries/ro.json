@@ -102,10 +102,16 @@
       "privacy": "Politica de Confidențialitate",
       "terms": "Termeni și Condiții"
     },
+    "serviceLinks": {
+      "cadastral": "Cadastru și Intabulare",
+      "topography": "Ridicări Topografice",
+      "gis": "Sisteme GIS",
+      "governmentSolutions": "Soluții Guvernamentale"
+    },
     "contactInfo": {
-      "address": "Strada Exemplu Nr. 123, București, România",
-      "phone": "+40 721 234 567",
-      "email": "contact@megagis.ro"
+      "address": "Str. Nifon nr. 16, Târgoviște, România",
+      "phone": "+40 345 401 035",
+      "email": "office@megagis.ro"
     },
     "copyright": "© 2025 Megagis. Toate drepturile rezervate."
   },

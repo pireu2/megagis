@@ -4,26 +4,27 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Brand Colors */
-  --primary-50: #eff6ff;
-  --primary-100: #dbeafe;
-  --primary-200: #bfdbfe;
-  --primary-300: #93c5fd;
-  --primary-400: #60a5fa;
-  --primary-500: #3b82f6;
-  --primary-600: #1e3a5f;
-  --primary-700: #1e40af;
-  --primary-800: #1e3a8a;
-  --primary-900: #1e3a5f;
-  --primary-950: #172554;
+  /* Brand Colors - Green Theme (darkened for better contrast) */
+  --primary-50: #f0fdf4;
+  --primary-100: #dcfce7;
+  --primary-200: #bbf7d0;
+  --primary-300: #6ee7a0;
+  --primary-400: #34d379;
+  --primary-500: #16a34a;
+  --primary-600: #148c3f;
+  --primary-700: #166534;
+  --primary-800: #14532d;
+  --primary-900: #0f3d21;
+  --primary-950: #052e16;
 
-  /* Accent Colors */
-  --accent-orange: #f97316;
-  --accent-orange-hover: #ea580c;
+  /* Accent Colors - Amber/Gold for CTAs */
+  --accent-amber: #f59e0b;
+  --accent-amber-hover: #d97706;
+  --accent-amber-light: #fbbf24;
   --accent-teal: #14b8a6;
   --accent-teal-hover: #0d9488;
 
-  /* Neutral Colors */
+  /* Neutral Colors - Default Slate (blue-tinted) */
   --slate-50: #f8fafc;
   --slate-100: #f1f5f9;
   --slate-200: #e2e8f0;
@@ -36,8 +37,21 @@
   --slate-900: #0f172a;
   --slate-950: #020617;
 
+  /* Sage Colors - Green-tinted neutrals */
+  --sage-50: #f6f7f6;
+  --sage-100: #e8ebe8;
+  --sage-200: #d5dbd5;
+  --sage-300: #b8c2b8;
+  --sage-400: #8a9a8a;
+  --sage-500: #667766;
+  --sage-600: #4d5c4d;
+  --sage-700: #3d4a3d;
+  --sage-800: #2a352a;
+  --sage-900: #1a231a;
+  --sage-950: #0d120d;
+
   /* Semantic Colors */
-  --background: var(--slate-50);
+  --background: #fafaf9;
   --foreground: var(--slate-900);
   --card: #ffffff;
   --card-foreground: var(--slate-900);
@@ -45,11 +59,11 @@
   --popover-foreground: var(--slate-900);
   --primary: var(--primary-600);
   --primary-foreground: #ffffff;
-  --secondary: var(--slate-100);
+  --secondary: #f5f5f4;
   --secondary-foreground: var(--slate-900);
-  --muted: var(--slate-100);
+  --muted: #f5f5f4;
   --muted-foreground: var(--slate-500);
-  --accent: var(--accent-orange);
+  --accent: var(--accent-amber);
   --accent-foreground: #ffffff;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
@@ -80,11 +94,37 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
+  /* Primary color scale for gradient usage */
+  --color-primary-50: var(--primary-50);
+  --color-primary-100: var(--primary-100);
+  --color-primary-200: var(--primary-200);
+  --color-primary-300: var(--primary-300);
+  --color-primary-400: var(--primary-400);
+  --color-primary-500: var(--primary-500);
+  --color-primary-600: var(--primary-600);
+  --color-primary-700: var(--primary-700);
+  --color-primary-800: var(--primary-800);
+  --color-primary-900: var(--primary-900);
+  --color-primary-950: var(--primary-950);
+
+  /* Sage color scale for green-tinted neutrals */
+  --color-sage-50: var(--sage-50);
+  --color-sage-100: var(--sage-100);
+  --color-sage-200: var(--sage-200);
+  --color-sage-300: var(--sage-300);
+  --color-sage-400: var(--sage-400);
+  --color-sage-500: var(--sage-500);
+  --color-sage-600: var(--sage-600);
+  --color-sage-700: var(--sage-700);
+  --color-sage-800: var(--sage-800);
+  --color-sage-900: var(--sage-900);
+  --color-sage-950: var(--sage-950);
+
   /* Brand specific colors */
   --color-brand-primary: var(--primary-600);
   --color-brand-secondary: var(--slate-500);
-  --color-brand-accent: var(--accent-orange);
-  --color-brand-accent-hover: var(--accent-orange-hover);
+  --color-brand-accent: var(--accent-amber);
+  --color-brand-accent-hover: var(--accent-amber-hover);
   --color-brand-success: var(--accent-teal);
 
   /* Fonts */
