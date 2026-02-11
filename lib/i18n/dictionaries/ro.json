@@ -11,7 +11,7 @@
   "hero": {
     "title": "Precizie în Cadastru și Topografie",
     "subtitle": "Soluții GIS Profesionale",
-    "description": "Oferim servicii complete de cadastru, topografie și sisteme informaționale geografice pentru sectorul privat și instituții publice din România.",
+    "description": "Firmă dinamică și tânără, autorizată ANCPI clasa I. Oferim servicii complete de cadastru, topografie și GIS pentru sectorul privat și instituții publice din România, la costuri accesibile.",
     "primaryCta": "Solicită Ofertă",
     "secondaryCta": "Descoperă Serviciile"
   },
@@ -46,15 +46,15 @@
       },
       "compliance": {
         "title": "Conformitate Legală",
-        "description": "Toate documentațiile sunt întocmite în conformitate cu legislația în vigoare și cerințele ANCPI."
+        "description": "Autorizați ANCPI clasa I (RO-B-J nr. 0450/2014). Certificate ISO 9001, ISO 14001, ISO 27001 pentru calitate, mediu și securitate."
       },
       "efficiency": {
         "title": "Eficiență și Rapiditate",
-        "description": "Procese optimizate pentru livrarea la timp a documentațiilor, fără compromisuri în privința calității."
+        "description": "Procese optimizate pentru livrarea la timp a documentațiilor la costuri accesibile, fără compromisuri în privința calității."
       },
       "expertise": {
         "title": "Expertiză Dovedită",
-        "description": "Echipă de specialiști autorizați cu experiență vastă în proiecte diverse din sectorul public și privat."
+        "description": "Echipă de specialiști autorizati cu experiență vastă în proiecte diverse. Garanția maximei satisfacții confirmă calitatea serviciilor noastre."
       }
     }
   },
@@ -89,7 +89,7 @@
     "secondaryButton": "Sună Acum"
   },
   "footer": {
-    "description": "Megagis oferă servicii profesionale de cadastru, topografie și GIS pentru sectorul privat și instituții publice din România.",
+    "description": "Firmă dinamică înființată în 2012, autorizată ANCPI clasa I. Oferim servicii profesionale de cadastru, topografie și GIS la costuri accesibile, cu garanția maximei satisfacții.",
     "services": "Servicii",
     "company": "Companie",
     "contact": "Contact",

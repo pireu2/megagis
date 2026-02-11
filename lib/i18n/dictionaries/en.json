@@ -11,7 +11,7 @@
   "hero": {
     "title": "Precision in Cadastral & Surveying",
     "subtitle": "Professional GIS Solutions",
-    "description": "We provide comprehensive cadastral, topographical surveying, and geographic information system services for the private sector and public institutions in Romania.",
+    "description": "Dynamic young company, ANCPI Class I certified. We provide comprehensive cadastral, topographical, and GIS services for the private sector and public institutions in Romania at affordable costs.",
     "primaryCta": "Request a Quote",
     "secondaryCta": "Explore Services"
   },
@@ -46,15 +46,15 @@
       },
       "compliance": {
         "title": "Legal Compliance",
-        "description": "All documentation is prepared in accordance with current legislation and ANCPI requirements."
+        "description": "ANCPI Class I certified (RO-B-J nr. 0450/2014). ISO 9001, ISO 14001, ISO 27001 certified for quality, environmental, and information security management."
       },
       "efficiency": {
         "title": "Efficiency & Speed",
-        "description": "Optimized processes for timely delivery of documentation without compromising on quality."
+        "description": "Optimized processes for timely delivery of documentation at affordable costs, without compromising on quality."
       },
       "expertise": {
         "title": "Proven Expertise",
-        "description": "Team of authorized specialists with extensive experience in diverse projects from public and private sectors."
+        "description": "Team of certified specialists with extensive experience in diverse projects. Guaranteed maximum satisfaction confirms the quality of our services."
       }
     }
   },
@@ -89,7 +89,7 @@
     "secondaryButton": "Call Now"
   },
   "footer": {
-    "description": "Megagis provides professional cadastral, surveying, and GIS services for the private sector and public institutions in Romania.",
+    "description": "Dynamic company founded in 2012, ANCPI Class I certified. We offer professional cadastral, topographic, and GIS services at affordable costs, with guaranteed maximum satisfaction.",
     "services": "Services",
     "company": "Company",
     "contact": "Contact",

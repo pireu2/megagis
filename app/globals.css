@@ -165,3 +165,177 @@ html {
   background-color: var(--primary-200);
   color: var(--primary-900);
 }
+
+/* Swiss GIS Aesthetic Utilities */
+
+/* Mathematical Grid Background - Faint grid lines exposing structure */
+.bg-grid-slate-thin {
+  background-image:
+    linear-gradient(to right, rgb(15 23 42 / 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(15 23 42 / 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-grid-slate-900\/\[0\.04\] {
+  background-image:
+    linear-gradient(to right, rgb(15 23 42 / 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(15 23 42 / 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Glassmorphism - Glass cards floating above grid */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-card-dark {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Technical Data Decorators - Monospace labels for precision */
+.data-decorator {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(100, 116, 139, 0.6);
+}
+
+/* Swiss Typography Scale - Dominant headings */
+.heading-massive {
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.heading-dominant {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+}
+
+/* Flush Left Typography */
+.text-flush-left {
+  text-align: left;
+  hyphens: none;
+}
+
+/* Layer Effect - Simulating map layers */
+.layer-card {
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.layer-card::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: inherit;
+  opacity: 0.3;
+  z-index: -1;
+  border-radius: inherit;
+  transform: translateZ(-1px);
+}
+
+.layer-card:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+/* Active Whitespace - Swiss spacing system */
+.section-padding-swiss {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding-swiss {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+}
+
+/* Technical Microcopy */
+.microcopy-technical {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+/* Topographical Map Animations */
+@keyframes topo-flow {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 200;
+  }
+}
+
+@keyframes topo-drift {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(200px, 0);
+  }
+}
+
+@keyframes topo-drift-slow {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100px, 0);
+  }
+}
+
+@keyframes topo-elevation-pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+    r: 1.5;
+  }
+  50% {
+    opacity: 1;
+    r: 2;
+  }
+}
+
+@keyframes topo-undulate {
+  0%,
+  100% {
+    d: path("M0,50 Q50,40 100,50 T200,50");
+  }
+  50% {
+    d: path("M0,50 Q50,45 100,50 T200,50");
+  }
+}
+
+.animate-topo-flow {
+  animation: topo-flow 20s linear infinite;
+}
+
+.animate-topo-drift {
+  animation: topo-drift 60s linear infinite;
+}
+
+.animate-topo-drift-slow {
+  animation: topo-drift-slow 80s linear infinite;
+}
+
+.animate-elevation-pulse {
+  animation: topo-elevation-pulse 3s ease-in-out infinite;
+}

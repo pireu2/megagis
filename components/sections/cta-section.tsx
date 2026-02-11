@@ -1,4 +1,7 @@
-import { ArrowRight, Phone } from "lucide-react";
+"use client";
+
+import { ArrowRight, Phone, Mail } from "lucide-react";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { LocaleLink } from "@/components/locale-link";
 import type { Locale, CtaSectionDict, FooterDict } from "@/lib/i18n";
@@ -11,34 +14,67 @@ interface CtaSectionProps {
 
 export function CtaSection({ lang, dict, contactInfo }: CtaSectionProps) {
   return (
-    <section className="py-20 md:py-28 bg-linear-to-br from-primary-900 via-primary-800 to-primary-950 relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}
-        />
-      </div>
+    <section className="section-padding-swiss bg-slate-950 relative overflow-hidden">
+      {/* Mathematical Grid Background */}
+      <div className="absolute inset-0 bg-grid-slate-900/[0.04]" />
 
-      {/* Gradient Orb */}
-      <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-accent/20 blur-3xl" />
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-linear-to-br from-primary-950/30 via-transparent to-slate-950" />
 
       <div className="container relative mx-auto px-4 md:px-6">
-        <div className="mx-auto max-w-3xl text-center">
-          {/* Title */}
-          <h2 className="font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
+        {/* Technical Decorator - Top */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="mb-16 flex flex-wrap items-start justify-between border-b border-white/10 pb-6 gap-4"
+        >
+          <div className="flex flex-col gap-1">
+            <div className="data-decorator text-slate-500">CONTACT / CTA</div>
+            <div className="data-decorator text-primary-400/60">
+              RESPONSE TIME: &lt;24H
+            </div>
+          </div>
+          <div className="flex flex-col gap-1 text-right">
+            <div className="data-decorator text-slate-500">READY TO START</div>
+            <div className="data-decorator text-primary-400/60">
+              CONSULTATION: FREE
+            </div>
+          </div>
+        </motion.div>
+
+        <div className="max-w-4xl text-flush-left">
+          {/* Title - Flush Left */}
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
+            className="heading-dominant text-white mb-8"
+          >
             {dict.title}
-          </h2>
+          </motion.h2>
 
           {/* Description */}
-          <p className="mt-6 text-lg text-slate-300 md:text-xl">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-2xl mb-12"
+          >
             {dict.description}
-          </p>
+          </motion.p>
 
           {/* CTA Buttons */}
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+            className="flex flex-col sm:flex-row items-start gap-4 mb-16"
+          >
             <LocaleLink href="/contact" lang={lang}>
               <Button variant="accent" size="xl" className="group">
                 {dict.primaryButton}
@@ -50,30 +86,60 @@ export function CtaSection({ lang, dict, contactInfo }: CtaSectionProps) {
               <Button
                 variant="outline"
                 size="xl"
-                className="border-white/30 bg-white/5 text-white hover:bg-white/10 hover:border-white/50"
+                className="border-slate-700 bg-slate-900/50 text-slate-200 hover:bg-slate-800/70 hover:border-slate-600"
               >
                 <Phone className="mr-2 h-5 w-5" />
                 {dict.secondaryButton}
               </Button>
             </a>
-          </div>
+          </motion.div>
 
-          {/* Contact Info */}
-          <p className="mt-8 text-slate-400">
+          {/* Contact Info Cards - Technical Precision */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+            className="grid md:grid-cols-2 gap-4 border-t border-white/5 pt-12"
+          >
             <a
               href={`tel:${contactInfo.phone.replace(/\s/g, "")}`}
-              className="hover:text-accent transition-colors"
+              className="glass-card-dark p-6 rounded-xl hover:border-accent transition-colors group relative overflow-hidden"
             >
-              {contactInfo.phone}
+              <div className="absolute top-3 right-3 data-decorator text-slate-600 text-[0.5rem]">
+                TEL-01
+              </div>
+              <div className="data-decorator mb-2">TELEFON / DIRECT LINE</div>
+              <div className="flex items-center gap-3 mb-2">
+                <Phone className="h-5 w-5 text-accent" />
+                <span className="text-lg font-mono text-white group-hover:text-accent transition-colors">
+                  {contactInfo.phone}
+                </span>
+              </div>
+              <div className="data-decorator text-primary-400/50 text-[0.6rem]">
+                AVAILABLE: MON-FRI 09:00-18:00
+              </div>
             </a>
-            {" • "}
+
             <a
               href={`mailto:${contactInfo.email}`}
-              className="hover:text-accent transition-colors"
+              className="glass-card-dark p-6 rounded-xl hover:border-accent transition-colors group relative overflow-hidden"
             >
-              {contactInfo.email}
+              <div className="absolute top-3 right-3 data-decorator text-slate-600 text-[0.5rem]">
+                EMAIL-01
+              </div>
+              <div className="data-decorator mb-2">EMAIL / CORRESPONDENCE</div>
+              <div className="flex items-center gap-3 mb-2">
+                <Mail className="h-5 w-5 text-accent" />
+                <span className="text-lg font-mono text-white group-hover:text-accent transition-colors break-all">
+                  {contactInfo.email}
+                </span>
+              </div>
+              <div className="data-decorator text-primary-400/50 text-[0.6rem]">
+                RESPONSE: &lt;24H • PRIORITY SUPPORT
+              </div>
             </a>
-          </p>
+          </motion.div>
         </div>
       </div>
     </section>
