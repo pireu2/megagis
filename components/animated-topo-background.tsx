@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 import * as THREE from "three";
 
 interface AnimatedTopoBackgroundProps {
@@ -18,10 +18,10 @@ interface AnimatedTopoBackgroundProps {
 
 export function AnimatedTopoBackground({
   lineColor = "#60a5faCC",
-  levels = 12,
-  animationSpeed = 0.012,
+  levels = 20,
+  animationSpeed = 0.01,
   edgeThreshold = 0.005,
-  opacity = 0.3,
+  opacity = 0.1,
 }: AnimatedTopoBackgroundProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
@@ -30,41 +30,17 @@ export function AnimatedTopoBackground({
   const materialRef = useRef<THREE.ShaderMaterial | null>(null);
   const clockRef = useRef<THREE.Clock | null>(null);
   const animationFrameRef = useRef<number | undefined>(undefined);
+  const meshRef = useRef<THREE.Mesh | null>(null);
+  const resizeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const isVisibleRef = useRef(true);
 
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
+  // State to track container dimensions and trigger re-initialization on resize
+  const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
 
-    const rect = container.getBoundingClientRect();
-    const width = rect.width;
-    const height = rect.height;
-
-    // Parse color
-    const colorHex = lineColor.slice(0, 7); // Remove alpha if present
-    const color = new THREE.Color(colorHex);
-
-    // Setup scene
-    const scene = new THREE.Scene();
-    sceneRef.current = scene;
-
-    // Setup camera
-    const camera = new THREE.OrthographicCamera(0, width, 0, height, 1, 2);
-    camera.position.z = 2;
-    cameraRef.current = camera;
-
-    // Setup renderer
-    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: false });
-    renderer.setClearColor(0, 0);
-    renderer.setSize(width, height);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    rendererRef.current = renderer;
-
-    // Setup clock
-    const clock = new THREE.Clock();
-    clockRef.current = clock;
-
-    // Simplex noise shader (from Ashima Arts)
-    const simplexNoise = `
+  // Memoize shader strings to avoid recreation
+  const shaders = useMemo(
+    () => ({
+      simplexNoise: `
       vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
       vec4 mod289(vec4 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
       vec4 permute(vec4 x) { return mod289(((x*34.0)+10.0)*x); }
@@ -126,17 +102,13 @@ export function AnimatedTopoBackground({
         m = m * m;
         return 105.0 * dot(m*m, vec4(dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3)));
       }
-    `;
-
-    // Vertex shader
-    const vertexShader = `
+    `,
+      vertex: `
       void main() {
         gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
       }
-    `;
-
-    // Fragment shader
-    const fragmentShader = `
+    `,
+      fragment: (simplexNoise: string) => `
       uniform vec3 color;
       uniform float time;
       uniform float levels;
@@ -148,36 +120,100 @@ export function AnimatedTopoBackground({
         vec2 pos = gl_FragCoord.xy;
         
         // Multi-octave noise for more realistic terrain
-        // Layer 1: Large terrain features
         float noise1 = snoise(vec3(pos * 0.0008, time * 0.3));
-        
-        // Layer 2: Medium details with different frequency
         float noise2 = snoise(vec3(pos * 0.002, time * 0.5 + 100.0)) * 0.5;
-        
-        // Layer 3: Fine details
         float noise3 = snoise(vec3(pos * 0.004, time * 0.7 + 200.0)) * 0.25;
         
-        // Combine layers with different weights for natural terrain
         float noise = noise1 + noise2 + noise3;
-        noise = (noise + 1.0) / 2.0; // Normalize to 0-1
+        noise = (noise + 1.0) / 2.0;
 
-        // Posterize to create bands
         float lower = floor(noise * levels) / levels;
         float lowerDiff = noise - lower;
 
-        // Draw only edges between bands
         if (lowerDiff > edgeThreshold)
           discard;
 
         gl_FragColor = vec4(color, 1.0);
       }
-    `;
+    `,
+    }),
+    [],
+  );
+
+  // Update shader uniforms when parameters change (without re-initialization)
+  useEffect(() => {
+    if (!materialRef.current) return;
+
+    const colorHex = lineColor.slice(0, 7);
+    const color = new THREE.Color(colorHex);
+
+    materialRef.current.uniforms.color.value = color;
+    materialRef.current.uniforms.levels.value = levels;
+    materialRef.current.uniforms.edgeThreshold.value = edgeThreshold;
+  }, [lineColor, levels, edgeThreshold]);
+
+  // Visibility API - pause animation when tab is hidden
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      isVisibleRef.current = !document.hidden;
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () =>
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+  }, []);
+
+  // Initial measurement effect
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const rect = container.getBoundingClientRect();
+    if (rect.width > 0 && rect.height > 0) {
+      setContainerSize({ width: rect.width, height: rect.height });
+    }
+  }, []);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const rect = container.getBoundingClientRect();
+    const width = rect.width;
+    const height = rect.height;
+
+    // If dimensions are 0, wait for next render
+    if (width === 0 || height === 0) return;
+
+    // Parse color
+    const colorHex = lineColor.slice(0, 7); // Remove alpha if present
+    const color = new THREE.Color(colorHex);
+
+    // Setup scene
+    const scene = new THREE.Scene();
+    sceneRef.current = scene;
+
+    // Setup camera
+    const camera = new THREE.OrthographicCamera(0, width, 0, height, 1, 2);
+    camera.position.z = 2;
+    cameraRef.current = camera;
+
+    // Setup renderer
+    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: false });
+    renderer.setClearColor(0, 0);
+    renderer.setSize(width, height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    rendererRef.current = renderer;
+
+    // Setup clock
+    const clock = new THREE.Clock();
+    clockRef.current = clock;
 
     // Create geometry
     const geometry = new THREE.PlaneGeometry(width, height);
     geometry.translate(width / 2, height / 2, 0);
 
-    // Create material
+    // Create material using memoized shaders
     const material = new THREE.ShaderMaterial({
       uniforms: {
         color: { value: color },
@@ -185,23 +221,26 @@ export function AnimatedTopoBackground({
         levels: { value: levels },
         edgeThreshold: { value: edgeThreshold },
       },
-      vertexShader,
-      fragmentShader,
-      side: THREE.BackSide,
+      vertexShader: shaders.vertex,
+      fragmentShader: shaders.fragment(shaders.simplexNoise),
+      side: THREE.DoubleSide,
       transparent: true,
     });
     materialRef.current = material;
 
     // Create mesh and add to scene
     const mesh = new THREE.Mesh(geometry, material);
+    meshRef.current = mesh;
     scene.add(mesh);
 
     // Add canvas to container
     container.appendChild(renderer.domElement);
 
-    // Animation loop
+    // Animation loop with visibility check
     const animate = () => {
+      // Skip rendering when tab is hidden to save resources
       if (
+        isVisibleRef.current &&
         materialRef.current &&
         clockRef.current &&
         rendererRef.current &&
@@ -218,27 +257,37 @@ export function AnimatedTopoBackground({
 
     animate();
 
-    // Handle resize
+    // Handle resize with debouncing - update state to trigger re-initialization
     const handleResize = () => {
-      if (!container || !rendererRef.current || !cameraRef.current) return;
+      if (!container) return;
 
-      const rect = container.getBoundingClientRect();
-      const newWidth = rect.width;
-      const newHeight = rect.height;
+      // Clear existing timeout
+      if (resizeTimeoutRef.current) {
+        clearTimeout(resizeTimeoutRef.current);
+      }
 
-      cameraRef.current.right = newWidth;
-      cameraRef.current.top = newHeight;
-      cameraRef.current.updateProjectionMatrix();
-
-      rendererRef.current.setSize(newWidth, newHeight);
+      // Debounce resize to prevent excessive re-initialization
+      resizeTimeoutRef.current = setTimeout(() => {
+        const rect = container.getBoundingClientRect();
+        setContainerSize({ width: rect.width, height: rect.height });
+      }, 300);
     };
 
     window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
+
+      // Clear resize timeout
+      if (resizeTimeoutRef.current) {
+        clearTimeout(resizeTimeoutRef.current);
+      }
+
       if (animationFrameRef.current) {
         cancelAnimationFrame(animationFrameRef.current);
+      }
+      if (meshRef.current) {
+        meshRef.current.geometry.dispose();
       }
       if (rendererRef.current) {
         container.removeChild(rendererRef.current.domElement);
@@ -248,7 +297,7 @@ export function AnimatedTopoBackground({
         materialRef.current.dispose();
       }
     };
-  }, [animationSpeed, edgeThreshold, levels, lineColor]);
+  }, [animationSpeed, containerSize]);
 
   return (
     <div

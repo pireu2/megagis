@@ -24,9 +24,17 @@ export function ValuePropsSection({ dict }: ValuePropsSectionProps) {
   ];
 
   return (
-    <section className="section-padding-swiss bg-slate-50 relative overflow-hidden">
-      {/* Mathematical Grid Background */}
+    <section className="section-padding-swiss relative overflow-hidden">
+      {/* Enhanced Background with Gradient */}
+      <div className="absolute inset-0 bg-linear-to-br from-slate-100 via-slate-50 to-white" />
       <div className="absolute inset-0 bg-grid-slate-thin opacity-50" />
+      {/* Radial gradient overlay for depth */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-primary-100/40 via-primary-50/20 to-transparent" />
+
+      {/* Green gradient borders - top */}
+      <div className="absolute top-0 left-0 right-0 h-0.5 bg-linear-to-r from-transparent via-primary-500 to-transparent opacity-50" />
+      {/* Green gradient borders - bottom */}
+      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-transparent via-primary-500 to-transparent opacity-50" />
 
       <div className="container relative mx-auto px-4 md:px-6">
         {/* Section Header - Flush Left */}
@@ -62,46 +70,39 @@ export function ValuePropsSection({ dict }: ValuePropsSectionProps) {
                 transition={{
                   duration: 0.6,
                   delay: index * 0.1,
-                  ease: [0.34, 1.56, 0.64, 1],
+                  ease: [0.22, 1, 0.36, 1],
                 }}
                 className="group relative"
               >
-                {/* Glass Card */}
-                <div className="glass-card h-full p-8 rounded-2xl border border-slate-200/50 hover:border-primary-400 hover:shadow-xl hover:shadow-primary-100/50 transition-all duration-300">
+                {/* Card */}
+                <div className="h-full p-8 rounded-3xl border border-slate-200/50 bg-white hover:border-primary-300 transition-all duration-500 relative overflow-hidden group-hover:scale-[1.02] group-hover:shadow-2xl shadow-lg">
+                  {/* Subtle hover overlay */}
+                  <div className="absolute inset-0 bg-linear-to-br from-transparent via-white/0 to-white/0 group-hover:via-slate-50/50 group-hover:to-slate-50/30 transition-all duration-500 pointer-events-none" />
+
                   {/* Technical ID - Top Right */}
-                  <div className="absolute top-6 right-6 flex flex-col items-end gap-1">
-                    <div className="data-decorator text-slate-400">
+                  <div className="absolute top-6 right-6 flex flex-col items-end gap-1 z-10">
+                    <div className="font-mono text-sm font-bold text-slate-400">
                       {prop.id}
                     </div>
-                    <div className="data-decorator text-primary-600/60 text-[0.5rem]">
+                    <div className="font-mono text-[0.5rem] tracking-widest text-slate-400/60">
                       ADV-{(index + 1).toString().padStart(2, "0")}
                     </div>
                   </div>
 
                   {/* Icon with Precision Movement */}
-                  <motion.div
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                    className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-linear-to-br from-primary-500 to-primary-700 text-white shadow-lg shadow-primary-500/30"
-                  >
-                    <Icon className="h-8 w-8" />
-                  </motion.div>
+                  <div className="mb-6 inline-flex h-16 w-16 md:h-20 md:w-20 items-center justify-center rounded-2xl bg-linear-to-br from-primary-500 to-primary-700 text-white shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                    <Icon className="h-8 w-8 md:h-10 md:w-10" />
+                  </div>
 
                   {/* Title - Left Aligned */}
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4 tracking-tight text-flush-left">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4 tracking-tight text-slate-900 group-hover:text-primary-700 transition-colors duration-300">
                     {prop.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-slate-600 leading-relaxed text-flush-left">
+                  <p className="leading-relaxed text-slate-600">
                     {prop.description}
                   </p>
-
-                  {/* Layer Effect Border */}
-                  <div
-                    className="absolute inset-0 rounded-2xl border-2 border-primary-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-                    style={{ transform: "translate(4px, 4px)" }}
-                  />
                 </div>
               </motion.div>
             );

@@ -24,6 +24,7 @@ export interface ServicesOverviewDict {
   cadastral: {
     title: string;
     description: string;
+    features: string[];
   };
   topography: {
     title: string;
@@ -34,6 +35,10 @@ export interface ServicesOverviewDict {
     description: string;
   };
   urbanPlanning: {
+    title: string;
+    description: string;
+  };
+  consulting: {
     title: string;
     description: string;
   };

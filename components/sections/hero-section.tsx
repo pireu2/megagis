@@ -14,14 +14,14 @@ interface HeroSectionProps {
 
 export function HeroSection({ lang, dict }: HeroSectionProps) {
   return (
-    <section className="relative overflow-hidden bg-primary-950 section-padding-swiss">
+    <section className="relative overflow-hidden bg-primary-950 min-h-screen pt-14 flex flex-col justify-center">
       {/* Animated Topographical Map Background */}
       <AnimatedTopoBackground
         lineColor="#ffffffDD"
-        levels={8}
-        animationSpeed={0.008}
-        edgeThreshold={0.004}
-        opacity={0.4}
+        levels={20}
+        animationSpeed={0.01}
+        edgeThreshold={0.005}
+        opacity={0.1}
       />
 
       {/* Gradient Overlay for depth */}
@@ -35,28 +35,28 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
         }}
       />
 
-      <div className="container relative mx-auto px-4 md:px-6">
+      <div className="container relative flex flex-col gap-6 md:gap-12 mx-auto px-4 md:px-6">
         {/* Technical Decorator - Top */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mb-12 flex flex-wrap items-start justify-between border-b border-white/10 pb-6 gap-4"
+          className="flex flex-wrap items-start justify-between border-b border-white/10 pb-2 md:pb-3 gap-2 md:gap-4"
         >
           <div className="flex flex-col gap-1">
-            <div className="data-decorator text-slate-500">
+            <div className="text-[0.5rem] md:text-[10px] font-mono tracking-wider text-slate-400 uppercase">
               PROJECT: RO-MEGAGIS-2026
             </div>
-            <div className="data-decorator text-primary-400/60">
+            <div className="text-[0.5rem] md:text-[10px] font-mono tracking-wider text-primary-400/70 uppercase">
               SURVEY TYPE: CADASTRAL • GIS • TOPO
             </div>
           </div>
           <div className="flex flex-col gap-1 text-right">
-            <div className="data-decorator text-slate-500 flex items-center gap-2 justify-end">
+            <div className="text-[0.5rem] md:text-[10px] font-mono tracking-wider text-slate-400 uppercase flex items-center gap-2 justify-end">
               <MapPin className="h-3 w-3" />
               44°55'37.1"N 25°28'45.6"E
             </div>
-            <div className="data-decorator text-primary-400/60">
+            <div className="text-[0.5rem] md:text-[10px] font-mono tracking-wider text-primary-400/70 uppercase">
               TÂRGOVIȘTE, ROM • ELEV: 282M
             </div>
           </div>
@@ -64,17 +64,18 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
 
         {/* Main Content - Flush Left Layout */}
         <div className="max-w-5xl text-flush-left">
-          {/* Technical Badge */}
+          {/* Premium Technical Badge */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-            className="mb-8 inline-flex items-center gap-3 glass-card-dark px-4 py-2.5 rounded-full"
+            className="mb-4 md:mb-6 inline-flex items-center gap-2 md:gap-3 px-3 md:px-5 py-1.5 md:py-2.5 rounded-full border border-primary-500/30 bg-linear-to-r from-primary-950/50 via-primary-900/30 to-primary-950/50 backdrop-blur-sm"
           >
-            <Layers className="h-4 w-4 text-accent" />
-            <span className="microcopy-technical text-slate-300 tracking-wider">
+            <Layers className="h-3 w-3 md:h-4 md:w-4 text-primary-400" />
+            <span className="text-xs md:text-sm font-medium text-primary-300 tracking-wide uppercase">
               {dict.subtitle}
             </span>
+            <div className="h-1 w-1 rounded-full bg-primary-500 animate-pulse" />
           </motion.div>
 
           {/* Massive Heading - Swiss Typography */}
@@ -82,7 +83,7 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="heading-massive text-white mb-8 tracking-tight leading-[0.95] max-w-4xl"
+            className="heading-massive text-white mb-6 md:mb-8 tracking-tight leading-[0.95] max-w-6xl"
           >
             {dict.title}
           </motion.h1>
@@ -92,7 +93,7 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-            className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-2xl mb-12"
+            className="text-base md:text-lg lg:text-xl text-slate-400 leading-relaxed max-w-2xl mb-5 md:mb-8"
           >
             {dict.description}
           </motion.p>
@@ -102,68 +103,76 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            className="flex flex-col sm:flex-row items-start gap-4"
+            className="flex flex-row flex-wrap items-start gap-2 md:gap-4"
           >
             <LocaleLink href="/contact" lang={lang}>
-              <Button variant="accent" size="xl" className="group">
+              <Button
+                variant="accent"
+                size="default"
+                className="group text-xs md:text-lg md:p-6"
+              >
                 {dict.primaryCta}
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className=" h-4 w-4 md:h-5 md:w-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </LocaleLink>
             <LocaleLink href="/servicii" lang={lang}>
               <Button
                 variant="outline"
-                size="xl"
-                className="border-slate-700 bg-slate-900/50 text-slate-200 hover:bg-slate-800/70 hover:border-slate-600"
+                size="default"
+                className="text-xs md:text-lg md:p-6 border-slate-700 bg-slate-900/50 text-slate-200 hover:bg-slate-800/70 hover:border-slate-600 hover:text-white"
               >
                 {dict.secondaryCta}
-                <ArrowRight className="ml-2 h-5 w-5 opacity-50" />
+                <ArrowRight className="h-4 w-4 md:h-5 md:w-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </LocaleLink>
           </motion.div>
+        </div>
 
-          {/* Trust Indicators - Technical Precision */}
+        {/* Trust Indicators - Technical Precision */}
+        <div className="container mx-auto mt-auto">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
-            className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/5 pt-8"
+            className="border-t border-white/10 pt-4 md:pt-8 pb-4 md:pb-6"
           >
-            <div className="flex flex-col">
-              <span className="text-3xl md:text-4xl font-bold text-white tracking-tight font-mono">
-                500+
-              </span>
-              <span className="data-decorator mt-1">Proiecte Finalizate</span>
-              <span className="data-decorator text-primary-400/50 mt-0.5">
-                2012-2026
-              </span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-3xl md:text-4xl font-bold text-white tracking-tight font-mono">
-                14+
-              </span>
-              <span className="data-decorator mt-1">Ani Experiență</span>
-              <span className="data-decorator text-primary-400/50 mt-0.5">
-                EST. 2012
-              </span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-3xl md:text-4xl font-bold text-accent tracking-tight font-mono">
-                CLS I
-              </span>
-              <span className="data-decorator mt-1">Autorizare ANCPI</span>
-              <span className="data-decorator text-primary-400/50 mt-0.5">
-                RO-B-J 0450/2014
-              </span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-3xl md:text-4xl font-bold text-primary-400 tracking-tight font-mono">
-                24/7
-              </span>
-              <span className="data-decorator mt-1">Support Tehnic</span>
-              <span className="data-decorator text-primary-400/50 mt-0.5">
-                365 DAYS/YR
-              </span>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+              <div className="flex flex-col">
+                <span className="text-2xl md:text-4xl font-bold text-white tracking-tight font-mono">
+                  500+
+                </span>
+                <span className="data-decorator mt-1">Proiecte Finalizate</span>
+                <span className="data-decorator text-primary-400/50 mt-0.5">
+                  2012-2026
+                </span>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-2xl md:text-4xl font-bold text-white tracking-tight font-mono">
+                  14+
+                </span>
+                <span className="data-decorator mt-1">Ani Experiență</span>
+                <span className="data-decorator text-primary-400/50 mt-0.5">
+                  EST. 2012
+                </span>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-2xl md:text-4xl font-bold text-accent tracking-tight font-mono">
+                  CLS I
+                </span>
+                <span className="data-decorator mt-1">Autorizare ANCPI</span>
+                <span className="data-decorator text-primary-400/50 mt-0.5">
+                  RO-B-J 0450/2014
+                </span>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-2xl md:text-4xl font-bold text-primary-400 tracking-tight font-mono">
+                  A+
+                </span>
+                <span className="data-decorator mt-1">Suport Premium</span>
+                <span className="data-decorator text-primary-400/50 mt-0.5">
+                  HIGH QUALITY
+                </span>
+              </div>
             </div>
           </motion.div>
         </div>

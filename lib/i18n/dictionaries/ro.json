@@ -20,7 +20,13 @@
     "subtitle": "Soluții complete pentru toate nevoile dumneavoastră cadastrale și topografice",
     "cadastral": {
       "title": "Cadastru și Intabulare",
-      "description": "Documentații cadastrale complete pentru înscrierea în Cartea Funciară, dezmembrări, comasări și actualizări de date."
+      "description": "Documentații cadastrale complete pentru înscrierea în Cartea Funciară, dezmembrări, comasări și actualizări de date.",
+      "features": [
+        "Măsurători de teren",
+        "Documentații complete",
+        "Asistență juridică",
+        "Înregistrare Carte Funciară"
+      ]
     },
     "topography": {
       "title": "Ridicări Topografice",
@@ -33,6 +39,10 @@
     "urbanPlanning": {
       "title": "Urbanism (PUG/PUZ/PUD)",
       "description": "Documentații de urbanism și amenajare a teritoriului conform legislației în vigoare."
+    },
+    "consulting": {
+      "title": "Consultanță & Avizare",
+      "description": "Consultanță specializată pentru proiecte cadastrale, conformitate legală și planificare strategică în dezvoltarea teritorială."
     },
     "viewAll": "Vezi Toate Serviciile"
   },
@@ -79,6 +89,18 @@
         "author": "Gheorghe Dumitrescu",
         "role": "Primar",
         "company": "Comuna Bragadiru"
+      },
+      {
+        "quote": "Documentațiile cadastrale au fost realizate impecabil și la termen. Profesionalism de excepție și prețuri corecte.",
+        "author": "Elena Stanciu",
+        "role": "Manager Proiect",
+        "company": "Urban Development Group"
+      },
+      {
+        "quote": "Servicii topografice de înaltă precizie pentru proiectele noastre de infrastructură. Echipă dedicată și rezultate excelente.",
+        "author": "Andrei Munteanu",
+        "role": "Inginer Șef",
+        "company": "Infrastructure Solutions SRL"
       }
     ]
   },

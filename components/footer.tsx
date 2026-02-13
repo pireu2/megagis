@@ -25,9 +25,9 @@ export function Footer({ lang, dict }: FooterProps) {
       {/* Mathematical Grid Background */}
       <div className="absolute inset-0 bg-grid-slate-thin opacity-50" />
 
-      <div className="container relative mx-auto px-4 md:px-6 py-16 md:py-20">
+      <div className="container relative mx-auto px-4 md:px-6 py-12 md:py-16 lg:py-20">
         {/* Technical Decorator - Top */}
-        <div className="mb-12 flex flex-wrap items-center justify-between border-b border-slate-200 pb-6 gap-4">
+        <div className="mb-8 md:mb-12 flex flex-wrap items-center justify-between border-b border-slate-200 pb-4 md:pb-6 gap-4">
           <div className="flex flex-col gap-1">
             <div className="data-decorator text-slate-500">
               FOOTER / CONTACT
@@ -44,7 +44,7 @@ export function Footer({ lang, dict }: FooterProps) {
           </div>
         </div>
 
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 mb-12">
+        <div className="grid gap-8 md:gap-12 sm:grid-cols-2 lg:grid-cols-4 mb-8 md:mb-12">
           {/* Brand Column - Technical Precision */}
           <div className="space-y-6">
             <LocaleLink
@@ -95,7 +95,7 @@ export function Footer({ lang, dict }: FooterProps) {
           </div>
 
           {/* Services Column */}
-          <div className="space-y-4">
+          <div className="space-y-3 md:space-y-4">
             <h3 className="data-decorator text-slate-700 mb-6">
               {dict.services}
             </h3>
@@ -144,7 +144,7 @@ export function Footer({ lang, dict }: FooterProps) {
           </div>
 
           {/* Company Column */}
-          <div className="space-y-4">
+          <div className="space-y-3 md:space-y-4">
             <h3 className="data-decorator text-slate-700 mb-6">
               {dict.company}
             </h3>
@@ -193,7 +193,7 @@ export function Footer({ lang, dict }: FooterProps) {
           </div>
 
           {/* Contact Column - Glass Cards */}
-          <div className="space-y-4">
+          <div className="space-y-3 md:space-y-4">
             <h3 className="data-decorator text-slate-700 mb-6">
               {dict.contact}
             </h3>
@@ -245,8 +245,8 @@ export function Footer({ lang, dict }: FooterProps) {
         </div>
 
         {/* Bottom Bar - Technical Precision */}
-        <div className="pt-8 border-t border-slate-200">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="pt-6 md:pt-8 border-t border-slate-200">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 text-center md:text-left">
             <p className="data-decorator text-slate-500">
               {dict.copyright.replace("2025", currentYear.toString())}
             </p>

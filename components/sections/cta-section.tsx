@@ -19,10 +19,10 @@ export function CtaSection({ lang, dict, contactInfo }: CtaSectionProps) {
       {/* Animated Topographical Background */}
       <AnimatedTopoBackground
         lineColor="#60a5faCC"
-        levels={14}
+        levels={20}
         animationSpeed={0.01}
-        edgeThreshold={0.008}
-        opacity={0.18}
+        edgeThreshold={0.005}
+        opacity={0.1}
       />
 
       {/* Gradient Overlay */}
@@ -80,38 +80,46 @@ export function CtaSection({ lang, dict, contactInfo }: CtaSectionProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-            className="flex flex-col sm:flex-row items-start gap-4 mb-16"
+            className="flex flex-row flex-wrap items-start gap-2 md:gap-4 mb-16"
           >
             <LocaleLink href="/contact" lang={lang}>
-              <Button variant="accent" size="xl" className="group">
+              <Button
+                variant="accent"
+                size="default"
+                className="group text-xs md:text-lg md:p-6"
+              >
                 {dict.primaryButton}
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </LocaleLink>
 
             <a href={`tel:${contactInfo.phone.replace(/\s/g, "")}`}>
               <Button
                 variant="outline"
-                size="xl"
-                className="border-slate-700 bg-slate-900/50 text-slate-200 hover:bg-slate-800/70 hover:border-slate-600"
+                size="default"
+                className="text-xs md:text-lg md:p-6 border-slate-700 bg-slate-900/50 text-slate-200 hover:bg-slate-800/70 hover:border-slate-600"
               >
-                <Phone className="mr-2 h-5 w-5" />
+                <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5" />
                 {dict.secondaryButton}
               </Button>
             </a>
           </motion.div>
+        </div>
+      </div>
 
-          {/* Contact Info Cards - Technical Precision */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-            className="grid md:grid-cols-2 gap-4 border-t border-white/5 pt-12"
-          >
+      {/* Contact Info Cards */}
+      <div className="container mx-auto px-4 md:px-6">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+          className="border-t border-white/10 mt-16 pt-12 pb-12"
+        >
+          <div className="flex flex-col md:flex-row gap-4 justify-start items-stretch">
             <a
               href={`tel:${contactInfo.phone.replace(/\s/g, "")}`}
-              className="glass-card-dark p-6 rounded-xl hover:border-accent transition-colors group relative overflow-hidden"
+              className="glass-card-dark p-6 rounded-xl hover:border-accent transition-colors group relative overflow-hidden max-w-md w-full"
             >
               <div className="absolute top-3 right-3 data-decorator text-slate-600 text-[0.5rem]">
                 TEL-01
@@ -130,7 +138,7 @@ export function CtaSection({ lang, dict, contactInfo }: CtaSectionProps) {
 
             <a
               href={`mailto:${contactInfo.email}`}
-              className="glass-card-dark p-6 rounded-xl hover:border-accent transition-colors group relative overflow-hidden"
+              className="glass-card-dark p-6 rounded-xl hover:border-accent transition-colors group relative overflow-hidden max-w-md w-full"
             >
               <div className="absolute top-3 right-3 data-decorator text-slate-600 text-[0.5rem]">
                 EMAIL-01
@@ -146,8 +154,8 @@ export function CtaSection({ lang, dict, contactInfo }: CtaSectionProps) {
                 RESPONSE: &lt;24H • PRIORITY SUPPORT
               </div>
             </a>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

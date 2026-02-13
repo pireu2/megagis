@@ -20,7 +20,13 @@
     "subtitle": "Complete solutions for all your cadastral and surveying needs",
     "cadastral": {
       "title": "Cadastre & Land Registration",
-      "description": "Complete cadastral documentation for Land Book registration, property divisions, consolidations, and data updates."
+      "description": "Complete cadastral documentation for Land Book registration, property divisions, consolidations, and data updates.",
+      "features": [
+        "Land Surveys",
+        "Complete Documentation",
+        "Legal Assistance",
+        "Land Book Registration"
+      ]
     },
     "topography": {
       "title": "Topographical Surveys",
@@ -33,6 +39,10 @@
     "urbanPlanning": {
       "title": "Urban Planning (PUG/PUZ/PUD)",
       "description": "Urban planning and territorial development documentation in accordance with current legislation."
+    },
+    "consulting": {
+      "title": "Consulting & Advisory",
+      "description": "Expert consulting for cadastral projects, regulatory compliance, and strategic planning for land development."
     },
     "viewAll": "View All Services"
   },
@@ -79,6 +89,18 @@
         "author": "Gheorghe Dumitrescu",
         "role": "Mayor",
         "company": "Bragadiru Commune"
+      },
+      {
+        "quote": "Cadastral documentation was completed flawlessly and on time. Exceptional professionalism and fair pricing.",
+        "author": "Elena Stanciu",
+        "role": "Project Manager",
+        "company": "Urban Development Group"
+      },
+      {
+        "quote": "High-precision topographic services for our infrastructure projects. Dedicated team and excellent results.",
+        "author": "Andrei Munteanu",
+        "role": "Chief Engineer",
+        "company": "Infrastructure Solutions SRL"
       }
     ]
   },
