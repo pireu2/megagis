@@ -4,6 +4,7 @@ import { ArrowRight, MapPin, Layers } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { LocaleLink } from "@/components/locale-link";
+import { AnimatedTopoBackground } from "@/components/animated-topo-background";
 import type { Locale, HeroDict } from "@/lib/i18n";
 
 interface HeroSectionProps {
@@ -14,223 +15,21 @@ interface HeroSectionProps {
 export function HeroSection({ lang, dict }: HeroSectionProps) {
   return (
     <section className="relative overflow-hidden bg-primary-950 section-padding-swiss">
-      {/* Animated Topographical Map Background - Layer 1 (Background) */}
-      <div className="absolute inset-0 opacity-15">
-        <svg
-          className="absolute inset-0 w-full h-full"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="xMidYMid slice"
-        >
-          <defs>
-            <pattern
-              id="topo-layer-1"
-              x="0"
-              y="0"
-              width="400"
-              height="300"
-              patternUnits="userSpaceOnUse"
-            >
-              {/* Slow-moving background contours */}
-              <path
-                d="M0,50 Q100,35 200,50 T400,50"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="0.8"
-                strokeDasharray="4 4"
-                className="text-primary-400/40 animate-topo-flow"
-                style={{ animationDuration: "25s" }}
-              />
-              <path
-                d="M0,120 Q100,105 200,120 T400,120"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="0.6"
-                strokeDasharray="6 6"
-                className="text-primary-400/30 animate-topo-flow"
-                style={{ animationDuration: "30s", animationDelay: "-5s" }}
-              />
-              <path
-                d="M0,190 Q100,175 200,190 T400,190"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="0.8"
-                strokeDasharray="4 4"
-                className="text-primary-400/40 animate-topo-flow"
-                style={{ animationDuration: "35s", animationDelay: "-10s" }}
-              />
-              <path
-                d="M0,260 Q100,245 200,260 T400,260"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="0.6"
-                strokeDasharray="6 6"
-                className="text-primary-400/30 animate-topo-flow"
-                style={{ animationDuration: "28s", animationDelay: "-8s" }}
-              />
-            </pattern>
-          </defs>
-          <rect
-            width="200%"
-            height="100%"
-            fill="url(#topo-layer-1)"
-            className="animate-topo-drift-slow"
-          />
-        </svg>
-      </div>
-
-      {/* Animated Topographical Map - Layer 2 (Mid-ground) */}
-      <div className="absolute inset-0 opacity-20">
-        <svg
-          className="absolute inset-0 w-full h-full"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="xMidYMid slice"
-        >
-          <defs>
-            <pattern
-              id="topo-layer-2"
-              x="0"
-              y="0"
-              width="350"
-              height="250"
-              patternUnits="userSpaceOnUse"
-            >
-              {/* Medium-speed contours with varying thickness */}
-              <path
-                d="M0,60 Q87.5,48 175,60 T350,60"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.2"
-                strokeDasharray="8 4"
-                className="text-primary-300 animate-topo-flow"
-                style={{ animationDuration: "18s" }}
-              />
-              <path
-                d="M0,130 Q87.5,118 175,130 T350,130"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-                className="text-primary-400"
-              />
-              <path
-                d="M0,200 Q87.5,188 175,200 T350,200"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.2"
-                strokeDasharray="8 4"
-                className="text-primary-300 animate-topo-flow"
-                style={{ animationDuration: "20s", animationDelay: "-7s" }}
-              />
-              {/* Elevation points with pulse */}
-              <circle
-                cx="87.5"
-                cy="130"
-                r="1.8"
-                className="fill-primary-400"
-                style={{
-                  animation: "topo-elevation-pulse 4s ease-in-out infinite",
-                }}
-              />
-              <circle
-                cx="262.5"
-                cy="130"
-                r="1.8"
-                className="fill-primary-400"
-                style={{
-                  animation: "topo-elevation-pulse 4s ease-in-out infinite -2s",
-                }}
-              />
-            </pattern>
-          </defs>
-          <rect
-            width="200%"
-            height="100%"
-            fill="url(#topo-layer-2)"
-            className="animate-topo-drift"
-            style={{ animationDuration: "50s" }}
-          />
-        </svg>
-      </div>
-
-      {/* Animated Topographical Map - Layer 3 (Foreground) */}
-      <div className="absolute inset-0 opacity-25">
-        <svg
-          className="absolute inset-0 w-full h-full"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="xMidYMid slice"
-        >
-          <defs>
-            <pattern
-              id="topo-layer-3"
-              x="0"
-              y="0"
-              width="300"
-              height="200"
-              patternUnits="userSpaceOnUse"
-            >
-              {/* Fast-moving foreground contours */}
-              <path
-                d="M0,45 Q75,38 150,45 T300,45"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeDasharray="10 5"
-                className="text-accent/60 animate-topo-flow"
-                style={{ animationDuration: "15s" }}
-              />
-              <path
-                d="M0,100 Q75,93 150,100 T300,100"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                className="text-accent/40"
-              />
-              <path
-                d="M0,155 Q75,148 150,155 T300,155"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeDasharray="10 5"
-                className="text-accent/60 animate-topo-flow"
-                style={{ animationDuration: "12s", animationDelay: "-4s" }}
-              />
-              {/* Accent elevation markers */}
-              <circle
-                cx="75"
-                cy="100"
-                r="2.5"
-                className="fill-accent"
-                style={{
-                  animation: "topo-elevation-pulse 3s ease-in-out infinite",
-                }}
-              />
-              <circle
-                cx="225"
-                cy="100"
-                r="2.5"
-                className="fill-accent"
-                style={{
-                  animation:
-                    "topo-elevation-pulse 3s ease-in-out infinite -1.5s",
-                }}
-              />
-            </pattern>
-          </defs>
-          <rect
-            width="200%"
-            height="100%"
-            fill="url(#topo-layer-3)"
-            className="animate-topo-drift"
-            style={{ animationDuration: "40s" }}
-          />
-        </svg>
-      </div>
+      {/* Animated Topographical Map Background */}
+      <AnimatedTopoBackground
+        lineColor="#ffffffDD"
+        levels={8}
+        animationSpeed={0.008}
+        edgeThreshold={0.004}
+        opacity={0.4}
+      />
 
       {/* Gradient Overlay for depth */}
-      <div className="absolute inset-0 bg-linear-to-br from-primary-900/80 via-primary-950/60 to-slate-950/90" />
+      <div className="absolute inset-0 bg-linear-to-br from-primary-900/80 via-primary-950/60 to-slate-950/90 pointer-events-none" />
 
       {/* Noise texture for map feel */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.03] pointer-events-none"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' /%3E%3C/svg%3E")`,
         }}

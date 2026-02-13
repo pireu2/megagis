@@ -4,6 +4,7 @@ import { ArrowRight, Phone, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { LocaleLink } from "@/components/locale-link";
+import { AnimatedTopoBackground } from "@/components/animated-topo-background";
 import type { Locale, CtaSectionDict, FooterDict } from "@/lib/i18n";
 
 interface CtaSectionProps {
@@ -15,11 +16,17 @@ interface CtaSectionProps {
 export function CtaSection({ lang, dict, contactInfo }: CtaSectionProps) {
   return (
     <section className="section-padding-swiss bg-slate-950 relative overflow-hidden">
-      {/* Mathematical Grid Background */}
-      <div className="absolute inset-0 bg-grid-slate-900/[0.04]" />
+      {/* Animated Topographical Background */}
+      <AnimatedTopoBackground
+        lineColor="#60a5faCC"
+        levels={14}
+        animationSpeed={0.01}
+        edgeThreshold={0.008}
+        opacity={0.18}
+      />
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-linear-to-br from-primary-950/30 via-transparent to-slate-950" />
+      <div className="absolute inset-0 bg-linear-to-br from-primary-950/30 via-transparent to-slate-950 pointer-events-none" />
 
       <div className="container relative mx-auto px-4 md:px-6">
         {/* Technical Decorator - Top */}
