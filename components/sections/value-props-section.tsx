@@ -90,8 +90,8 @@ export function ValuePropsSection({ dict }: ValuePropsSectionProps) {
                   </div>
 
                   {/* Icon with Precision Movement */}
-                  <div className="mb-6 inline-flex h-16 w-16 md:h-20 md:w-20 items-center justify-center rounded-2xl bg-linear-to-br from-primary-500 to-primary-700 text-white shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                    <Icon className="h-8 w-8 md:h-10 md:w-10" />
+                  <div className="mb-4 md:mb-6 inline-flex h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20 items-center justify-center rounded-2xl bg-linear-to-br from-primary-500 to-primary-700 text-white shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                    <Icon className="h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10" />
                   </div>
 
                   {/* Title - Left Aligned */}

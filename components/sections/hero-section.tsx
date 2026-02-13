@@ -14,7 +14,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ lang, dict }: HeroSectionProps) {
   return (
-    <section className="relative overflow-hidden bg-primary-950 min-h-screen pt-14 flex flex-col justify-center">
+    <section className="relative overflow-hidden bg-primary-950 min-h-screen pt-16 flex flex-col justify-center">
       {/* Animated Topographical Map Background */}
       <AnimatedTopoBackground
         lineColor="#ffffffDD"
