@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Building,
@@ -13,13 +13,6 @@ import {
 } from "lucide-react";
 import type { ProjectsPageDict, ProjectsPageItem } from "@/lib/i18n";
 import { ProjectLogoBadge } from "@/components/ui/project-logo-badge";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-} from "@/components/ui/dialog";
 
 interface ProjectsPageClientProps {
   dict: ProjectsPageDict;
@@ -30,6 +23,18 @@ export function ProjectsPageClient({ dict }: ProjectsPageClientProps) {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [activeModalProject, setActiveModalProject] =
     useState<ProjectsPageItem | null>(null);
+
+  // Lock body scroll when project modal is open to prevent background scrolling & dynamic mobile address bar jumps
+  useEffect(() => {
+    if (activeModalProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [activeModalProject]);
 
   // Filter projects by category and search query
   const filteredProjects = useMemo(() => {
@@ -202,32 +207,48 @@ export function ProjectsPageClient({ dict }: ProjectsPageClientProps) {
         )}
       </div>
 
-      {/* Sleek Project Detail Modal using Shadcn/Radix Dialog */}
-      <Dialog
-        open={!!activeModalProject}
-        onOpenChange={(open) => {
-          if (!open) setActiveModalProject(null);
-        }}
-      >
-        <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto p-6 md:p-8">
-          {activeModalProject && (
-            <>
-              <DialogHeader className="mb-6 flex flex-row items-start justify-between gap-4 pr-8 text-left">
+      {/* Sleek Project Detail Modal */}
+      <AnimatePresence>
+        {activeModalProject && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
+            {/* Backdrop extending 300px beyond all viewport edges (overcomes mobile browser address bar dynamic height changes) */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setActiveModalProject(null)}
+              className="fixed -inset-[300px] bg-slate-950/60 backdrop-blur-md"
+            />
+
+            {/* Modal Window */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.96, y: 15 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.96, y: 15 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+              className="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto bg-white rounded-2xl shadow-xl border border-slate-200 p-6 md:p-8 z-10"
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setActiveModalProject(null)}
+                className="absolute top-5 right-5 p-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 transition-colors"
+              >
+                <X className="w-4 h-4" />
+              </button>
+
+              <div className="mb-6 flex items-start justify-between gap-4 pr-8">
                 <div>
                   <span className="text-xs font-semibold text-primary-600 uppercase tracking-wider inline-block mb-2">
                     {activeModalProject.categoryLabel}
                   </span>
-                  <DialogTitle className="text-xl md:text-2xl font-bold text-slate-900 leading-snug">
+                  <h2 className="text-xl md:text-2xl font-bold text-slate-900 leading-snug">
                     {activeModalProject.title}
-                  </DialogTitle>
-                  <DialogDescription className="sr-only">
-                    {activeModalProject.scopeDetails}
-                  </DialogDescription>
+                  </h2>
                 </div>
                 <div className="shrink-0 pt-1">
                   <ProjectLogoBadge item={activeModalProject} />
                 </div>
-              </DialogHeader>
+              </div>
 
               {/* Meta Grid */}
               <div className="grid grid-cols-3 gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100 mb-6 text-xs">
@@ -300,10 +321,10 @@ export function ProjectsPageClient({ dict }: ProjectsPageClientProps) {
                   {dict.modal.closeBtn}
                 </button>
               </div>
-            </>
-          )}
-        </DialogContent>
-      </Dialog>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </main>
   );
 }
