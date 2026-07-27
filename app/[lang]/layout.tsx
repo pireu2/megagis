@@ -4,6 +4,8 @@ import { GeistMono } from "geist/font/mono";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { JsonLd } from "@/components/json-ld";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { i18n, getDictionary, type Locale } from "@/lib/i18n";
 import "@/app/globals.css";
 
@@ -134,6 +136,8 @@ export default async function LocaleLayout({
         />
         <main className="flex-1">{children}</main>
         <Footer lang={locale} dict={dict.footer} />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
