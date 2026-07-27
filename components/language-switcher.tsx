@@ -3,7 +3,6 @@
 import { usePathname, useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import type { Locale } from "@/lib/i18n";
-import { i18n } from "@/lib/i18n";
 
 interface LanguageSwitcherProps {
   currentLang: Locale;

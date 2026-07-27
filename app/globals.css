@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -147,11 +146,13 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
+  overflow-x: hidden;
 }
 
-/* Smooth scrolling */
+/* Smooth scrolling and horizontal overflow protection */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Focus styles */
@@ -216,8 +217,8 @@ html {
 }
 
 .heading-dominant {
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  line-height: 1.05;
+  font-size: clamp(1.875rem, 3.5vw, 2.75rem);
+  line-height: 1.15;
   letter-spacing: -0.015em;
   font-weight: 700;
 }

@@ -1,5 +1,10 @@
 export { HeroSection } from "./hero-section";
+export { SoftwareShowcaseSection } from "./software-showcase-section";
 export { ServicesOverviewSection } from "./services-overview-section";
+export { HardwareEquipmentSection } from "./hardware-equipment-section";
+export { ProjectsPartnersSection } from "./projects-partners-section";
 export { ValuePropsSection } from "./value-props-section";
-export { TestimonialsSection } from "./testimonials-section";
 export { CtaSection } from "./cta-section";
+export { AboutPageClient } from "./about-page-client";
+export { ProjectsPageClient } from "./projects-page-client";
+export { SectionSeparator } from "./section-separator";

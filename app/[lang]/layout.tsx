@@ -1,17 +1,11 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
-import { Lora } from "next/font/google";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { JsonLd } from "@/components/json-ld";
 import { i18n, getDictionary, type Locale } from "@/lib/i18n";
 import "@/app/globals.css";
-
-const lora = Lora({
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-lora",
-  display: "swap",
-});
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -28,24 +22,87 @@ export async function generateMetadata({
   ) as Locale;
   const dict = await getDictionary(locale);
 
+  const keywords =
+    locale === "ro"
+      ? [
+          "cadastru",
+          "topografie",
+          "GIS",
+          "intabulare",
+          "cadastru sistematic",
+          "PNCCF",
+          "registrul spatiilor verzi",
+          "masuratori topografice",
+          "geodezie",
+          "urbanism",
+          "Megagis",
+          "Targoviste",
+          "Dambovita",
+          "Romania",
+        ]
+      : [
+          "cadastre",
+          "topography",
+          "GIS",
+          "land registration",
+          "systematic cadastre",
+          "PNCCF",
+          "green space register",
+          "topographical survey",
+          "geodesy",
+          "urban planning",
+          "Megagis",
+          "Romania",
+        ];
+
   return {
     title: {
       default: dict.metadata.home.title,
       template: `%s | Megagis`,
     },
     description: dict.metadata.home.description,
+    keywords,
     metadataBase: new URL("https://megagis.ro"),
     alternates: {
       canonical: `/${locale}`,
       languages: {
         "ro-RO": "/ro",
         "en-US": "/en",
+        "x-default": "/ro",
       },
     },
     openGraph: {
-      type: "website",
-      locale: locale === "ro" ? "ro_RO" : "en_US",
+      title: dict.metadata.home.title,
+      description: dict.metadata.home.description,
+      url: `https://megagis.ro/${locale}`,
       siteName: "Megagis",
+      locale: locale === "ro" ? "ro_RO" : "en_US",
+      type: "website",
+      images: [
+        {
+          url: "https://megagis.ro/icon.png",
+          width: 512,
+          height: 512,
+          alt: "Megagis Digital Topography & GIS Services",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: dict.metadata.home.title,
+      description: dict.metadata.home.description,
+      images: ["https://megagis.ro/icon.png"],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
     },
   };
 }
@@ -65,8 +122,11 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        <JsonLd lang={locale} />
+      </head>
       <body
-        className={`${GeistSans.variable} ${GeistMono.variable} ${lora.variable} antialiased min-h-screen flex flex-col`}
+        className={`${GeistSans.variable} ${GeistMono.variable} antialiased min-h-screen flex flex-col`}
       >
         <Header
           lang={locale}
