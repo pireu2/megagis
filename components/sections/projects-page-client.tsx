@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Building,
@@ -23,6 +23,18 @@ export function ProjectsPageClient({ dict }: ProjectsPageClientProps) {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [activeModalProject, setActiveModalProject] =
     useState<ProjectsPageItem | null>(null);
+
+  // Lock body scroll when project modal is open to prevent background scrolling & dynamic mobile address bar jumps
+  useEffect(() => {
+    if (activeModalProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [activeModalProject]);
 
   // Filter projects by category and search query
   const filteredProjects = useMemo(() => {
@@ -198,14 +210,14 @@ export function ProjectsPageClient({ dict }: ProjectsPageClientProps) {
       {/* Sleek Project Detail Modal */}
       <AnimatePresence>
         {activeModalProject && (
-          <div className="fixed inset-0 h-[100dvh] w-full z-50 flex items-center justify-center p-4 sm:p-6 overflow-hidden">
-            {/* Backdrop with extended bounds to cover dynamic mobile address bar hiding */}
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
+            {/* Backdrop extending 300px beyond all viewport edges (overcomes mobile browser address bar dynamic height changes) */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setActiveModalProject(null)}
-              className="fixed -inset-x-[20vw] -inset-y-[20vh] bg-slate-950/60 backdrop-blur-md"
+              className="fixed -inset-[300px] bg-slate-950/60 backdrop-blur-md"
             />
 
             {/* Modal Window */}
@@ -214,7 +226,7 @@ export function ProjectsPageClient({ dict }: ProjectsPageClientProps) {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.96, y: 15 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="relative w-full max-w-2xl max-h-[85dvh] overflow-y-auto bg-white rounded-2xl shadow-xl border border-slate-200 p-6 md:p-8 z-10"
+              className="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto bg-white rounded-2xl shadow-xl border border-slate-200 p-6 md:p-8 z-10"
             >
               {/* Close Button */}
               <button
