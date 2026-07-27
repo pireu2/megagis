@@ -13,9 +13,17 @@
     "subtitle": "Soluții GIS Profesionale",
     "description": "Firmă dinamică și tânără, autorizată ANCPI clasa I. Oferim servicii complete de cadastru, topografie și GIS pentru sectorul privat și instituții publice din România, la costuri accesibile.",
     "primaryCta": "Solicită Ofertă",
-    "secondaryCta": "Descoperă Serviciile"
+    "secondaryCta": "Descoperă Serviciile",
+    "ancpiBadge": "ANCPI Clasa I",
+    "trustCards": {
+      "ancpi": { "value": "Clasa I", "label": "Autorizat ANCPI (RO-B-J 2489/2022)" },
+      "projects": { "value": "100+", "label": "Proiecte Cadastru Sistematic & RSV" },
+      "anre": { "value": "ANRE", "label": "Conformitate Rețele Utilități" },
+      "precision": { "value": "±1–2 cm", "label": "Precizie Măsurători GNSS RTK" }
+    }
   },
   "servicesOverview": {
+    "badge": "Servicii",
     "title": "Principalele Categorii de Servicii",
     "subtitle": "MEGAGIS SRL este societate autorizată ANCPI Clasa I, cu experiență pe proiecte naționale și lucrări complexe",
     "cadastral": {
@@ -47,6 +55,7 @@
     "viewAll": "Vezi Toate Serviciile"
   },
   "softwareShowcase": {
+    "badge": "Tehnologie & GIS",
     "title": "Platforme Software & Sisteme Web GIS",
     "subtitle": "Dezvoltăm și operăm aplicații geospațiale dedicate pentru cadastru sistematic și managementul spațiilor verzi",
     "tabs": {
@@ -92,6 +101,7 @@
     }
   },
   "hardwareEquipment": {
+    "badge": "Dotare Tehnică",
     "title": "Echipamente & Tehnologie de Teren",
     "subtitle": "Investim în instrumente de înaltă precizie pentru măsurători milimetrice și performanță pe orice șantier",
     "items": [
@@ -119,6 +129,7 @@
     ]
   },
   "projectsPartners": {
+    "badge": "Portofoliu",
     "title": "Portofoliu & Parteneri Strategic",
     "subtitle": "Experiență dovedită în proiecte majore pentru administrația publică și dezvoltatori privați",
     "categories": {
@@ -309,6 +320,7 @@
     ]
   },
   "valueProps": {
+    "badge": "Avantaje Principale",
     "title": "De Ce Să Ne Alegeți",
     "subtitle": "Partenerul dumneavoastră de încredere în servicii cadastrale și topografice",
     "items": {
@@ -495,6 +507,12 @@
     "badge": "SOLICITĂ OFERTĂ TEHNICĂ & CONTACT DIRECT",
     "title": "Suntem pregătiți pentru proiectul tău",
     "subtitle": "Echipă autorizată ANCPI Clasa I specializată în cadastru sistematic, topografie ingineriască și sisteme geospațiale WebGIS.",
+    "stats": {
+      "experience": { "title": "15 Ani", "subtitle": "Experiență" },
+      "projects": { "title": "500+", "subtitle": "Proiecte" },
+      "ancpi": { "title": "ANCPI", "subtitle": "Clasa I" },
+      "response": { "title": "24h", "subtitle": "Răspuns" }
+    },
     "trustBadge": {
       "title": "Autorizație ANCPI Clasa I",
       "certNumber": "Seria RO-B-J, Nr. 2489/2022",
@@ -502,6 +520,7 @@
     },
     "details": {
       "title": "Date de Contact Direct",
+      "infoTitle": "Informații de Contact",
       "addressLabel": "Adresă Sediu",
       "addressValue": "Str. Răsăritului nr. 6, Târgoviște, Jud. Dâmbovița",
       "phoneLabel": "Telefon Direct",
@@ -1732,7 +1751,8 @@
       "infrastructure": "Topografie Inginerească & Mediu",
       "searchPlaceholder": "Caută proiect sau UAT...",
       "noResultsTitle": "Niciun proiect găsit",
-      "noResultsSubtitle": "Încearcă să schimbi termenii de căutare sau categoria selectată."
+      "noResultsSubtitle": "Încearcă să schimbi termenii de căutare sau categoria selectată.",
+      "resetSearch": "Resetează căutarea"
     },
     "modal": {
       "closeBtn": "Închide",

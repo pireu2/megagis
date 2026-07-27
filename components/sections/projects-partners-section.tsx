@@ -43,7 +43,7 @@ export function ProjectsPartnersSection({
           className="max-w-3xl mb-12 md:mb-16 text-flush-left"
         >
           <span className="text-xs font-semibold text-primary-600 tracking-wider uppercase mb-3 inline-block">
-            Portofoliu
+            {dict.badge ?? "Portofoliu"}
           </span>
           <h2 className="heading-dominant text-slate-900 mb-6">
             {dict.title}

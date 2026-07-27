@@ -16,9 +16,17 @@ export interface HeroDict {
   description: string;
   primaryCta: string;
   secondaryCta: string;
+  ancpiBadge?: string;
+  trustCards?: {
+    ancpi: { value: string; label: string };
+    projects: { value: string; label: string };
+    anre: { value: string; label: string };
+    precision: { value: string; label: string };
+  };
 }
 
 export interface ServicesOverviewDict {
+  badge?: string;
   title: string;
   subtitle: string;
   cadastral: {
@@ -46,6 +54,7 @@ export interface ServicesOverviewDict {
 }
 
 export interface ValuePropsDict {
+  badge?: string;
   title: string;
   subtitle: string;
   items: {
@@ -184,6 +193,7 @@ export interface MetadataDict {
 }
 
 export interface SoftwareShowcaseDict {
+  badge?: string;
   title: string;
   subtitle: string;
   tabs: {
@@ -215,6 +225,7 @@ export interface SoftwareShowcaseDict {
 }
 
 export interface HardwareEquipmentDict {
+  badge?: string;
   title: string;
   subtitle: string;
   items: Array<{
@@ -227,6 +238,7 @@ export interface HardwareEquipmentDict {
 }
 
 export interface ProjectsPartnersDict {
+  badge?: string;
   title: string;
   subtitle: string;
   categories: {
@@ -348,6 +360,12 @@ export interface ContactPageDict {
   badge: string;
   title: string;
   subtitle: string;
+  stats?: {
+    experience: { title: string; subtitle: string };
+    projects: { title: string; subtitle: string };
+    ancpi: { title: string; subtitle: string };
+    response: { title: string; subtitle: string };
+  };
   trustBadge: {
     title: string;
     certNumber: string;
@@ -355,6 +373,7 @@ export interface ContactPageDict {
   };
   details: {
     title: string;
+    infoTitle?: string;
     addressLabel: string;
     addressValue: string;
     phoneLabel: string;
@@ -631,6 +650,7 @@ export interface ProjectsPageDict {
     searchPlaceholder: string;
     noResultsTitle: string;
     noResultsSubtitle: string;
+    resetSearch?: string;
   };
   modal: {
     closeBtn: string;

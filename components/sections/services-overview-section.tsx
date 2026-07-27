@@ -111,7 +111,7 @@ export function ServicesOverviewSection({
           className="max-w-3xl mb-16 text-flush-left"
         >
           <span className="text-xs font-semibold text-primary-600 tracking-wider uppercase mb-3 inline-block">
-            Servicii
+            {dict.badge ?? "Servicii"}
           </span>
           <h2 className="heading-dominant text-slate-900 mb-6">{dict.title}</h2>
           <p className="text-lg md:text-xl text-slate-600 max-w-2xl">

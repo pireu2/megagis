@@ -158,10 +158,26 @@ export function ContactClientPage({
             className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16"
           >
             {[
-              { icon: Building2, title: "15 Ani", subtitle: "Experiență" },
-              { icon: Users, title: "500+", subtitle: "Proiecte" },
-              { icon: ShieldCheck, title: "ANCPI", subtitle: "Clasa I" },
-              { icon: Timer, title: "24h", subtitle: "Răspuns" },
+              {
+                icon: Building2,
+                title: dict.stats?.experience.title ?? "15 Ani",
+                subtitle: dict.stats?.experience.subtitle ?? "Experiență",
+              },
+              {
+                icon: Users,
+                title: dict.stats?.projects.title ?? "500+",
+                subtitle: dict.stats?.projects.subtitle ?? "Proiecte",
+              },
+              {
+                icon: ShieldCheck,
+                title: dict.stats?.ancpi.title ?? "ANCPI",
+                subtitle: dict.stats?.ancpi.subtitle ?? "Clasa I",
+              },
+              {
+                icon: Timer,
+                title: dict.stats?.response.title ?? "24h",
+                subtitle: dict.stats?.response.subtitle ?? "Răspuns",
+              },
             ].map((stat, i) => (
               <div
                 key={i}
@@ -187,7 +203,9 @@ export function ContactClientPage({
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
               className="h-full p-8 rounded-3xl border border-slate-200/50 bg-white hover:border-primary-300 transition-all duration-500 relative overflow-hidden shadow-lg"
             >
-              <h2 className="text-xl font-bold text-slate-900 mb-6">Informații de Contact</h2>
+              <h2 className="text-xl font-bold text-slate-900 mb-6">
+                {dict.details.infoTitle ?? dict.details.title}
+              </h2>
               
               <div className="flex flex-col">
                 <a href={`tel:${contactInfo.phone.replace(/\s/g, "")}`} className="flex items-start gap-4 py-4 border-b border-slate-100 last:border-0 group">

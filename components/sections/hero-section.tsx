@@ -64,7 +64,9 @@ export function HeroSection({ lang, dict, bgVideoSrc }: HeroSectionProps) {
             className="flex items-center gap-2 mb-4 md:mb-8 text-sm font-medium text-slate-500"
           >
             <ShieldCheck className="h-4 w-4 text-primary-600" />
-            <span className="text-slate-700 font-semibold">ANCPI Clasa I</span>
+            <span className="text-slate-700 font-semibold">
+              {dict.ancpiBadge ?? "ANCPI Clasa I"}
+            </span>
           </motion.div>
 
           {/* Massive Swiss Typography Heading */}
@@ -128,37 +130,37 @@ export function HeroSection({ lang, dict, bgVideoSrc }: HeroSectionProps) {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
             <div className="flex flex-col">
               <span className="text-2xl md:text-4xl font-bold text-slate-900 tracking-tight">
-                Clasa I
+                {dict.trustCards?.ancpi.value ?? "Clasa I"}
               </span>
               <span className="text-xs md:text-sm font-medium text-slate-500 mt-1">
-                Autorizat ANCPI (RO-B-J 2489/2022)
+                {dict.trustCards?.ancpi.label ?? "Autorizat ANCPI (RO-B-J 2489/2022)"}
               </span>
             </div>
 
             <div className="flex flex-col">
               <span className="text-2xl md:text-4xl font-bold text-slate-900 tracking-tight">
-                100+
+                {dict.trustCards?.projects.value ?? "100+"}
               </span>
               <span className="text-xs md:text-sm font-medium text-slate-500 mt-1">
-                Proiecte Cadastru Sistematic & RSV
+                {dict.trustCards?.projects.label ?? "Proiecte Cadastru Sistematic & RSV"}
               </span>
             </div>
 
             <div className="flex flex-col">
               <span className="text-2xl md:text-4xl font-bold text-primary-600 tracking-tight">
-                ANRE
+                {dict.trustCards?.anre.value ?? "ANRE"}
               </span>
               <span className="text-xs md:text-sm font-medium text-slate-500 mt-1">
-                Conformitate Rețele Utilități
+                {dict.trustCards?.anre.label ?? "Conformitate Rețele Utilități"}
               </span>
             </div>
 
             <div className="flex flex-col">
               <span className="text-2xl md:text-4xl font-bold text-slate-700 tracking-tight">
-                ±1–2 cm
+                {dict.trustCards?.precision.value ?? "±1–2 cm"}
               </span>
               <span className="text-xs md:text-sm font-medium text-slate-500 mt-1">
-                Precizie Măsurători GNSS RTK
+                {dict.trustCards?.precision.label ?? "Precizie Măsurători GNSS RTK"}
               </span>
             </div>
           </div>

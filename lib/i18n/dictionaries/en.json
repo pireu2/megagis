@@ -13,9 +13,17 @@
     "subtitle": "Professional GIS Solutions",
     "description": "Dynamic young company, ANCPI Class I certified. We provide comprehensive cadastral, topographical, and GIS services for the private sector and public institutions in Romania at affordable costs.",
     "primaryCta": "Request a Quote",
-    "secondaryCta": "Explore Services"
+    "secondaryCta": "Explore Services",
+    "ancpiBadge": "ANCPI Class I",
+    "trustCards": {
+      "ancpi": { "value": "Class I", "label": "ANCPI Authorized (RO-B-J 2489/2022)" },
+      "projects": { "value": "100+", "label": "Systematic Cadastre & Green Spaces Projects" },
+      "anre": { "value": "ANRE", "label": "Utility Network Compliance" },
+      "precision": { "value": "±1–2 cm", "label": "GNSS RTK Measurement Precision" }
+    }
   },
   "servicesOverview": {
+    "badge": "Services",
     "title": "Main Categories of Services",
     "subtitle": "MEGAGIS SRL is an ANCPI Class I authorized company with extensive experience in national projects and complex surveying",
     "cadastral": {
@@ -47,6 +55,7 @@
     "viewAll": "View All Services"
   },
   "softwareShowcase": {
+    "badge": "Technology & GIS",
     "title": "Software Platforms & Web GIS Systems",
     "subtitle": "We develop and operate dedicated geospatial applications for systematic cadastre and green space management",
     "tabs": {
@@ -92,6 +101,7 @@
     }
   },
   "hardwareEquipment": {
+    "badge": "Technical Equipment",
     "title": "Field Hardware & Equipment",
     "subtitle": "We invest in high-precision survey instruments for millimetric accuracy on every field project",
     "items": [
@@ -119,6 +129,7 @@
     ]
   },
   "projectsPartners": {
+    "badge": "Portfolio",
     "title": "Portfolio & Strategic Partners",
     "subtitle": "Proven execution on major projects for public administration and private developers",
     "categories": {
@@ -309,6 +320,7 @@
     ]
   },
   "valueProps": {
+    "badge": "Key Advantages",
     "title": "Why Choose Us",
     "subtitle": "Your trusted partner in cadastral and surveying services",
     "items": {
@@ -495,6 +507,12 @@
     "badge": "REQUEST TECHNICAL QUOTE & DIRECT CONTACT",
     "title": "We are ready for your project",
     "subtitle": "ANCPI Class I authorized team specialized in systematic cadastre, engineering topography, and WebGIS geospatial systems.",
+    "stats": {
+      "experience": { "title": "15 Years", "subtitle": "Experience" },
+      "projects": { "title": "500+", "subtitle": "Projects" },
+      "ancpi": { "title": "ANCPI", "subtitle": "Class I" },
+      "response": { "title": "24h", "subtitle": "Response" }
+    },
     "trustBadge": {
       "title": "ANCPI Class I Authorization",
       "certNumber": "Series RO-B-J, No. 2489/2022",
@@ -502,6 +520,7 @@
     },
     "details": {
       "title": "Direct Contact Details",
+      "infoTitle": "Contact Information",
       "addressLabel": "Headquarters Address",
       "addressValue": "6 Răsăritului St., Târgoviște, Dâmbovița County, Romania",
       "phoneLabel": "Direct Phone",
@@ -1732,7 +1751,8 @@
       "infrastructure": "Engineering Surveying & Environment",
       "searchPlaceholder": "Search project or municipality...",
       "noResultsTitle": "No projects found",
-      "noResultsSubtitle": "Try adjusting your search query or selecting a different category."
+      "noResultsSubtitle": "Try adjusting your search query or selecting a different category.",
+      "resetSearch": "Reset Search"
     },
     "modal": {
       "closeBtn": "Close",

@@ -201,7 +201,7 @@ export function ProjectsPageClient({ dict }: ProjectsPageClientProps) {
               }}
               className="px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg text-xs font-semibold transition-colors"
             >
-              Resetează căutarea
+              {dict.filter.resetSearch ?? "Resetează căutarea"}
             </button>
           </div>
         )}
