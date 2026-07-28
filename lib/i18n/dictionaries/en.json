@@ -78,22 +78,22 @@
         "title": "Digital Urban Green Space Registry & Phytosanitary Inventory",
         "description": "Comprehensive geospatial solution for city halls and local councils, designed to identify, classify, and phytosanitarily evaluate urban trees, hedges, and green zones.",
         "features": [
-          "Field measurements with ±1–2 cm GNSS RTK precision",
-          "Individual phytosanitary files for each tree specimen",
-          "Real-time national Stereo 70 coordinate grid",
-          "Statutory surface calculation and reporting"
+          "Field measurements with high-precision GNSS RTK",
+          "Individual phytosanitary files for each tree",
+          "Real-time national Stereo 70 coordinates",
+          "Statistical reports and area calculations per law"
         ],
-        "cta": "Explore Municipal Solution"
+        "cta": "View Solution for Municipalities"
       },
       "gas": {
         "label": "Utility Networks & Gas (ANRE)",
-        "badge": "ANRE Audit & Approval",
-        "title": "Vector Mapping of Distribution Networks",
-        "description": "GIS system for topological record-keeping of public utility networks, natural gas pipelines, connections, and PRM stations, built on MapSys and ArcGIS platforms.",
+        "badge": "ANRE Audit & Permitting",
+        "title": "Vector Mapping Distribution Networks",
+        "description": "GIS topological record system for public utility networks, natural gas pipelines, connections, and PRM stations built on MapSys and ArcGIS platforms.",
         "features": [
           "Complete node and connection topology (ArcGIS 10.2 / Pro 3.2)",
-          "Record of ANRE / UAT decisions and approvals",
-          "Filtering interface by locality, street, and meter",
+          "ANRE / UAT decisions and permits tracking",
+          "Filter interface by municipality, street, and meter",
           "Spatial database integration and ArcGIS Enterprise 11.2 servers"
         ],
         "cta": "Consult Utility GIS Services"
@@ -102,21 +102,21 @@
   },
   "hardwareEquipment": {
     "badge": "Technical Equipment",
-    "title": "Field Hardware & Equipment",
-    "subtitle": "We invest in high-precision survey instruments for millimetric accuracy on every field project",
+    "title": "Field Equipment & Technology",
+    "subtitle": "We invest in high-precision instruments for millimeter accuracy measurements and top performance on any site",
     "items": [
       {
         "title": "Total Stations: Leica & Topcon",
-        "category": "High-Precision Optical Measurement",
+        "category": "High-Precision Optical Surveys",
         "specs": "Leica TC 805, TCR 1101 DR / TOPCON OS-103 BG",
-        "description": "Deployed for extreme precision surveys under dense canopy vegetation or near high-rise structures where satellite GNSS signals are obstructed.",
+        "description": "Used for high-precision optical surveying under dense tree canopy or near high-rise buildings where GNSS signal is obstructed.",
         "imagePath": "/images/equipment/topcon-total-station.jpg"
       },
       {
-        "title": "GNSS RTK Rovers",
+        "title": "GNSS RTK Receivers",
         "category": "Real-Time Satellite Positioning",
         "specs": "TOPCON HiPer HR, GR5, HiPer PRO",
-        "description": "Instant centimetric positioning (±1–2 cm) on individual trees, plot boundaries, and cadastral benchmarks directly in the national Stereo 70 coordinate system.",
+        "description": "Instant centimetric positioning on individual trees, plot boundaries, and cadastral benchmarks directly in the national Stereo 70 coordinate system.",
         "imagePath": "/images/equipment/gnss-rtk-rover.jpg"
       },
       {
@@ -765,10 +765,6 @@
         {
           "label": "Cadastred Municipalities (UAT)",
           "value": "15+"
-        },
-        {
-          "label": "Geodetic Network & RTK Precision",
-          "value": "±1–2 mm"
         }
       ]
     },
@@ -786,7 +782,7 @@
         "title": "Systematic Cadastre & Free Land Registration",
         "subtitle": "End-to-end management of systematic land registration at municipality or sector level",
         "description": "We carry out systematic land registration works under the National Program for Cadastre and Land Registry (PNCCF) and POR. We handle property and owner identification, field surveying, technical documentation, and free land registration.",
-        "imagePath": "/images/team/SNY09454.jpg",
+        "imagePath": "/images/team/SNY09445.jpg",
         "features": [
           "Identification and inventory of land parcels, buildings, and legal owners",
           "On-site cadastral surveying with centimeter-level RTK GNSS receivers",
@@ -912,7 +908,7 @@
         "title": "Engineering Topography & High-Precision Geodesy",
         "subtitle": "Topographical surveys, construction setting out, profiles, and deformation monitoring",
         "description": "We deliver high-precision engineering topography and geodetic services for infrastructure, civil, and industrial projects. Utilizing robotic total stations (Leica / Topcon) and dual-frequency GNSS receivers for sub-centimeter accuracy.",
-        "imagePath": "/images/team/SNY09475.jpg",
+        "imagePath": "/images/team/SNY09449.jpg",
         "secondaryImage": "/images/equipment/topcon-total-station.jpg",
         "features": [
           "High-precision topographical surveys for site plans (PUG / PUZ / PAC)",
@@ -1577,8 +1573,8 @@
           {
             "id": "top-1",
             "question": "What precision do Megagis topographical survey instruments provide?",
-            "answer": "Megagis SRL operates multi-frequency GNSS RTK receivers connected to the national ROMPOS network, achieving ±1-2 cm positioning accuracy. For detailed structural, engineering, and construction site surveys, we use Leica and Topcon robotic total stations capable of millimeter-level distance and 1-2 arcsecond angular precision.",
-            "takeaway": "±1-2 cm accuracy with GNSS RTK ROMPOS and millimeter precision with Leica/Topcon total stations.",
+            "answer": "Megagis SRL operates multi-frequency GNSS RTK receivers connected to the national ROMPOS network, achieving high centimetric positioning accuracy. For detailed structural, engineering, and construction site surveys, we use Leica and Topcon robotic total stations capable of millimeter-level distance and high angular precision.",
+            "takeaway": "Centimetric accuracy with GNSS RTK ROMPOS and millimeter precision with Leica/Topcon total stations.",
             "audience": "all",
             "tags": [
               "ROMPOS",
@@ -1725,7 +1721,7 @@
       "title": "Portfolio & Key References",
       "subtitle": "Proven track record in major systematic cadastre, green space registries, and engineering surveying",
       "description": "Our portfolio includes over 60 contracts executed nationwide for central and local public administrations, international engineering firms, and private developers.",
-      "featuredPartnersTitle": "Featured Business Partners"
+      "featuredPartnersTitle": "Featured Partners"
     },
     "filter": {
       "all": "All Projects",

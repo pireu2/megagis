@@ -109,14 +109,14 @@
         "title": "Stații Totale: Leica & Topcon",
         "category": "Măsurători Optice de Înaltă Precizie",
         "specs": "Leica TC 805, TCR 1101 DR / TOPCON OS-103 BG",
-        "description": "Utilizate pentru măsurători de extremă precizie în zone sub coronament dens de vegetație sau lângă clădiri înalte unde semnalul GNSS este obstrucționat.",
+        "description": "Utilizate pentru măsurători de precizie în zone sub coronament dens de vegetație sau lângă clădiri înalte unde semnalul GNSS este obstrucționat.",
         "imagePath": "/images/equipment/topcon-total-station.jpg"
       },
       {
         "title": "Receptoare GNSS RTK",
         "category": "Poziționare Satelitară în Timp Real",
         "specs": "TOPCON HiPer HR, GR5, HiPer PRO",
-        "description": "Poziționare instantanee centimetrică (±1–2 cm) pe fiecare arbore, limită de proprietate sau bornă cadastrală direct în sistemul național Stereo 70.",
+        "description": "Poziționare instantanee centimetrică pe fiecare arbore, limită de proprietate sau bornă cadastrală direct în sistemul național Stereo 70.",
         "imagePath": "/images/equipment/gnss-rtk-rover.jpg"
       },
       {
@@ -717,7 +717,7 @@
       "subtitle": "Echipa noastră de ingineri autorizați desfășoară măsurători milimetrice pe teren și procesare avansată în birou.",
       "images": [
         {
-          "src": "/images/team/SNY09445.jpg",
+          "src": "/images/team/SNY09470.jpg",
           "title": "Măsurători GNSS RTK de Teren",
           "category": "Cadastru & Topografie",
           "description": "Determinare coordonate în sistem național Stereo 70 cu recepție satelitară multi-constelație."
@@ -735,7 +735,7 @@
           "description": "Colectare date de teren pentru delimitare imobile și realizare de profiluri longitudinale."
         },
         {
-          "src": "/images/team/SNY09470.jpg",
+          "src": "/images/team/drona.jpg",
           "title": "Procesare & Cartografiere GIS",
           "category": "Baze de Date Spațiale",
           "description": "Vectorizare, validare topologică și pregătire fișiere .xml conform cerințelor tehnice."
@@ -902,8 +902,8 @@
           {
             "id": "top-1",
             "question": "Ce precizie au măsurătorile topografice efectuate de echipamentele Megagis?",
-            "answer": "Megagis SRL utilizează receptoare GNSS RTK multi-frecvență (conectate la rețeaua națională de stații permanente ROMPOS) ce asigură precizii planimetrice și altimetrice de ±1-2 cm. Pentru măsurători de detaliu pe șantiere, infrastructură sau clădiri, folosim stații totale robotizate Leica și Topcon cu precizii unghiulare de până la 1-2 secunde și precizie de distanță milimetrică.",
-            "takeaway": "Precizie de ±1-2 cm cu GNSS RTK ROMPOS și precizie milimetrică cu stații totale Leica/Topcon.",
+            "answer": "Megagis SRL utilizează receptoare GNSS RTK multi-frecvență (conectate la rețeaua națională de stații permanente ROMPOS) ce asigură precizie centimetrică planimetrică și altimetrică. Pentru măsurători de detaliu pe șantiere, infrastructură sau clădiri, folosim stații totale robotizate Leica și Topcon cu precizie de distanță milimetrică.",
+            "takeaway": "Precizie centimetrică cu GNSS RTK ROMPOS și precizie milimetrică cu stații totale Leica/Topcon.",
             "audience": "all",
             "tags": [
               "ROMPOS",
@@ -1054,10 +1054,6 @@
         {
           "label": "UAT-uri Cadastrate & În Derulare",
           "value": "15+"
-        },
-        {
-          "label": "Precizie Rețele Geodezice & RTK",
-          "value": "±1–2 mm"
         }
       ]
     },
@@ -1075,7 +1071,7 @@
         "title": "Cadastru Sistematic și Înregistrare Gratuită",
         "subtitle": "Managementul integral al procesului de cadastrare la nivel de UAT sau sector cadastral",
         "description": "Executăm lucrări de cadastru sistematic în cadrul Programului Național de Cadastru și Carte Funciară (PNCCF) și POR. Asigurăm identificarea riguroasă a proprietarilor, măsurătorile de teren, întocmirea documentelor tehnice și înscrierea gratuită a imobilelor în Cartea Funciară.",
-        "imagePath": "/images/team/SNY09454.jpg",
+        "imagePath": "/images/team/SNY09445.jpg",
         "features": [
           "Identificarea și inventarierea terenurilor, construcțiilor și deținătorilor",
           "Măsurători topografice în teren cu receptoare GNSS RTK centimetric",
@@ -1201,7 +1197,7 @@
         "title": "Topografie Inginerească & Geodezie de Precizie",
         "subtitle": "Ridicări topografice, asistare șantier, trasare axare și profile de teren",
         "description": "Asigurăm servicii de topografie inginerească și geodezie pentru lucrări de infrastructură, civile și industriale. Utilizăm stații totale robotizate Leica / Topcon și echipamente GNSS RTK dublă frecvență pentru măsurători milimetrice și trasări de precizie.",
-        "imagePath": "/images/team/SNY09475.jpg",
+        "imagePath": "/images/team/SNY09449.jpg",
         "secondaryImage": "/images/equipment/topcon-total-station.jpg",
         "features": [
           "Ridicări topografice de înaltă precizie pentru planuri de situație PUG / PUZ / PAC",
@@ -1725,7 +1721,7 @@
       "title": "Portofoliu & Lucrări de Referință",
       "subtitle": "Experiență dovedită în proiecte majore de cadastru sistematic, registre de spații verzi și topografie inginerească",
       "description": "Portofoliul nostru include peste 60 de contracte derulate la nivel național pentru administrația publică centrală și locală, companii internaționale de inginerie și dezvoltatori privați.",
-      "featuredPartnersTitle": "Parteneri Privați & de Business"
+      "featuredPartnersTitle": "Parteneri Principali"
     },
     "filter": {
       "all": "Toate Proiectele",

@@ -35,12 +35,12 @@ export function ProjectsPageClient({ dict }: ProjectsPageClientProps) {
         isSpecial: true,
       },
       {
-        name: "SC Megaconstruct SA",
-        logo: "/logos/megaconstruct.webp",
+        name: "ANCPI / OCPI",
+        logo: "/logos/ancpi.png",
       },
       {
-        name: "SC North Topocad SRL",
-        logo: "/logos/north_topocad.jpg",
+        name: "SC Megaconstruct SA",
+        logo: "/logos/megaconstruct.webp",
       },
       {
         name: "Agricover / Derom Total",
@@ -296,14 +296,14 @@ export function ProjectsPageClient({ dict }: ProjectsPageClientProps) {
                   </p>
 
                   {/* Card Bottom Meta Row */}
-                  <div className="flex items-center justify-between text-xs text-slate-600 mt-auto pt-4 border-t border-slate-100">
-                    <span className="flex items-center gap-1.5 font-medium truncate max-w-[65%]">
+                  <div className="flex items-center justify-between text-xs text-slate-600 mt-auto pt-4 border-t border-slate-100 gap-2">
+                    <span className="flex items-center gap-1.5 font-medium truncate min-w-0 flex-1">
                       <Building className="h-3.5 w-3.5 text-slate-400 shrink-0" />
-                      <span className="truncate">{project.client}</span>
+                      <span className="truncate" title={project.client}>{project.client}</span>
                     </span>
-                    <span className="flex items-center gap-1 font-semibold text-slate-500 shrink-0">
+                    <span className="flex items-center gap-1 font-semibold text-slate-500 truncate max-w-[45%] shrink-0">
                       <MapPin className="h-3.5 w-3.5 text-slate-400 shrink-0" />
-                      <span>{project.location}</span>
+                      <span className="truncate" title={project.location}>{project.location}</span>
                     </span>
                   </div>
                 </div>
