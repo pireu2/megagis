@@ -139,7 +139,7 @@ export function HeroSection({ lang, dict, bgVideoSrc }: HeroSectionProps) {
 
             <div className="flex flex-col">
               <span className="text-2xl md:text-4xl font-bold text-slate-900 tracking-tight">
-                {dict.trustCards?.projects.value ?? "100+"}
+                {dict.trustCards?.projects.value ?? "50+"}
               </span>
               <span className="text-xs md:text-sm font-medium text-slate-500 mt-1">
                 {dict.trustCards?.projects.label ?? "Proiecte Cadastru Sistematic & RSV"}
@@ -156,11 +156,11 @@ export function HeroSection({ lang, dict, bgVideoSrc }: HeroSectionProps) {
             </div>
 
             <div className="flex flex-col">
-              <span className="text-2xl md:text-4xl font-bold text-slate-700 tracking-tight">
-                {dict.trustCards?.precision.value ?? "±1–2 cm"}
+              <span className="text-2xl md:text-4xl font-bold text-slate-900 tracking-tight">
+                {dict.trustCards?.pnccf?.value ?? dict.trustCards?.precision?.value ?? "100.000+"}
               </span>
               <span className="text-xs md:text-sm font-medium text-slate-500 mt-1">
-                {dict.trustCards?.precision.label ?? "Precizie Măsurători GNSS RTK"}
+                {dict.trustCards?.pnccf?.label ?? dict.trustCards?.precision?.label ?? "Imobile & UAT-uri Înregistrate (PNCCF)"}
               </span>
             </div>
           </div>

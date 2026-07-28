@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { Compass, Home, Mail } from "lucide-react";
+import { FileQuestion, Home, Mail } from "lucide-react";
 import { LocaleLink } from "@/components/locale-link";
 import { Button } from "@/components/ui/button";
 import roDict from "@/lib/i18n/dictionaries/ro.json";
@@ -20,38 +20,38 @@ export function NotFoundContent({ forceLang }: NotFoundContentProps) {
   const dict: NotFoundDict = (isEn ? enDict : roDict).notFound;
 
   return (
-    <div className="relative min-h-[75vh] w-full flex items-center justify-center py-16 px-4 bg-white text-slate-900">
+    <div className="relative min-h-[calc(100vh-3.5rem)] w-full flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 text-slate-900 overflow-hidden">
       {/* Background Precision Grid */}
       <div className="absolute inset-0 bg-grid-slate-thin opacity-50 pointer-events-none" />
 
-      <motion.div
-        initial={{ opacity: 0, y: 15 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
-        className="relative z-10 max-w-xl w-full text-center p-8 sm:p-12 rounded-3xl border border-slate-200/80 bg-white/80 backdrop-blur-md shadow-xl shadow-slate-950/5 flex flex-col items-center"
-      >
-        {/* Icon Badge */}
-        <div className="h-14 w-14 rounded-2xl bg-primary-50 border border-primary-100 flex items-center justify-center text-primary-600 mb-6">
-          <Compass className="w-7 h-7" />
-        </div>
+      {/* Subtle Gradient Glow */}
+      <div className="absolute inset-0 bg-linear-to-b from-white via-transparent to-white pointer-events-none" />
 
-        {/* Code & Title */}
-        <span className="text-xs font-mono font-bold tracking-widest uppercase text-primary-600 mb-2">
-          {dict.code}
-        </span>
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 mb-3">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="relative z-10 max-w-3xl w-full mx-auto p-8 sm:p-12 lg:p-16 rounded-3xl border border-slate-200/80 bg-white/80 backdrop-blur-md shadow-xl shadow-slate-950/5 text-left"
+      >
+      
+
+        {/* Massive Swiss Title */}
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.05] mb-6">
           {dict.title}
         </h1>
 
-        {/* Description */}
-        <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-md mb-8">
+        {/* Simple Website Description */}
+        <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl mb-8">
           {dict.description}
         </p>
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full sm:w-auto">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
           <LocaleLink href="/" lang={lang} className="w-full sm:w-auto">
-            <Button size="lg" className="w-full sm:w-auto gap-2 font-semibold">
+            <Button
+              size="lg"
+              className="w-full sm:w-auto gap-2 font-semibold bg-primary-600 hover:bg-primary-700 text-white shadow-sm"
+            >
               <Home className="w-4 h-4" />
               {dict.backHome}
             </Button>
@@ -61,7 +61,7 @@ export function NotFoundContent({ forceLang }: NotFoundContentProps) {
             <Button
               variant="outline"
               size="lg"
-              className="w-full sm:w-auto gap-2 font-semibold border-slate-200 hover:bg-slate-50 text-slate-700"
+              className="w-full sm:w-auto gap-2 font-semibold border-slate-200 hover:bg-slate-100 text-slate-700"
             >
               <Mail className="w-4 h-4" />
               {dict.contactSupport}
@@ -72,4 +72,3 @@ export function NotFoundContent({ forceLang }: NotFoundContentProps) {
     </div>
   );
 }
-

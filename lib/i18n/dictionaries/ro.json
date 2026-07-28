@@ -17,9 +17,9 @@
     "ancpiBadge": "ANCPI Clasa I",
     "trustCards": {
       "ancpi": { "value": "Clasa I", "label": "Autorizat ANCPI (RO-B-J 2489/2022)" },
-      "projects": { "value": "100+", "label": "Proiecte Cadastru Sistematic & RSV" },
+      "projects": { "value": "50+", "label": "Proiecte Cadastru Sistematic & RSV" },
       "anre": { "value": "ANRE", "label": "Conformitate Rețele Utilități" },
-      "precision": { "value": "±1–2 cm", "label": "Precizie Măsurători GNSS RTK" }
+      "pnccf": { "value": "100.000+", "label": "Imobile & UAT-uri Înregistrate (PNCCF)" }
     }
   },
   "servicesOverview": {
@@ -132,6 +132,7 @@
     "badge": "Portofoliu",
     "title": "Portofoliu & Parteneri Strategic",
     "subtitle": "Experiență dovedită în proiecte majore pentru administrația publică și dezvoltatori privați",
+    "viewAll": "Vezi Toate Proiectele",
     "categories": {
       "all": "Toate Proiectele",
       "cadastru": "Cadastru Sistematic (PNCC)",
@@ -583,24 +584,14 @@
     },
     "stats": [
       {
-        "value": "100+",
-        "label": "Sectoare & UAT-uri",
-        "description": "Lucrări de cadastru sistematic finalizate și recepționate"
+        "value": "15+",
+        "label": "Echipamente & Vehicule de Teren",
+        "description": "Flotă auto de teren și instrumente geodezice Leica/Topcon de înaltă precizie"
       },
       {
         "value": "100%",
-        "label": "Rată de Finalizare",
+        "label": "Rată de Conformitate & Livrare",
         "description": "Livrare la timp și conformitate 100% cu specificațiile tehnice"
-      },
-      {
-        "value": "Clasa I",
-        "label": "Autorizație Tehnică",
-        "description": "Capacitate tehnică maximă pentru orice categorie de lucrare geodezică"
-      },
-      {
-        "value": "15+",
-        "label": "Echipamente & Vehicule",
-        "description": "Flotă auto de teren și instrumente geodezice Leica/Topcon de înaltă precizie"
       }
     ],
     "profile": {
@@ -1061,20 +1052,12 @@
       "description": "De la lucrări de cadastru sistematic de mare amploare (PNCCF/POR) și măsurători topografice centimetric GNSS, până la sisteme WebGIS custom și Registrul Local al Spațiilor Verzi conform Legii 24/2007.",
       "stats": [
         {
-          "label": "Imobile Intabulate",
-          "value": "50.000+"
-        },
-        {
-          "label": "UAT-uri Finalizate & În Derulare",
+          "label": "UAT-uri Cadastrate & În Derulare",
           "value": "15+"
         },
         {
-          "label": "Precizie Instrumentală",
-          "value": "±1 cm"
-        },
-        {
-          "label": "Proiecte GIS & RSV",
-          "value": "100%"
+          "label": "Precizie Rețele Geodezice & RTK",
+          "value": "±1–2 mm"
         }
       ]
     },
@@ -1741,7 +1724,8 @@
       "badge": "Portofoliu Proiecte",
       "title": "Portofoliu & Lucrări de Referință",
       "subtitle": "Experiență dovedită în proiecte majore de cadastru sistematic, registre de spații verzi și topografie inginerească",
-      "description": "Portofoliul nostru include peste 60 de contracte derulate la nivel național pentru administrația publică centrală și locală, companii internaționale de inginerie și dezvoltatori privați."
+      "description": "Portofoliul nostru include peste 60 de contracte derulate la nivel național pentru administrația publică centrală și locală, companii internaționale de inginerie și dezvoltatori privați.",
+      "featuredPartnersTitle": "Parteneri Privați & de Business"
     },
     "filter": {
       "all": "Toate Proiectele",
@@ -2906,27 +2890,25 @@
     ]
   },
   "notFound": {
-    "badge": "Semnal Geospațial Pierdut",
+    "badge": "Eroare 404",
     "code": "404",
-    "title": "Coordonate Negăsite în Baza de Date",
-    "description": "Pagina sau parcela pe care o căutați nu există în registrul nostru digital, a fost mutată sau a suferit o recalibrare de sistem.",
-    "coordinates": "44°19'11.8\"N 23°47'20.4\"E",
-    "status": "STATUS: VECTOR UNMAPPED",
+    "title": "Pagina nu a fost găsită",
+    "description": "Pagina pe care o căutați nu există pe site-ul nostru, a fost mutată sau adresa URL este incorectă. Vă rugăm să verificați adresa URL sau să reveniți la pagina principală.",
     "backHome": "Înapoi la Pagina Principală",
-    "contactSupport": "Contactează Asistența Tehnică",
-    "quickLinksTitle": "Link-uri Utile de Navigare",
+    "contactSupport": "Contactează-ne",
+    "quickLinksTitle": "Navigare rapidă pe site",
     "servicesLink": "Servicii Cadastru & Topografie",
     "projectsLink": "Proiecte & Portofoliu UAT",
     "aboutLink": "Despre Compania MEGAGIS"
   },
   "errorPage": {
-    "badge": "Anomalie de Sistem Geospațial",
-    "code": "500 / ERROR",
-    "title": "A Intervenit o Eroare Neașteptată",
-    "description": "Modulul de procesare a întâmpinat o întrerupere temporară. Datele dvs. sunt în siguranță. Vă rugăm să încercați reîncărcarea resursei.",
-    "retryButton": "Reîncearcă Procesarea",
+    "badge": "Eroare 500",
+    "code": "500",
+    "title": "A apărut o eroare neașteptată",
+    "description": "A intervenit o eroare la încărcarea acestei pagini a site-ului. Vă rugăm să reîncercați accesarea paginii sau să reveniți la pagina principală.",
+    "retryButton": "Reîncearcă",
     "backHome": "Înapoi la Pagina Principală",
-    "supportNotice": "Dacă problema persistă, echipa noastră de suport tehnic vă stă la dispoziție.",
-    "technicalDetailsTitle": "Detalii Tehnice Excepție"
+    "supportNotice": "Dacă problema persistă, vă rugăm să contactați echipa noastră de suport.",
+    "technicalDetailsTitle": "Detalii tehnice eroare"
   }
 }

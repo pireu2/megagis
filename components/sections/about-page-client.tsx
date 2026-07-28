@@ -98,8 +98,8 @@ export function AboutPageClient({ dict }: AboutPageClientProps) {
             </motion.p>
           </div>
 
-          {/* Stats grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 md:mt-16">
+          {/* Stats grid - Styled consistently with Hero Trust Bar */}
+          <div className="grid grid-cols-2 gap-6 md:gap-12 mt-8 md:mt-12 max-w-xl">
             {dict.stats.map((stat, idx) => (
               <motion.div
                 key={idx}
@@ -110,19 +110,18 @@ export function AboutPageClient({ dict }: AboutPageClientProps) {
                   delay: 0.3 + idx * 0.1,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="group relative"
+                className="flex flex-col text-left"
               >
-                <div className="h-full p-6 rounded-3xl border border-slate-200/50 bg-white hover:border-primary-300 transition-all duration-500 relative overflow-hidden group-hover:scale-[1.02] group-hover:shadow-2xl shadow-lg text-left">
-                  <div className="text-4xl font-extrabold text-primary-600 mb-2 tracking-tight">
-                    {stat.value}
-                  </div>
-                  <div className="text-sm font-semibold text-slate-700">
-                    {stat.label}
-                  </div>
-                  <div className="text-xs text-slate-500 mt-1 leading-snug">
-                    {stat.description}
-                  </div>
-                </div>
+                <span
+                  className={`text-2xl md:text-4xl font-bold tracking-tight ${
+                    idx === 1 ? "text-primary-600" : "text-slate-900"
+                  }`}
+                >
+                  {stat.value}
+                </span>
+                <span className="text-xs md:text-sm font-medium text-slate-500 mt-1">
+                  {stat.label}
+                </span>
               </motion.div>
             ))}
           </div>
@@ -464,7 +463,7 @@ export function AboutPageClient({ dict }: AboutPageClientProps) {
                 <div className="absolute inset-0 bg-linear-to-t from-slate-900/70 via-slate-900/20 to-transparent" />
 
                 <div className="absolute inset-0 p-6 flex flex-col justify-end text-left">
-                  <span className="inline-block px-2 py-0.5 rounded-full bg-primary-600/90 text-[10px] font-semibold text-white tracking-wider uppercase mb-2 w-fit">
+                  <span className="text-[11px] font-semibold text-primary-300 tracking-wider uppercase mb-1">
                     {img.category}
                   </span>
                   <h3 className="text-lg font-bold text-white tracking-tight mb-1">

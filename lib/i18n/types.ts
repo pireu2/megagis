@@ -21,7 +21,8 @@ export interface HeroDict {
     ancpi: { value: string; label: string };
     projects: { value: string; label: string };
     anre: { value: string; label: string };
-    precision: { value: string; label: string };
+    pnccf?: { value: string; label: string };
+    precision?: { value: string; label: string };
   };
 }
 
@@ -241,6 +242,7 @@ export interface ProjectsPartnersDict {
   badge?: string;
   title: string;
   subtitle: string;
+  viewAll?: string;
   categories: {
     all: string;
     cadastru: string;
@@ -570,8 +572,8 @@ export interface NotFoundDict {
   code: string;
   title: string;
   description: string;
-  coordinates: string;
-  status: string;
+  coordinates?: string;
+  status?: string;
   backHome: string;
   contactSupport: string;
   quickLinksTitle: string;
@@ -640,6 +642,7 @@ export interface ProjectsPageDict {
     title: string;
     subtitle: string;
     description: string;
+    featuredPartnersTitle?: string;
   };
   filter: {
     all: string;

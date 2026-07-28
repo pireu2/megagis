@@ -8,12 +8,8 @@ import {
   Phone,
   Mail,
   Clock,
-  ShieldCheck,
   Send,
   CheckCircle2,
-  Building2,
-  Users,
-  Timer
 } from "lucide-react";
 import type { ContactPageDict, FooterDict } from "@/lib/i18n";
 
@@ -86,7 +82,7 @@ export function ContactClientPage({
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!validateForm()) {
@@ -95,11 +91,29 @@ export function ContactClientPage({
 
     setIsSubmitting(true);
 
-    // Simulate network submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || "Eroare la trimiterea mesajului.");
+      }
+
       setIsSubmitted(true);
-    }, 900);
+    } catch (err: any) {
+      setErrors((prev) => ({
+        ...prev,
+        message: err.message || "Eroare la trimiterea mesajului. Te rugăm să încerci din nou.",
+      }));
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleResetForm = () => {
@@ -149,50 +163,6 @@ export function ContactClientPage({
               {dict.subtitle}
             </motion.p>
           </div>
-
-          {/* Stat Cards */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16"
-          >
-            {[
-              {
-                icon: Building2,
-                title: dict.stats?.experience.title ?? "15 Ani",
-                subtitle: dict.stats?.experience.subtitle ?? "Experiență",
-              },
-              {
-                icon: Users,
-                title: dict.stats?.projects.title ?? "500+",
-                subtitle: dict.stats?.projects.subtitle ?? "Proiecte",
-              },
-              {
-                icon: ShieldCheck,
-                title: dict.stats?.ancpi.title ?? "ANCPI",
-                subtitle: dict.stats?.ancpi.subtitle ?? "Clasa I",
-              },
-              {
-                icon: Timer,
-                title: dict.stats?.response.title ?? "24h",
-                subtitle: dict.stats?.response.subtitle ?? "Răspuns",
-              },
-            ].map((stat, i) => (
-              <div
-                key={i}
-                className="bg-white p-6 rounded-3xl border border-slate-200/50 shadow-sm flex flex-col items-center justify-center text-center gap-3 hover:border-primary-300 transition-all"
-              >
-                <div className="h-10 w-10 rounded-2xl bg-primary-50 text-primary-600 flex items-center justify-center mb-1">
-                  <stat.icon className="w-5 h-5" />
-                </div>
-                <div>
-                  <div className="font-bold text-slate-900 text-lg">{stat.title}</div>
-                  <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-0.5">{stat.subtitle}</div>
-                </div>
-              </div>
-            ))}
-          </motion.div>
 
           {/* 2-Col Layout */}
           <div className="grid lg:grid-cols-2 gap-8 items-start">

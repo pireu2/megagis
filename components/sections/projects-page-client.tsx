@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Building,
@@ -23,6 +24,31 @@ export function ProjectsPageClient({ dict }: ProjectsPageClientProps) {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [activeModalProject, setActiveModalProject] =
     useState<ProjectsPageItem | null>(null);
+
+  const isEnglish = dict.filter.all.includes("All");
+
+  const featuredPartners = useMemo(
+    () => [
+      {
+        name: "SC Ramboll South East Europe SRL",
+        logo: "/logos/ramboll.webp",
+        isSpecial: true,
+      },
+      {
+        name: "SC Megaconstruct SA",
+        logo: "/logos/megaconstruct.webp",
+      },
+      {
+        name: "SC North Topocad SRL",
+        logo: "/logos/north_topocad.jpg",
+      },
+      {
+        name: "Agricover / Derom Total",
+        logo: "/logos/derom_total.png",
+      },
+    ],
+    []
+  );
 
   // Lock body scroll when project modal is open to prevent background scrolling & dynamic mobile address bar jumps
   useEffect(() => {
@@ -87,6 +113,105 @@ export function ProjectsPageClient({ dict }: ProjectsPageClientProps) {
           <p className="text-sm text-slate-500 max-w-2xl leading-relaxed">
             {dict.hero.description}
           </p>
+        </motion.div>
+
+        {/* Featured Business Partners Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          className="mb-14"
+        >
+          <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4 block">
+            {dict.hero.featuredPartnersTitle ?? "Parteneri Privați & de Business"}
+          </span>
+
+          {/* Desktop & Tablet 4-Column Grid */}
+          <div className="hidden md:grid md:grid-cols-4 gap-4 lg:gap-6">
+            {featuredPartners.map((partner) => (
+              <div
+                key={partner.name}
+                className={`flex flex-col items-center justify-between p-6 rounded-2xl transition-all duration-300 group h-44 relative ${
+                  partner.isSpecial
+                    ? "bg-linear-to-b from-primary-50/50 via-white to-white backdrop-blur-md border border-primary-300 hover:border-primary-500 shadow-sm hover:shadow-lg overflow-hidden"
+                    : "bg-white/80 backdrop-blur-md border border-slate-200/80 hover:border-slate-300 shadow-xs hover:shadow-md"
+                }`}
+              >
+                {partner.isSpecial && (
+                  <div className="absolute top-2.5 right-3">
+                    <span className="inline-flex items-center text-[10px] font-semibold uppercase tracking-wider text-primary-700 bg-primary-100/70 px-2 py-0.5 rounded-full border border-primary-200/80">
+                      {isEnglish ? "Principal Partner" : "Partener Principal"}
+                    </span>
+                  </div>
+                )}
+                <div className="flex-1 w-full flex items-center justify-center p-2">
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    width={160}
+                    height={90}
+                    className="max-h-16 max-w-[90%] w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3
+                  className="text-xs font-bold text-slate-800 text-center leading-snug mt-3 line-clamp-2 w-full"
+                  title={partner.name}
+                >
+                  {partner.name}
+                </h3>
+              </div>
+            ))}
+          </div>
+
+          {/* Mobile Auto-Scroll Carousel */}
+          <div className="flex md:hidden relative overflow-hidden py-2 -mx-4 px-4">
+            <div className="absolute left-0 top-0 bottom-0 w-6 bg-linear-to-r from-slate-50 to-transparent z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-6 bg-linear-to-l from-slate-50 to-transparent z-10 pointer-events-none" />
+
+            <motion.div
+              animate={{ x: ["0%", "-50%"] }}
+              transition={{
+                repeat: Infinity,
+                duration: 16,
+                ease: "linear",
+              }}
+              className="flex gap-4 w-max"
+            >
+              {[...featuredPartners, ...featuredPartners].map((partner, idx) => (
+                <div
+                  key={`${partner.name}-${idx}`}
+                  className={`w-56 h-36 shrink-0 flex flex-col items-center justify-between p-5 rounded-2xl transition-all duration-300 relative ${
+                    partner.isSpecial
+                      ? "bg-linear-to-b from-primary-50/60 via-white to-white backdrop-blur-md border border-primary-300 shadow-sm overflow-hidden"
+                      : "bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-xs"
+                  }`}
+                >
+                  {partner.isSpecial && (
+                    <div className="absolute top-2 right-2.5">
+                      <span className="inline-flex items-center text-[9px] font-semibold uppercase tracking-wider text-primary-700 bg-primary-100/70 px-2 py-0.5 rounded-full border border-primary-200/80">
+                        {isEnglish ? "Principal" : "Principal"}
+                      </span>
+                    </div>
+                  )}
+                  <div className="flex-1 w-full flex items-center justify-center p-1">
+                    <Image
+                      src={partner.logo}
+                      alt={partner.name}
+                      width={140}
+                      height={80}
+                      className="max-h-14 max-w-[90%] w-auto object-contain"
+                    />
+                  </div>
+                  <h3
+                    className="text-xs font-bold text-slate-800 text-center leading-snug mt-2 line-clamp-2 w-full"
+                    title={partner.name}
+                  >
+                    {partner.name}
+                  </h3>
+                </div>
+              ))}
+            </motion.div>
+          </div>
         </motion.div>
 
         {/* Filter & Search Bar */}

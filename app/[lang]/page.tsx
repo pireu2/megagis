@@ -110,7 +110,7 @@ export default async function HomePage({
       <SectionSeparator />
       <HardwareEquipmentSection dict={dict.hardwareEquipment} />
       <SectionSeparator />
-      <ProjectsPartnersSection dict={dict.projectsPartners} />
+      <ProjectsPartnersSection lang={locale} dict={dict.projectsPartners} />
       <SectionSeparator />
       <ValuePropsSection dict={dict.valueProps} />
       <SectionSeparator />

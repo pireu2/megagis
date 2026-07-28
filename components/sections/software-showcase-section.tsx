@@ -135,15 +135,6 @@ export function SoftwareShowcaseSection({
                   </li>
                 ))}
               </ul>
-
-              <div>
-                <LocaleLink href="/contact" lang={lang}>
-                  <Button variant="accent" size="lg" className="group">
-                    {current.cta}
-                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </Button>
-                </LocaleLink>
-              </div>
             </div>
 
             {/* Right Column: Media Preview Card (Image / Video) */}

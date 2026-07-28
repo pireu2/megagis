@@ -2,16 +2,20 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Building, MapPin, Calendar } from "lucide-react";
-import type { ProjectsPartnersDict } from "@/lib/i18n";
+import { Building, MapPin, Calendar, ArrowRight } from "lucide-react";
+import type { ProjectsPartnersDict, Locale } from "@/lib/i18n";
 import { ProjectLogoBadge } from "@/components/ui/project-logo-badge";
+import { LocaleLink } from "@/components/locale-link";
+import { Button } from "@/components/ui/button";
 
 interface ProjectsPartnersSectionProps {
   dict: ProjectsPartnersDict;
+  lang?: Locale;
 }
 
 export function ProjectsPartnersSection({
   dict,
+  lang = "ro",
 }: ProjectsPartnersSectionProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
 
@@ -111,6 +115,28 @@ export function ProjectsPartnersSection({
             ))}
           </motion.div>
         </AnimatePresence>
+
+        {/* View All Projects CTA Button - Styled identically to Services button */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+          className="mt-12 text-center md:text-left"
+        >
+          <LocaleLink href="/proiecte" lang={lang}>
+            <Button
+              size="xl"
+              className="group relative overflow-hidden bg-linear-to-r from-primary-600 via-primary-500 to-primary-600 bg-size-[200%_100%] hover:bg-position-[100%_0] transition-all duration-500 text-white border-0 shadow-lg shadow-primary-500/30 hover:shadow-xl hover:shadow-primary-500/40 hover:scale-105"
+            >
+              <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+              <span className="relative z-10">
+                {dict.viewAll ?? "Vezi Toate Proiectele"}
+              </span>
+              <ArrowRight className="relative z-10 ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </LocaleLink>
+        </motion.div>
       </div>
     </section>
   );

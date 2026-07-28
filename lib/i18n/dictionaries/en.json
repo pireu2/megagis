@@ -17,9 +17,9 @@
     "ancpiBadge": "ANCPI Class I",
     "trustCards": {
       "ancpi": { "value": "Class I", "label": "ANCPI Authorized (RO-B-J 2489/2022)" },
-      "projects": { "value": "100+", "label": "Systematic Cadastre & Green Spaces Projects" },
+      "projects": { "value": "50+", "label": "Systematic Cadastre & Green Spaces Projects" },
       "anre": { "value": "ANRE", "label": "Utility Network Compliance" },
-      "precision": { "value": "±1–2 cm", "label": "GNSS RTK Measurement Precision" }
+      "pnccf": { "value": "100,000+", "label": "Registered Properties & UATs (PNCCF)" }
     }
   },
   "servicesOverview": {
@@ -132,6 +132,7 @@
     "badge": "Portfolio",
     "title": "Portfolio & Strategic Partners",
     "subtitle": "Proven execution on major projects for public administration and private developers",
+    "viewAll": "View All Projects",
     "categories": {
       "all": "All Projects",
       "cadastru": "Systematic Cadastre (PNCC)",
@@ -583,24 +584,14 @@
     },
     "stats": [
       {
-        "value": "100+",
-        "label": "Sectors & UAT Projects",
-        "description": "Completed and accepted systematic cadastral surveying projects"
+        "value": "15+",
+        "label": "Equipment & Field Vehicles",
+        "description": "All-terrain vehicle fleet and high-precision Leica/Topcon geodetic instruments"
       },
       {
         "value": "100%",
-        "label": "Completion Rate",
+        "label": "Compliance & Delivery Rate",
         "description": "On-time delivery and 100% compliance with technical specifications"
-      },
-      {
-        "value": "Class I",
-        "label": "Technical Authorization",
-        "description": "Highest technical qualification level for any geodetic & cadastral category"
-      },
-      {
-        "value": "15+",
-        "label": "Equipment & Fleet Units",
-        "description": "All-terrain vehicle fleet and high-precision Leica/Topcon geodetic instruments"
       }
     ],
     "profile": {
@@ -772,20 +763,12 @@
       "description": "From large-scale systematic land registration projects (PNCCF/POR) and high-precision GNSS surveying to custom WebGIS systems and Local Green Space Registries compliant with Law 24/2007.",
       "stats": [
         {
-          "label": "Registered Properties",
-          "value": "50,000+"
-        },
-        {
-          "label": "Completed Municipalities (UAT)",
+          "label": "Cadastred Municipalities (UAT)",
           "value": "15+"
         },
         {
-          "label": "Survey Precision",
-          "value": "±1 cm"
-        },
-        {
-          "label": "GIS & RSV Projects",
-          "value": "100%"
+          "label": "Geodetic Network & RTK Precision",
+          "value": "±1–2 mm"
         }
       ]
     },
@@ -1741,7 +1724,8 @@
       "badge": "Project Portfolio",
       "title": "Portfolio & Key References",
       "subtitle": "Proven track record in major systematic cadastre, green space registries, and engineering surveying",
-      "description": "Our portfolio includes over 60 contracts executed nationwide for central and local public administrations, international engineering firms, and private developers."
+      "description": "Our portfolio includes over 60 contracts executed nationwide for central and local public administrations, international engineering firms, and private developers.",
+      "featuredPartnersTitle": "Featured Business Partners"
     },
     "filter": {
       "all": "All Projects",
@@ -2906,27 +2890,25 @@
     ]
   },
   "notFound": {
-    "badge": "Geospatial Signal Lost",
+    "badge": "Error 404",
     "code": "404",
-    "title": "Coordinates Not Found in System",
-    "description": "The requested page or parcel coordinate does not exist in our digital register, has been relocated, or is undergoing system recalibration.",
-    "coordinates": "44°19'11.8\"N 23°47'20.4\"E",
-    "status": "STATUS: VECTOR UNMAPPED",
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist on our website, has been moved, or the URL is incorrect. Please check the URL or return to the home page.",
     "backHome": "Back to Home Page",
-    "contactSupport": "Contact Technical Support",
-    "quickLinksTitle": "Useful Navigation Links",
+    "contactSupport": "Contact Us",
+    "quickLinksTitle": "Quick Website Navigation",
     "servicesLink": "Cadastral & Topography Services",
     "projectsLink": "UAT Projects & Portfolio",
     "aboutLink": "About MEGAGIS Company"
   },
   "errorPage": {
-    "badge": "Geospatial System Anomaly",
-    "code": "500 / ERROR",
+    "badge": "Error 500",
+    "code": "500",
     "title": "An Unexpected Error Occurred",
-    "description": "The processing module encountered a temporary interruption. Your data remains secure. Please attempt to retry the operation.",
-    "retryButton": "Retry Operation",
+    "description": "We encountered an error while loading this page on our website. Please try loading the page again or return to the home page.",
+    "retryButton": "Try Again",
     "backHome": "Back to Home Page",
-    "supportNotice": "If the issue persists, our technical support team is ready to assist.",
-    "technicalDetailsTitle": "Technical Exception Details"
+    "supportNotice": "If the problem persists, please contact our support team.",
+    "technicalDetailsTitle": "Technical Error Details"
   }
 }

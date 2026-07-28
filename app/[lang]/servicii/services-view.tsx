@@ -125,22 +125,25 @@ export function ServicesView({
             </motion.p>
           </div>
 
-          {/* Stats Row */}
+          {/* Stats Row - Styled consistently with Hero Trust Bar */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6"
+            className="grid grid-cols-2 gap-6 md:gap-12 mt-8 md:mt-12 max-w-xl"
           >
             {dict.hero.stats.map((stat, idx) => (
-              <div
-                key={idx}
-                className="p-6 rounded-3xl border border-slate-200/50 bg-white shadow-lg text-left"
-              >
-                <div className="text-4xl font-extrabold text-primary-600">
+              <div key={idx} className="flex flex-col text-left">
+                <span
+                  className={`text-2xl md:text-4xl font-bold tracking-tight ${
+                    idx === 1 ? "text-primary-600" : "text-slate-900"
+                  }`}
+                >
                   {stat.value}
-                </div>
-                <div className="text-sm text-slate-500 mt-1">{stat.label}</div>
+                </span>
+                <span className="text-xs md:text-sm font-medium text-slate-500 mt-1">
+                  {stat.label}
+                </span>
               </div>
             ))}
           </motion.div>
