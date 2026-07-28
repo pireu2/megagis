@@ -60,7 +60,7 @@
     "subtitle": "We develop and operate dedicated geospatial applications for systematic cadastre and green space management",
     "tabs": {
       "cadastru": {
-        "label": "Systematic Cadastre (PNCC)",
+        "label": "Systematic Cadastre (PNCCF)",
         "badge": "Portals UAT / ANCPI",
         "title": "Web GIS Systematic Cadastre System & Automated Site Plan (PAD) Extraction",
         "description": "Interactive municipal cadastral query platform (e.g. Cerăt Municipality) with instant search by Cadastral ID / IE, sector visualization, and automated extraction of Site and Demarcation Plans (PAD).",
@@ -135,7 +135,7 @@
     "viewAll": "View All Projects",
     "categories": {
       "all": "All Projects",
-      "cadastru": "Systematic Cadastre (PNCC)",
+      "cadastru": "Systematic Cadastre (PNCCF)",
       "rsv": "Green Space Registries",
       "utilities": "Utility Networks (ANRE)",
       "infrastructure": "Infrastructure Works"

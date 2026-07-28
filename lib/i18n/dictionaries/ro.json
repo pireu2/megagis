@@ -60,7 +60,7 @@
     "subtitle": "Dezvoltăm și operăm aplicații geospațiale dedicate pentru cadastru sistematic și managementul spațiilor verzi",
     "tabs": {
       "cadastru": {
-        "label": "Cadastru Sistematic (PNCC)",
+        "label": "Cadastru Sistematic (PNCCF)",
         "badge": "Portals UAT / ANCPI",
         "title": "Sistem Web GIS Cadastru Sistematic & Extragere Automatizată PAD",
         "description": "Platformă interactivă de interogare cadastrală la nivel de UAT (ex. Comuna Cerăt), cu căutare instant după Număr Cadastral / IE, vizualizare sectoare și generare automată a Planurilor de Amplasament și Delimitare (PAD).",
@@ -135,7 +135,7 @@
     "viewAll": "Vezi Toate Proiectele",
     "categories": {
       "all": "Toate Proiectele",
-      "cadastru": "Cadastru Sistematic (PNCC)",
+      "cadastru": "Cadastru Sistematic (PNCCF)",
       "rsv": "Registre Spații Verzi",
       "utilities": "Rețele Utilități (ANRE)",
       "infrastructure": "Lucrări de Infrastructură"

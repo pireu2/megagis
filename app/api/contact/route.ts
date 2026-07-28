@@ -30,13 +30,13 @@ export async function POST(request: Request) {
     const transporter = nodemailer.createTransport({
       host,
       port,
-      secure: port === 465, // SSL for port 465
+      secure: port === 465,
       auth: {
         user,
         pass,
       },
       tls: {
-        rejectUnauthorized: false, // Prevents self-signed cert issues on shared hosting
+        rejectUnauthorized: false,
       },
     });
 
