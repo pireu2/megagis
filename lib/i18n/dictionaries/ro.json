@@ -11,7 +11,7 @@
   "hero": {
     "title": "Precizie în Cadastru și Topografie",
     "subtitle": "Soluții GIS Profesionale",
-    "description": "Firmă dinamică și tânără, autorizată ANCPI clasa I. Oferim servicii complete de cadastru, topografie și GIS pentru sectorul privat și instituții publice din România, la costuri accesibile.",
+    "description": "O firmă dinamică și tânără, autorizată ANCPI clasa I. Oferim servicii complete de cadastru, topografie și GIS pentru sectorul privat și instituții publice din România, la costuri accesibile.",
     "primaryCta": "Solicită Ofertă",
     "secondaryCta": "Descoperă Serviciile",
     "ancpiBadge": "ANCPI Clasa I",
@@ -24,21 +24,22 @@
   },
   "servicesOverview": {
     "badge": "Servicii",
-    "title": "Principalele Categorii de Servicii",
+    "title": "Domeniile noastre de expertiză",
     "subtitle": "MEGAGIS SRL este societate autorizată ANCPI Clasa I, cu experiență pe proiecte naționale și lucrări complexe",
     "cadastral": {
       "title": "Cadastru Sistematic (PNCCF)",
-      "description": "Lucrări de cadastru sistematic în cadrul Programului Național de Cadastru și Carte Funciară, asigurând toate etapele necesare realizării documentelor tehnice și înscrierii gratuite a imobilelor.",
+      "description": "Lucrări de cadastru sistematic în cadrul Programului Național de Cadastru și Carte Funciară, asigurând toate etapele necesare realizării documentelor tehnice și înscrierea gratuită a imobilelor în Sistemul Național de Carte Funciară.",
       "features": [
-        "Identificarea și inventarierea imobilelor și deținătorilor",
-        "Măsurători topografice și cadastrale în teren cu precizie RTK",
-        "Întocmirea documentelor tehnice și realizarea planurilor",
-        "Colaborare cu comisiile locale, publicare și predare către OCPI"
+        "Identificarea și înregistrarea imobilelor și a proprietarilor",
+        "Măsurători topografice și cadastrale în teren cu poziționare precisă RTK",
+        "Colaborare strânsă cu autoritățile locale pentru identificarea punctelor de interes și a potențialelor provocări",
+        "Generarea documentelor tehnice și a planurilor cadastrale",
+        "Proceduri de consultare publică și integrarea documentației în registrul național prin intermediul OCPI"
       ]
     },
     "topography": {
       "title": "Topografie și Geodezie",
-      "description": "Măsurători topografice de înaltă precizie utilizând echipamente GNSS RTK și stații totale robotizate: ridicări, trasări construcții/drumuri/rețele, profile, planuri de situație și rețele de sprijin."
+      "description": "Măsurători topografice de înaltă precizie utilizând echipamente GNSS RTK și stații totale robotizate pentru diverse aplicații: ridicări, măsurători și trasări pentru construcții, drumuri și rețele de utilități, planuri de situație, profile și rețele geodezice de sprijin."
     },
     "gis": {
       "title": "GIS și Cartografie Digitală",
@@ -46,13 +47,15 @@
     },
     "urbanPlanning": {
       "title": "Registrul Local al Spațiilor Verzi",
-      "description": "Inventarierea și administrarea patrimoniului verde conform legislației în vigoare: inventariere arbori și spații verzi, identificarea speciilor, evaluarea stării de sănătate, hărți tematice și statistici."
+      "description": "Inventarierea și administrarea infrastructurii verzi conform legislației în vigoare: inventariere vegetație și spații verzi, identificarea speciilor, evaluarea stării de sănătate și a riscurilor, hărți tematice și rapoarte statistice."
     },
     "consulting": {
       "title": "Consultanță și Asistență Tehnică",
       "description": "Suport tehnic și consultanță de specialitate pe întreaga durată a proiectelor: consultanță în cadastru și topografie, GIS, administrație publică, verificarea documentațiilor și relația cu ANCPI/OCPI."
     },
-    "viewAll": "Vezi Toate Serviciile"
+    "viewAll": "Vezi Toate Serviciile",
+    "viewDetails": "Vezi Detalii",
+    "viewFullDetails": "Vezi Detalii Complete"
   },
   "softwareShowcase": {
     "badge": "Tehnologie & GIS",
@@ -62,13 +65,13 @@
       "cadastru": {
         "label": "Cadastru Sistematic (PNCCF)",
         "badge": "Portals UAT / ANCPI",
-        "title": "Sistem Web GIS Cadastru Sistematic & Extragere Automatizată PAD",
+        "title": "Sistem Web GIS Cadastru Sistematic & Generare Automatizată a Planurilor de Amplasament și Delimitare (PAD)",
         "description": "Platformă interactivă de interogare cadastrală la nivel de UAT (ex. Comuna Cerăt), cu căutare instant după Număr Cadastral / IE, vizualizare sectoare și generare automată a Planurilor de Amplasament și Delimitare (PAD).",
         "features": [
           "Căutare instantanee după Număr Cadastral / Număr IE",
           "Calcul automat al suprafețelor și delimitare tarlale",
           "Export direct în formate ANCPI (.xml, .dxf, .shp)",
-          "Suprapunere ortofotoplanuri de înaltă rezoluție 2024"
+          "Suprapunere ortofotoplanuri de înaltă rezoluție"
         ],
         "cta": "Solicită Demo Platformă"
       },
@@ -758,7 +761,7 @@
   "faqPage": {
     "badge": "Centrul de Asistență Megagis",
     "title": "Întrebări Frecvente & Ghid Tehnic",
-    "subtitle": "Răspunsuri transparente privind procedurile cadastrale, inventarierea spațiilor verzi, măsurătorile topografice și soluțiile GIS pentru sectorul public (B2G) și privat (B2B).",
+    "subtitle": "Răspunsuri privind procedurile cadastrale, inventarierea spațiilor verzi, măsurătorile topografice și soluțiile GIS pentru sectorul public (B2G) și privat (B2B).",
     "searchPlaceholder": "Caută după termen (ex. PNCCF, Legea 24/2007, RTK, extras carte funciară, SEAP)...",
     "categoriesLabel": "Domenii de Soluții",
     "allCategoriesTab": "Toate Categoriile",
@@ -817,7 +820,7 @@
           {
             "id": "cad-3",
             "question": "Care sunt etapele principale ale unui proiect de Cadastru Sistematic?",
-            "answer": "Un proiect derulat de Megagis parcurge 5 etape riguroase: 1) Campania de informare publică și colectarea copiilor actelor de proprietate; 2) Măsurători topografice de precizie (GNSS RTK Stereo 70) și identificarea limitelor; 3) Prelucrarea datelor GIS și întocmirea documentelor tehnice cadastrale; 4) Publicarea documentelor tehnice la sediul primăriei și soluționarea cererilor de rectificare în termenul legal (60 de zile); 5) Recepția finală OCPI și eliberarea extraselor de Carte Funciară.",
+            "answer": "Un proiect derulat de Megagis parcurge 5 etape riguroase: 1) Campania de informare publică și colectarea copiilor actelor de proprietate; 2) Măsurători topografice de precizie (GNSS RTK Stereo 70) și identificarea limitelor; 3) Prelucrarea datelor GIS și întocmirea documentelor tehnice cadastrale; 4) Afișarea publică a documentelor tehnice la sediul primăriei și soluționarea cererilor de rectificare în termenul legal (60 de zile); 5) Recepția finală OCPI și eliberarea extraselor de Carte Funciară.",
             "takeaway": "Procesul include măsurători, procesare GIS, consultare publică de 60 de zile și recepție OCPI.",
             "audience": "all",
             "tags": [
@@ -1068,7 +1071,7 @@
       "cadastral": {
         "id": "cadastru-sistematic",
         "badge": "Lucrări Naționale PNCCF / POR",
-        "title": "Cadastru Sistematic și Înregistrare Gratuită",
+        "title": "Cadastru Sistematic și Înregistrare Gratuită în Cartea Funciară Națională",
         "subtitle": "Managementul integral al procesului de cadastrare la nivel de UAT sau sector cadastral",
         "description": "Executăm lucrări de cadastru sistematic în cadrul Programului Național de Cadastru și Carte Funciară (PNCCF) și POR. Asigurăm identificarea riguroasă a proprietarilor, măsurătorile de teren, întocmirea documentelor tehnice și înscrierea gratuită a imobilelor în Cartea Funciară.",
         "imagePath": "/images/team/SNY09445.jpg",
@@ -1077,8 +1080,7 @@
           "Măsurători topografice în teren cu receptoare GNSS RTK centimetric",
           "Elaborarea planurilor cadastrale și a fișelor de date ale imobilelor",
           "Asistență și colaborare directă cu Comisia Locală de Fond Funciar",
-          "Publicarea documentelor tehnice și soluționarea contestațiilor",
-          "Predarea cărților funciare și a extraselor gratuite către proprietari"
+          "Consultarea publică a documentelor tehnice și soluționarea contestațiilor"
         ],
         "deliverablesHeading": "Livrabile & Documentație Tehnică",
         "deliverables": [
@@ -1196,7 +1198,7 @@
         "badge": "Măsurători Optice & GNSS RTK",
         "title": "Topografie Inginerească & Geodezie de Precizie",
         "subtitle": "Ridicări topografice, asistare șantier, trasare axare și profile de teren",
-        "description": "Asigurăm servicii de topografie inginerească și geodezie pentru lucrări de infrastructură, civile și industriale. Utilizăm stații totale robotizate Leica / Topcon și echipamente GNSS RTK dublă frecvență pentru măsurători milimetrice și trasări de precizie.",
+        "description": "Asigurăm servicii de topografie inginerească de înaltă precizie și geodezie pentru proiecte de infrastructură civilă și industrială, utilizând stații totale robotizate Leica / Topcon și echipamente GNSS RTK dublă frecvență pentru precizie subcentimetrică.",
         "imagePath": "/images/team/SNY09449.jpg",
         "secondaryImage": "/images/equipment/topcon-total-station.jpg",
         "features": [
@@ -1323,7 +1325,7 @@
         "badge": "Enterprise WebGIS & Spatial Data",
         "title": "Sisteme GIS & Cartografie Digitală",
         "subtitle": "Dezvoltare baze de date spațiale, servere ArcGIS Enterprise și conversie date",
-        "description": "Proiectăm și implementăm platforme WebGIS avansate pentru primării, utilități și dezvoltatori. Soluțiile noastre integrează baze de date spațiale, hărți interactive și servicii de conversie / vectorizare multi-format.",
+        "description": "Proiectăm și implementăm platforme WebGIS pentru primării, companii de infrastructură publică și proiecte de dezvoltare. Soluțiile noastre integrează și combină baze de date spațiale, hărți WebGIS interactive și servicii automatizate de conversie a datelor.",
         "imagePath": "/images/team/SNY09470.jpg",
         "features": [
           "Arhitectură și administrare servere ArcGIS Enterprise 11.2",
@@ -1331,7 +1333,7 @@
           "Cartografiere digitală, digitalizare și georeferențiere planuri istorice",
           "Conversie de date multi-format: CAD (DWG/DXF) <-> GIS (SHP/GPKG/GeoJSON)",
           "Dezvoltare portaluri WebGIS cu interfețe interactive și tablouri de bord (Dashboards)",
-          "Creare topologii curate pentru rețele de apă, gaz, energie și canalizare"
+          "Crearea topologiei și verificarea erorilor topologice dintre diferite date spațiale cum ar fi rețele de apă, gaz, energie și canalizare"
         ],
         "deliverablesHeading": "Componente & Servicii GIS",
         "deliverables": [
@@ -1355,7 +1357,7 @@
             "value": "SHP, GPKG, GeoJSON, DWG, KML"
           }
         ],
-        "ctaText": "Proiectează Soluția GIS",
+        "ctaText": "Solicită ofertă pentru un proiect GIS sau platformă WebGIS",
         "heroStats": [
           {
             "label": "Server GIS",
@@ -1449,15 +1451,15 @@
         "badge": "Conformitate Legea 24/2007",
         "title": "Registrul Local al Spațiilor Verzi (RSV)",
         "subtitle": "Inventarierea patrimoniului verde, analiză fitosanitară și hărți GIS pentru UAT-uri",
-        "description": "Elaborăm Registrul Local al Spațiilor Verzi conform cerințelor Legii 24/2007 privind administrarea spațiilor verzi din intravilanul localităților. Soluția noastră combină inventarierea de teren cu evaluarea fitosanitară și integrarea într-o interfață WebGIS dedicată.",
+        "description": "Elaborăm Registrul Local al Spațiilor Verzi conform Legii 24/2007 pentru managementul spațiilor verzi. Soluția noastră combină digitalizarea GIS a domeniului public, inventarierea de teren a vegetației, evaluarea fitosanitară individuală a arborilor și integrarea datelor într-un portal municipal WebGIS.",
         "imagePath": "/images/team/SNY09477.jpg",
         "features": [
-          "Inventarierea terenurilor cu destinație de spațiu verde și a parcurilor",
-          "Identificarea speciilor arborescente și arbustive cu poziționare centimetrică RTK",
+          "Inventarierea spațiilor verzi publice, a parcurilor și a zonelor vegetale urbane",
+          "Poziționarea individuală în teren a arborilor și arbuștilor utilizând GNSS RTK centimetric sau ortofotomosaice de înaltă rezoluție",
           "Evaluarea fitosanitară individuală și încadrarea în clase de risc / stare de sănătate",
           "Recomandări tehnice de toaletare, tăiere de siguranță sau punere în valoare",
           "Calculul suprafeței de spațiu verde per locuitor conform normelor legale",
-          "Integrat cu portal public de căutare și vizualizare pentru cetățeni"
+          "Portal WebGIS public interactiv de căutare și vizualizare"
         ],
         "deliverablesHeading": "Pachet Complet RSV pentru Primării",
         "deliverables": [
@@ -1578,7 +1580,7 @@
         "description": "Oferim asistență tehnică completă pentru autorități publice, dezvoltatori imobiliari și companii de infrastructură. Asigurăm verificarea documentațiilor, reprezentarea în relația cu ANCPI/OCPI și soluționarea problemelor complexe de cadastru.",
         "imagePath": "/images/team/SNY09458.jpg",
         "features": [
-          "Consultanță în pregătirea documentațiilor de atribuire pentru licitații publice",
+          "Consultanță în pregătirea documentațiilor pentru achiziții publice",
           "Verificarea tehnică a documentațiilor cadastrale și topografice existente",
           "Asistență tehnică și reprezentare în relația cu ANCPI, OCPI și Primării",
           "Supervizarea și verificarea lucrărilor de cadastru sistematic derulate în UAT",

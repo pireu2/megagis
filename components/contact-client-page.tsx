@@ -106,10 +106,11 @@ export function ContactClientPage({
       }
 
       setIsSubmitted(true);
-    } catch (err: any) {
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : "Eroare la trimiterea mesajului. Te rugăm să încerci din nou.";
       setErrors((prev) => ({
         ...prev,
-        message: err.message || "Eroare la trimiterea mesajului. Te rugăm să încerci din nou.",
+        message,
       }));
     } finally {
       setIsSubmitting(false);

@@ -8,11 +8,8 @@ import {
   Search,
   CheckCircle2,
   Play,
-  ArrowRight,
   Database,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { LocaleLink } from "@/components/locale-link";
 import type { Locale, SoftwareShowcaseDict } from "@/lib/i18n";
 
 interface SoftwareShowcaseSectionProps {
@@ -21,7 +18,6 @@ interface SoftwareShowcaseSectionProps {
 }
 
 export function SoftwareShowcaseSection({
-  lang,
   dict,
 }: SoftwareShowcaseSectionProps) {
   const [activeTab, setActiveTab] = useState<"cadastru" | "rsv" | "gas">(

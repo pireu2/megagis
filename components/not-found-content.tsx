@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { FileQuestion, Home, Mail } from "lucide-react";
+import { Home, Mail } from "lucide-react";
 import { LocaleLink } from "@/components/locale-link";
 import { Button } from "@/components/ui/button";
 import roDict from "@/lib/i18n/dictionaries/ro.json";

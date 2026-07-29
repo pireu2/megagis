@@ -83,10 +83,11 @@ export async function POST(request: Request) {
     });
 
     return NextResponse.json({ success: true });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Error sending contact email:", error);
+    const errorMessage = error instanceof Error ? error.message : "Eroare la trimiterea mesajului.";
     return NextResponse.json(
-      { error: error?.message || "Eroare la trimiterea mesajului." },
+      { error: errorMessage },
       { status: 500 }
     );
   }

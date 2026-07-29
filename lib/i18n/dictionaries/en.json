@@ -9,9 +9,9 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Precision in Cadastral & Surveying",
+    "title": "Precision in Cadastre & Surveying",
     "subtitle": "Professional GIS Solutions",
-    "description": "Dynamic young company, ANCPI Class I certified. We provide comprehensive cadastral, topographical, and GIS services for the private sector and public institutions in Romania at affordable costs.",
+    "description": "A dynamic and young company that is ANCPI Class I certified. We provide comprehensive cadaster, topography, and GIS services for the private sector and public institutions in Romania at affordable costs.",
     "primaryCta": "Request a Quote",
     "secondaryCta": "Explore Services",
     "ancpiBadge": "ANCPI Class I",
@@ -24,21 +24,22 @@
   },
   "servicesOverview": {
     "badge": "Services",
-    "title": "Main Categories of Services",
+    "title": "Our domains of expertise",
     "subtitle": "MEGAGIS SRL is an ANCPI Class I authorized company with extensive experience in national projects and complex surveying",
     "cadastral": {
       "title": "Systematic Cadastre (PNCCF)",
-      "description": "Systematic land registration works under the National Program for Cadastre and Land Registry, ensuring all stages necessary for technical documentation and free registration in the land registry.",
+      "description": "Systematic land registration works under the National Program for Cadastre and Land Registry, ensuring all stages necessary for technical documentation and free registration in the national land registry.",
       "features": [
-        "Identification and inventory of properties and owners",
-        "On-site topographical and cadastral field surveys with RTK precision",
-        "Preparation of technical documentation and cadastral plans",
-        "Local commission collaboration, publication, and OCPI delivery"
+        "Identifying and creating records of properties and property owners",
+        "Topographical and cadastral field surveys with precise RTK positioning",
+        "Close collaboration with local authorities on identifying points of interest and potential challenges",
+        "Generating technical documents and cadastral plans",
+        "Public consultation procedures and the integration of our work product in the national registry through the Cadastre and Land Registry Office (OCPI)"
       ]
     },
     "topography": {
       "title": "Topography & Geodesy",
-      "description": "High-precision topographical surveys using GNSS RTK equipment and robotic total stations: surveys, construction/road/utility setting-out, profiles, site plans, and geodetic support networks."
+      "description": "High-precision topographical surveys using GNSS RTK equipment and robotic total stations for different applications: surveys, measurements and setting-out/stakeouts for constructions, roads, and utility networks, site plans, profiles and geodetic support networks."
     },
     "gis": {
       "title": "GIS & Digital Cartography",
@@ -46,13 +47,15 @@
     },
     "urbanPlanning": {
       "title": "Local Registry of Green Spaces",
-      "description": "Inventory and management of green heritage according to current legislation: tree and green space inventory, species identification, health assessment, thematic maps, and statistical reports."
+      "description": "Inventory and management of green infrastructure according to current legislation: vegetation and green space inventory, species identification, health and risk assessment, thematical maps and statistical reports."
     },
     "consulting": {
       "title": "Technical Consulting & Assistance",
       "description": "Specialized technical support and consulting throughout projects: cadastral and topographical consulting, GIS, public administration support, documentation verification, and ANCPI/OCPI liaison."
     },
-    "viewAll": "View All Services"
+    "viewAll": "View All Services",
+    "viewDetails": "View Details",
+    "viewFullDetails": "View Complete Details"
   },
   "softwareShowcase": {
     "badge": "Technology & GIS",
@@ -62,13 +65,13 @@
       "cadastru": {
         "label": "Systematic Cadastre (PNCCF)",
         "badge": "Portals UAT / ANCPI",
-        "title": "Web GIS Systematic Cadastre System & Automated Site Plan (PAD) Extraction",
-        "description": "Interactive municipal cadastral query platform (e.g. Cerăt Municipality) with instant search by Cadastral ID / IE, sector visualization, and automated extraction of Site and Demarcation Plans (PAD).",
+        "title": "Web GIS Systematic Cadaster System & Site and Demarcation Plan (PAD) generation",
+        "description": "Interactive municipal cadastral query platforms (e.g. Cerăt Municipality) with instant search by Cadastral ID / IE, sector visualization, and automated extraction of Site and Demarcation Plans (PAD).",
         "features": [
           "Instant search by Cadastral Number / Electronic ID (IE)",
           "Automated area calculation and parcel demarcations",
           "Direct export into official ANCPI formats (.xml, .dxf, .shp)",
-          "High-resolution 2024 orthophoto layer integration"
+          "High-resolution orthophoto layer integration"
         ],
         "cta": "Request Platform Demo"
       },
@@ -578,7 +581,7 @@
   "aboutPage": {
     "hero": {
       "badge": "Company Profile & Technical Expertise",
-      "title": "Digital Topography, Systematic Cadastru & High-Precision GIS Solutions",
+      "title": "Digital Topography, Systematic Cadaster & High-Precision GIS Solutions",
       "subtitle": "SC MEGAGIS SRL is a company specialized in delivering advanced geospatial services for public administration and the private sector.",
       "description": "Founded with the mission to digitalize and streamline cadastral and surveying processes in Romania, our company combines field engineering experience with modern software platforms and state-of-the-art surveying equipment."
     },
@@ -779,7 +782,7 @@
       "cadastral": {
         "id": "cadastru-sistematic",
         "badge": "National PNCCF / POR Projects",
-        "title": "Systematic Cadastre & Free Land Registration",
+        "title": "Systematic Cadastre & Free National Land Registration",
         "subtitle": "End-to-end management of systematic land registration at municipality or sector level",
         "description": "We carry out systematic land registration works under the National Program for Cadastre and Land Registry (PNCCF) and POR. We handle property and owner identification, field surveying, technical documentation, and free land registration.",
         "imagePath": "/images/team/SNY09445.jpg",
@@ -788,8 +791,7 @@
           "On-site cadastral surveying with centimeter-level RTK GNSS receivers",
           "Preparation of cadastral maps, sector plans, and property data files",
           "Direct collaboration and support with Local Land Commissions",
-          "Publication of technical documentation and resolution of owner appeals",
-          "Delivery of free land register certificates to property owners"
+          "Public consultation of technical documentation and resolution of owner appeals"
         ],
         "deliverablesHeading": "Technical Deliverables & Documentation",
         "deliverables": [
@@ -813,7 +815,7 @@
             "value": "Stereo 70 / Black Sea 1975"
           }
         ],
-        "ctaText": "Request Systematic Cadastre Proposal",
+        "ctaText": "Request a Systematic Cadaster quote",
         "heroStats": [
           {
             "label": "Registered Properties",
@@ -905,9 +907,9 @@
       "topography": {
         "id": "topografie-geodezie",
         "badge": "Optical & GNSS RTK Surveys",
-        "title": "Engineering Topography & High-Precision Geodesy",
+        "title": "Engineering-level topography & high-precision geodetic survey",
         "subtitle": "Topographical surveys, construction setting out, profiles, and deformation monitoring",
-        "description": "We deliver high-precision engineering topography and geodetic services for infrastructure, civil, and industrial projects. Utilizing robotic total stations (Leica / Topcon) and dual-frequency GNSS receivers for sub-centimeter accuracy.",
+        "description": "We deliver high-precision engineering-level topography and geodetic services for civil infrastructure and industrial projects utilizing robotic total stations (Leica / Topcon) and dual-frequency GNSS receivers for sub-centimeter accuracy.",
         "imagePath": "/images/team/SNY09449.jpg",
         "secondaryImage": "/images/equipment/topcon-total-station.jpg",
         "features": [
@@ -1034,7 +1036,7 @@
         "badge": "Enterprise WebGIS & Spatial Data",
         "title": "GIS Systems & Digital Cartography",
         "subtitle": "Spatial database design, ArcGIS Enterprise servers, and multi-format conversion",
-        "description": "We design and deploy enterprise WebGIS platforms for municipalities, utility companies, and real estate developers. Our solutions integrate spatial databases, interactive WebGIS maps, and automated data conversion services.",
+        "description": "We design and implement WebGIS platforms for municipalities, public infrastructure companies, and development projects. Our solutions integrate and combine spatial databases, interactive WebGIS maps, and automated data conversion services.",
         "imagePath": "/images/team/SNY09470.jpg",
         "features": [
           "ArcGIS Enterprise 11.2 server architecture design and administration",
@@ -1042,7 +1044,7 @@
           "Digital cartography, historical map digitization, and georeferencing",
           "Multi-format spatial data conversion: CAD (DWG/DXF) <-> GIS (SHP/GPKG/GeoJSON)",
           "Custom WebGIS portal development with interactive dashboards",
-          "Clean topology creation for water, gas, power, and sewer utility networks"
+          "Topology generation and the correction of topology errors between different spatial datasets: electricity, wastewater, natural gas or water networks, etc."
         ],
         "deliverablesHeading": "GIS Components & Deliverables",
         "deliverables": [
@@ -1066,7 +1068,7 @@
             "value": "SHP, GPKG, GeoJSON, DWG, KML"
           }
         ],
-        "ctaText": "Design GIS Solution",
+        "ctaText": "Get a quote for a GIS project or WebGIS platform",
         "heroStats": [
           {
             "label": "GIS Server",
@@ -1160,15 +1162,15 @@
         "badge": "Law 24/2007 Compliance",
         "title": "Local Registry of Green Spaces (RSV)",
         "subtitle": "Green asset inventory, phytosanitary health assessment, and WebGIS for municipalities",
-        "description": "We build the official Local Registry of Green Spaces compliant with Law 24/2007. Our solution combines field inventory, individual tree health diagnosis, and integration into a municipal WebGIS portal.",
+        "description": "We build the official Local Registry of Green Spaces compliant with Law 24/2007 for Green Space Management. Our solution combines public property GIS digitization, field inventory of vegetation, individual tree health diagnosis, and data integration into a municipal WebGIS portal.",
         "imagePath": "/images/team/SNY09477.jpg",
         "features": [
-          "Inventory of public green zones, parks, and urban vegetation areas",
-          "Individual tree & shrub positioning using centimeter-level GNSS RTK",
+          "Inventory of public green spaces, parks, and urban vegetation areas",
+          "Individual on-site tree & shrub positioning using centimeter-level GNSS RTK or high-resolution orthomosaics",
           "Individual phytosanitary assessment and risk classification for every tree",
           "Technical pruning, maintenance, and preservation recommendations",
           "Statutory calculation of green space square meters per inhabitant",
-          "Public-facing WebGIS interactive map and search portal for citizens"
+          "Public WebGIS interactive map and search portal."
         ],
         "deliverablesHeading": "Complete RSV Package for Municipalities",
         "deliverables": [
@@ -1192,7 +1194,7 @@
             "value": "Public / Private WebGIS"
           }
         ],
-        "ctaText": "Request Municipal RSV Proposal",
+        "ctaText": "Request Municipal RSV quote",
         "heroStats": [
           {
             "label": "Legal Compliance",
@@ -1289,7 +1291,7 @@
         "description": "We provide end-to-end technical assistance for public authorities, real estate developers, and infrastructure contractors. We ensure documentation auditing, institutional representation with ANCPI/OCPI, and resolution of complex cadastral challenges.",
         "imagePath": "/images/team/SNY09458.jpg",
         "features": [
-          "Technical support in preparing tender documents for public procurements",
+          "Technical support in preparing documents for public procurements",
           "Technical auditing of existing cadastral and topographical files",
           "Institutional liaison and representation with ANCPI, OCPI, and Municipalities",
           "Quality control and supervision of systematic land registration projects",
@@ -1429,7 +1431,7 @@
   "faqPage": {
     "badge": "Megagis Help Center",
     "title": "Frequently Asked Questions & Technical Guide",
-    "subtitle": "Transparent answers regarding cadastral procedures, green space inventory, topographical surveys, and GIS solutions for public institutions (B2G) and private clients (B2B).",
+    "subtitle": "Answers regarding cadastral procedures, green space inventory, topographical surveys, and GIS solutions for public institutions (B2G) and private clients (B2B).",
     "searchPlaceholder": "Search by keyword (e.g. PNCCF, Law 24/2007, RTK, land registry, SEAP)...",
     "categoriesLabel": "Solution Areas",
     "allCategoriesTab": "All Categories",
@@ -1488,7 +1490,7 @@
           {
             "id": "cad-3",
             "question": "What are the main stages of a Systematic Cadastre project?",
-            "answer": "A systematic cadastre project managed by Megagis follows 5 rigorous phases: 1) Public information campaign and collection of title deeds; 2) Precision field surveys (GNSS RTK Stereo 70) and boundary identification; 3) GIS data processing and technical document preparation; 4) Public publication of technical documents at the city hall and a 60-day rectification period; 5) Final OCPI reception and Land Registry extract delivery.",
+            "answer": "A systematic cadaster project managed by Megagis follows 5 rigorous phases: 1) Public information campaign and collection of property documents; 2) Precision field surveys (GNSS RTK Stereo 70) and boundary identification; 3) GIS data processing and technical document preparation; 4) Public consultation of technical documents at the city hall and a 60-day rectification period; 5) Final OCPI reception and Land Registry extract delivery.",
             "takeaway": "The process includes field surveys, GIS processing, a 60-day public notice window, and official OCPI registration.",
             "audience": "all",
             "tags": [
@@ -1501,8 +1503,8 @@
           },
           {
             "id": "cad-4",
-            "question": "What happens if area discrepancies or overlaps occur during the public display period?",
-            "answer": "During the official 60-day public display window, any property owner can submit a rectification request. Megagis engineers re-verify field measurements, analyze original title deeds, and perform technical corrections in the spatial database prior to final project closing.",
+            "question": "What happens if area discrepancies or overlaps occur during the public consultation period?",
+            "answer": "During the official 60-day public consultation window, any property owner can submit a rectification request. Megagis engineers re-verify field measurements, analyze original title deeds, and perform technical corrections in the spatial database prior to final project closing.",
             "takeaway": "Discrepancies are resolved free of charge based on rectification requests filed within the 60-day window.",
             "audience": "all",
             "tags": [

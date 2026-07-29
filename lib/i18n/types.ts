@@ -52,6 +52,8 @@ export interface ServicesOverviewDict {
     description: string;
   };
   viewAll: string;
+  viewDetails?: string;
+  viewFullDetails?: string;
 }
 
 export interface ValuePropsDict {

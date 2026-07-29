@@ -190,7 +190,7 @@ export function ServicesOverviewSection({
 
                         {/* CTA Button */}
                         <div className="inline-flex items-center gap-2 md:gap-3 px-4 md:px-6 mb-2 py-2 md:py-3 text-sm md:text-base rounded-md bg-primary-600 text-white font-medium group-hover:bg-primary-700 transition-all duration-300 shadow-md group-hover:shadow-lg">
-                          Vezi Detalii Complete
+                          {dict.viewFullDetails ?? "Vezi Detalii Complete"}
                           <ArrowRight className="h-4 w-4 md:h-5 md:w-5 transition-transform group-hover:translate-x-2" />
                         </div>
                       </div>
@@ -220,7 +220,7 @@ export function ServicesOverviewSection({
 
                       {/* CTA with arrow */}
                       <div className="text-xs tracking-wider uppercase font-semibold flex items-center gap-2 text-slate-500 group-hover:text-primary-600 transition-all duration-300">
-                        Vezi Detalii
+                        {dict.viewDetails ?? "Vezi Detalii"}
                         <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-2" />
                       </div>
                     </div>
