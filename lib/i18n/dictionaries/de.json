@@ -1,0 +1,2936 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "governmentSolutions": "Regierungslösungen",
+    "projects": "Projekte",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title": "Präzision in Kataster und Vermessung",
+    "subtitle": "Professionelle GIS-Lösungen",
+    "description": "Wir sind ein Unternehmen aus Targoviste, zertifiziert nach ANCPI-Klasse I. Wir bieten umfassende Kataster- und Topographiedienstleistungen sowie fortschrittliche GIS-Lösungen in ganz Rumänien.",
+    "primaryCta": "Fordern Sie ein Angebot an",
+    "secondaryCta": "Entdecken Sie Dienstleistungen",
+    "ancpiBadge": "ANCPI-Klasse I",
+    "trustCards": {
+      "ancpi": {
+        "value": "Klasse I",
+        "label": "ANCPI-autorisiert (RO-B-J 2489/2022)"
+      },
+      "projects": {
+        "value": "50+",
+        "label": "Systematische Kataster- und Grünflächenprojekte"
+      },
+      "anre": {
+        "value": "ZURÜCK",
+        "label": "Konformität mit Versorgungsnetzen"
+      },
+      "pnccf": {
+        "value": "100.000+",
+        "label": "Registrierte Immobilien und UATs (PNCCF)"
+      }
+    }
+  },
+  "servicesOverview": {
+    "badge": "Dienstleistungen",
+    "title": "Unsere Fachgebiete",
+    "subtitle": "MEGAGIS SRL ist ein ANCPI-zertifiziertes Unternehmen der Klasse I mit umfangreicher Erfahrung in nationalen Projekten und komplexen Vermessungen",
+    "cadastral": {
+      "title": "Systematisches Kataster (PNCCF)",
+      "description": "Die systematische Grundbucheintragung erfolgt im Rahmen des Nationalen Programms für Kataster und Grundbuchamt und gewährleistet alle notwendigen Schritte für die technische Dokumentation und die kostenlose Eintragung in das Landesgrundbuch.",
+      "features": [
+        "Identifizieren und Erstellen von Aufzeichnungen über Immobilien und Immobilieneigentümer",
+        "Topografische und Katasterfeldvermessungen mit präziser RTK-Positionierung",
+        "Enge Zusammenarbeit mit den lokalen Behörden bei der Identifizierung von Sonderzielen und potenziellen Herausforderungen",
+        "Erstellung technischer Unterlagen und Katasterpläne",
+        "Öffentliche Konsultationsverfahren und die Integration unserer Arbeitsergebnisse in das nationale Register durch das Kataster- und Grundbuchamt (OCPI)"
+      ]
+    },
+    "topography": {
+      "title": "Topographie und Geodäsie",
+      "description": "Hochpräzise topografische Vermessungen mit GNSS-RTK-Geräten und robotischen Totalstationen für verschiedene Anwendungen: Vermessungen, Messungen und Absteckungen für Bauwerke, Straßen und Versorgungsnetze, Lagepläne, Profile und geodätische Stütznetze."
+    },
+    "gis": {
+      "title": "GIS und digitale Kartographie",
+      "description": "Moderne Lösungen für das Geoinformationsmanagement: GIS-Datenbanken, ArcGIS Enterprise-Implementierung, WebGIS, interaktive Karten, Kartendigitalisierung und Multiformat-Datenkonvertierung."
+    },
+    "urbanPlanning": {
+      "title": "Lokales Grünflächenkataster",
+      "description": "Bestandsaufnahme und Management grüner Infrastruktur gemäß der geltenden Gesetzgebung: Vegetations- und Grünflächeninventur, Artenbestimmung, Gesundheits- und Risikobewertung, thematische Karten und statistische Berichte."
+    },
+    "consulting": {
+      "title": "Technische Beratung und Unterstützung",
+      "description": "Spezialisierte technische Unterstützung und Beratung während des gesamten Projekts: Kataster- und Topografieberatung, GIS, Unterstützung der öffentlichen Verwaltung, Dokumentationsprüfung und ANCPI/OCPI-Verbindung."
+    },
+    "viewAll": "Alle Dienste anzeigen",
+    "viewDetails": "Details anzeigen",
+    "viewFullDetails": "Vollständige Details anzeigen"
+  },
+  "softwareShowcase": {
+    "badge": "Technologie & GIS",
+    "title": "Softwareplattformen und Web-GIS-Systeme",
+    "subtitle": "Wir entwickeln und betreiben dedizierte Geodatenanwendungen für das systematische Kataster- und Grünflächenmanagement",
+    "tabs": {
+      "cadastru": {
+        "label": "Systematisches Kataster (PNCCF)",
+        "badge": "Portale UAT / ANCPI",
+        "title": "Web GIS Systematisches Katastersystem und Erstellung von Standort- und Demarkationsplänen (PAD)",
+        "description": "Interaktive kommunale Katasterabfrageplattformen (z. B. Cerăt Municipality) mit sofortiger Suche nach Kataster-ID/IE, Sektorvisualisierung und automatischer Extraktion von Standort- und Demarkationsplänen (PAD).",
+        "features": [
+          "Sofortige Suche nach Katasternummer / elektronischer ID (IE)",
+          "Automatisierte Flächenberechnung und Parzellenabgrenzung",
+          "Direkter Export in offizielle ANCPI-Formate (.xml, .dxf, .shp)",
+          "Hochauflösende Orthophoto-Layer-Integration"
+        ],
+        "cta": "Plattformdemo anfordern"
+      },
+      "rsv": {
+        "label": "Grünflächenkataster (RSV)",
+        "badge": "Konform mit Gesetz 24/2007",
+        "title": "Digitales städtisches Grünflächenregister und pflanzengesundheitliches Inventar",
+        "description": "Umfassende Geodatenlösung für Rathäuser und Gemeindeverwaltungen zur Identifizierung, Klassifizierung und phytosanitären Bewertung städtischer Bäume, Hecken und Grünflächen.",
+        "features": [
+          "Feldmessungen mit hochpräzisem GNSS RTK",
+          "Individuelle Pflanzenschutzakten für jeden Baum",
+          "Nationale Stereo 70-Koordinaten in Echtzeit",
+          "Statistische Berichte und Flächenberechnungen nach Gesetz"
+        ],
+        "cta": "Lösung für Kommunen anzeigen"
+      },
+      "gas": {
+        "label": "Versorgungsnetze und Gas (ANRE)",
+        "badge": "ANRE-Prüfung und Genehmigung",
+        "title": "Vektor-Mapping-Vertriebsnetzwerke",
+        "description": "Topologisches GIS-Aufzeichnungssystem für öffentliche Versorgungsnetze, Erdgaspipelines, Verbindungen und PRM-Stationen, basierend auf MapSys- und ArcGIS-Plattformen.",
+        "features": [
+          "Vollständige Knoten- und Verbindungstopologie (ArcGIS 10.2 / Pro 3.2)",
+          "ANRE/UAT-Entscheidungen und Genehmigungsverfolgung",
+          "Schnittstelle nach Gemeinde, Straße und Zähler filtern",
+          "Integration räumlicher Datenbanken und ArcGIS Enterprise 11.2-Server"
+        ],
+        "cta": "Konsultieren Sie Utility GIS Services"
+      }
+    }
+  },
+  "hardwareEquipment": {
+    "badge": "Technische Ausrüstung",
+    "title": "Feldausrüstung und Technologie",
+    "subtitle": "Wir investieren in hochpräzise Instrumente für millimetergenaue Messungen und Spitzenleistung an jedem Standort",
+    "items": [
+      {
+        "title": "Totalstationen: Leica & Topcon",
+        "category": "Hochpräzise optische Vermessungen",
+        "specs": "Leica TC 805, TCR 1101 DR / TOPCON OS-103 BG",
+        "description": "Wird für hochpräzise optische Vermessungen unter dichten Baumkronen oder in der Nähe von Hochhäusern verwendet, wo das GNSS-Signal behindert ist.",
+        "imagePath": "/images/equipment/topcon-total-station.jpg"
+      },
+      {
+        "title": "GNSS-RTK-Empfänger",
+        "category": "Echtzeit-Satellitenpositionierung",
+        "specs": "TOPCON HiPer HR, GR5, HiPer PRO",
+        "description": "Sofortige Zentimeterpositionierung einzelner Bäume, Grundstücksgrenzen und Kataster-Benchmarks direkt im nationalen Stereo 70-Koordinatensystem.",
+        "imagePath": "/images/equipment/gnss-rtk-rover.jpg"
+      },
+      {
+        "title": "Digitale Wasserwaagen",
+        "category": "Hochpräzise geometrische Nivellierung",
+        "specs": "Digitale Wasserwaage DL-101C",
+        "description": "Hochpräzises Gerät zur Bestimmung von Höhen und Höhen in Tragnetzen und großen Infrastrukturprojekten.",
+        "imagePath": "/images/equipment/survpoint-mini-prism.jpg"
+      }
+    ]
+  },
+  "projectsPartners": {
+    "badge": "Portfolio",
+    "title": "Portfolio und strategische Partner",
+    "subtitle": "Bewährte Ausführung bei Großprojekten für die öffentliche Verwaltung und private Bauträger",
+    "viewAll": "Alle Projekte anzeigen",
+    "categories": {
+      "all": "Alle Projekte",
+      "cadastru": "Systematisches Kataster (PNCCF)",
+      "rsv": "Grünflächenkataster",
+      "utilities": "Versorgungsnetze (ANRE)",
+      "infrastructure": "Infrastrukturarbeiten"
+    },
+    "placeholderNotice": "Die vollständige Liste der institutionellen Partner und begünstigten UATs wird in Kürze aktualisiert.",
+    "items": [
+      {
+        "id": "1",
+        "title": "Systematisches Kataster UAT Balteni",
+        "client": "Gemeinde Balteni",
+        "category": "Kataster",
+        "year": "2024-2026",
+        "location": "Olt",
+        "isTop": true,
+        "logoPath": "/logos/counties/stema_olt.svg",
+        "logoAlt": "Wappen des Kreises Olt"
+      },
+      {
+        "id": "2",
+        "title": "Systematisches Kataster UAT Amarăștii de Jos",
+        "client": "Gemeinde Amaraști de Jos",
+        "category": "Kataster",
+        "year": "2022-2024",
+        "location": "Schulden",
+        "isTop": true,
+        "logoPath": "/logos/counties/stema_dolj.svg",
+        "logoAlt": "Wappen des Kreises Dolj"
+      },
+      {
+        "id": "3",
+        "title": "Systematisches Kataster UAT Poiana Ilvei",
+        "client": "Gemeinde Poiana Ilvei",
+        "category": "Kataster",
+        "year": "2017-2022",
+        "location": "Bistrita-Năsăud",
+        "isTop": true,
+        "logoPath": "/logos/municipalities/bistrita.svg",
+        "logoAlt": "Wappen der Gemeinde Bistrita"
+      },
+      {
+        "id": "4",
+        "title": "Systematisches Kataster UAT Bujoreni",
+        "client": "Gemeinde Bujoreni",
+        "category": "Kataster",
+        "year": "2024-2026",
+        "location": "Vâlcea",
+        "isTop": false,
+        "logoPath": "/logos/counties/stema_valcea.svg",
+        "logoAlt": "Wappen des Landkreises Valcea"
+      },
+      {
+        "id": "5",
+        "title": "Städtisches Grünflächenregister Timisoara",
+        "client": "Gemeinde Timisoara",
+        "category": "RSV",
+        "year": "2023-2025",
+        "location": "Timis",
+        "isTop": true,
+        "logoPath": "/logos/municipalities/timisoara.svg",
+        "logoAlt": "Das Wappen der Gemeinde Timișoara"
+      },
+      {
+        "id": "6",
+        "title": "Städtisches Grünflächenregister Arad",
+        "client": "Gemeinde Arad",
+        "category": "RSV",
+        "year": "2021-2022",
+        "location": "Arad",
+        "isTop": true,
+        "logoPath": "/logos/municipalities/arad.svg",
+        "logoAlt": "Wappen der Gemeinde Arad"
+      },
+      {
+        "id": "7",
+        "title": "Städtisches Grünflächenregister Brașov",
+        "client": "Gemeinde Brașov",
+        "category": "RSV",
+        "year": "2021-2023",
+        "location": "Brasov",
+        "isTop": false,
+        "logoPath": "/logos/municipalities/brasov.svg",
+        "logoAlt": "Wappen der Gemeinde Brașov"
+      },
+      {
+        "id": "8",
+        "title": "Städtisches Grünflächenregister Oradea",
+        "client": "Gemeinde Oradea",
+        "category": "RSV",
+        "year": "2021-2022",
+        "location": "Bihor",
+        "isTop": false,
+        "logoPath": "/logos/municipalities/oradea.svg",
+        "logoAlt": "Wappen der Gemeinde Oradea"
+      },
+      {
+        "id": "9",
+        "title": "Erdgasversorgungsnetze SC Megaconstruct",
+        "client": "SC Megaconstruct SA",
+        "category": "Versorgungsunternehmen",
+        "year": "2015-heute",
+        "location": "Multi-UAT",
+        "isTop": true,
+        "logoPath": "/logos/counties/stema_constanta.png",
+        "logoAlt": "Wappen des Kreises Constanta"
+      },
+      {
+        "id": "10",
+        "title": "Topografische Vermessungen von Versorgungsnetzen",
+        "client": "Gemeinde Ploiesti",
+        "category": "Versorgungsunternehmen",
+        "year": "2021-2024",
+        "location": "Prahova",
+        "isTop": true,
+        "logoPath": "/logos/municipalities/ploiesti.png",
+        "logoAlt": "Wappen der Gemeinde Ploiești"
+      },
+      {
+        "id": "11",
+        "title": "Technische Hilfe für Wasser und Abwasser",
+        "client": "Kreis Ilfov",
+        "category": "Versorgungsunternehmen",
+        "year": "2014-2020",
+        "location": "Ilfov",
+        "isTop": true,
+        "logoPath": "/logos/counties/stema_ilfov.svg",
+        "logoAlt": "Wappen des Kreises Ilfov"
+      },
+      {
+        "id": "12",
+        "title": "Erweiterung des Wasser- und Abwassernetzes",
+        "client": "Arges County",
+        "category": "Versorgungsunternehmen",
+        "year": "2014-2020",
+        "location": "Arges",
+        "isTop": false,
+        "logoPath": "/logos/counties/stema_arges.png",
+        "logoAlt": "Wappen des Kreises Arges"
+      },
+      {
+        "id": "13",
+        "title": "Kataster- und GIS-Karten Natura 2000 Candești",
+        "client": "Rumänische Beratungsagentur",
+        "category": "Infrastruktur",
+        "year": "2015-2018",
+        "location": "Argeș / Dâmbovița",
+        "isTop": false,
+        "logoPath": "/logos/counties/stema_arges.png",
+        "logoAlt": "Wappen des Kreises Arges"
+      },
+      {
+        "id": "14",
+        "title": "Kataster- und GIS-Karten Natura 2000 Cotmeana",
+        "client": "Rumänische Beratungsagentur",
+        "category": "Infrastruktur",
+        "year": "2015-2018",
+        "location": "Arges / Olt",
+        "isTop": false,
+        "logoPath": "/logos/counties/stema_arges.png",
+        "logoAlt": "Wappen des Kreises Arges"
+      },
+      {
+        "id": "15",
+        "title": "Hochpräzise geometrische Nivellierung (±1 mm)",
+        "client": "Infrastrukturkonsortien",
+        "category": "Infrastruktur",
+        "year": "2015-2018",
+        "location": "National",
+        "isTop": false,
+        "logoPath": "/logos/counties/stema_dambovita.svg",
+        "logoAlt": "Wappen des Kreises Dâmbovița"
+      },
+      {
+        "id": "16",
+        "title": "Materialisierung des geodätischen Verdichtungsnetzwerks",
+        "client": "Große Infrastrukturprojekte",
+        "category": "Infrastruktur",
+        "year": "2014-2015",
+        "location": "National",
+        "isTop": false,
+        "logoPath": "/logos/counties/stema_dambovita.svg",
+        "logoAlt": "Wappen des Kreises Dâmbovița"
+      }
+    ]
+  },
+  "valueProps": {
+    "badge": "Hauptvorteile",
+    "title": "Warum sollten Sie sich für uns entscheiden?",
+    "subtitle": "Ihr vertrauenswürdiger Partner für Kataster- und Vermessungsdienstleistungen",
+    "items": {
+      "precision": {
+        "title": "Maximale Präzision",
+        "description": "Für Ergebnisse höchster Qualität nutzen wir modernste Vermessungsgeräte und professionelle Software."
+      },
+      "compliance": {
+        "title": "Einhaltung gesetzlicher Vorschriften",
+        "description": "ANCPI Klasse I zertifiziert (RO-B-J Nr. 2489/2022). ISO 9001, ISO 14001, ISO 27001 zertifiziert für Qualitäts-, Umwelt- und Informationssicherheitsmanagement."
+      },
+      "efficiency": {
+        "title": "Effizienz und Geschwindigkeit",
+        "description": "Optimierte Prozesse für eine zeitnahe Bereitstellung der Dokumentation zu erschwinglichen Kosten, ohne Kompromisse bei der Qualität einzugehen."
+      },
+      "expertise": {
+        "title": "Bewährte Expertise",
+        "description": "Team zertifizierter Spezialisten mit umfangreicher Erfahrung in vielfältigen Projekten. Garantierte maximale Zufriedenheit bestätigt die Qualität unserer Dienstleistungen."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "",
+    "subtitle": "",
+    "items": []
+  },
+  "ctaSection": {
+    "title": "Bereit zum Einstieg?",
+    "description": "Kontaktieren Sie uns noch heute für eine kostenlose Beratung und ein individuelles Angebot für Ihr Projekt.",
+    "primaryButton": "Fordern Sie ein kostenloses Angebot an",
+    "secondaryButton": "Rufen Sie jetzt an",
+    "phoneCard": {
+      "title": "Direktes Telefon",
+      "hours": "Montag - Freitag 09:00 - 18:00 Uhr"
+    },
+    "emailCard": {
+      "title": "E-Mail-Korrespondenz",
+      "response": "Garantierte Antwort innerhalb von 24 Stunden"
+    }
+  },
+  "footer": {
+    "description": "Dynamisches Unternehmen, gegründet 2012, ANCPI-Klasse-I-zertifiziert. Wir bieten professionelle Kataster-, Topografie- und GIS-Dienstleistungen zu erschwinglichen Kosten und mit garantierter maximaler Zufriedenheit.",
+    "services": "Dienstleistungen",
+    "company": "Unternehmen",
+    "contact": "Kontakt",
+    "navigation": {
+      "services": "Dienstleistungen",
+      "about": "Über uns",
+      "projects": "Projekte",
+      "contact": "Kontakt",
+      "faq": "FAQ",
+      "privacy": "Datenschutzrichtlinie",
+      "terms": "Allgemeine Geschäftsbedingungen"
+    },
+    "serviceLinks": {
+      "cadastral": "Systematisches Kataster (PNCCF)",
+      "topography": "Topographie und Geodäsie",
+      "gis": "GIS und digitale Kartographie",
+      "rsv": "Grünflächenkataster (RSV)",
+      "consulting": "Technische Beratung",
+      "governmentSolutions": "Regierungslösungen"
+    },
+    "contactInfo": {
+      "address": "6 Răsăritului St., Târgoviște, Kreis Dâmbovița, Rumänien",
+      "phone": "+40 727 323 869",
+      "email": "office@megagis.ro"
+    },
+    "copyright": "© 2025 Megagis. Alle Rechte vorbehalten."
+  },
+  "common": {
+    "learnMore": "Erfahren Sie mehr",
+    "getStarted": "Erste Schritte",
+    "contactUs": "Kontaktieren Sie uns",
+    "readMore": "Mehr lesen",
+    "seeAll": "Alle anzeigen",
+    "languageSwitch": "RO",
+    "openMenu": "Öffnen Sie das Menü",
+    "closeMenu": "Menü schließen",
+    "mobileNavSubtitle": "Digitale Topographie und Katasterdienste"
+  },
+  "metadata": {
+    "home": {
+      "title": "Megagis | Kataster-, Vermessungs- und GIS-Dienste Rumänien",
+      "description": "Professionelle Kataster-, Grundbuch-, topografische Vermessungs- und GIS-Dienstleistungen für den privaten Sektor und öffentliche Einrichtungen in Rumänien."
+    },
+    "services": {
+      "title": "Dienstleistungen | Megagis",
+      "description": "Entdecken Sie das gesamte Spektrum der von Megagis angebotenen Kataster-, Topografie- und GIS-Dienste."
+    },
+    "about": {
+      "title": "Über uns | Megagis",
+      "description": "Erfahren Sie mehr über das Megagis-Team und unsere Erfahrung im Kataster- und Vermessungswesen."
+    },
+    "contact": {
+      "title": "Kontakt | Megagis",
+      "description": "Kontaktieren Sie uns für eine kostenlose Beratung und ein individuelles Angebot für Ihr Projekt."
+    },
+    "faq": {
+      "title": "FAQ - Häufig gestellte Fragen | Megagis",
+      "description": "Klare und detaillierte Antworten zu systematischem Kataster (PNCCF), Grünflächenregister (RSV), topografischen Vermessungen, GIS und öffentlichem Beschaffungswesen."
+    },
+    "projects": {
+      "title": "Projektportfolio und nationale Erfolgsbilanz | Megagis",
+      "description": "Entdecken Sie das Portfolio von über 60 Großprojekten, die von Megagis SRL durchgeführt wurden: systematisches Kataster (PNCCF), kommunale Grünflächenregister, Versorgungsnetze und Ingenieurtopographie."
+    },
+    "privacy": {
+      "title": "Datenschutzrichtlinie | Megagis",
+      "description": "Datenschutzrichtlinie und Schutz personenbezogener Daten für Megagis-Dienste."
+    },
+    "terms": {
+      "title": "Allgemeine Geschäftsbedingungen | Megagis",
+      "description": "Nutzungsbedingungen für Megagis-Dienste und -Plattform."
+    },
+    "serviceDetails": {
+      "cadastru-sistematic": {
+        "title": "Systematisches Kataster (PNCCF) | Megagis",
+        "description": "Professionelle systematische Grundbucheintragungsdienste für Gemeinden gemäß PNCCF und POR. Zentimeter-RTK-Vermessungen und kostenlose Grundbucheintragung."
+      },
+      "topografie-geodezie": {
+        "title": "Technische Topographie und Geodäsie | Megagis",
+        "description": "Hochpräzise topografische Vermessungen für PUG/PUZ/PAC, Bauabsteckungen, Längsprofile, Strukturüberwachung und GNSS-RTK-Vermessungen."
+      },
+      "gis-cartografie": {
+        "title": "GIS-Systeme und digitale Kartographie | Megagis",
+        "description": "Benutzerdefinierte WebGIS-Plattformen, räumliche PostGIS/Esri-Datenbanken, CAD/GIS-Konvertierung in mehreren Formaten und digitale Kartografie für den öffentlichen und privaten Sektor."
+      },
+      "registrul-spatiilor-verzi": {
+        "title": "Lokales Grünflächenregister (RSV) | Megagis",
+        "description": "Bestandsaufnahme städtischer Grünflächen und Bewertung der Baumgesundheit gemäß Gesetz 24/2007. GNSS-RTK-Kartierung und spezielle WebGIS-Plattform für Kommunen."
+      },
+      "consultanta-tehnica": {
+        "title": "Technische Beratung und ANCPI-Zulassung | Megagis",
+        "description": "Kompetente technische Unterstützung für öffentliche Beschaffung, Katasterprüfungen, Lösung von Landüberschneidungen und offizielle ANCPI/OCPI-Vertretung."
+      }
+    }
+  },
+  "legal": {
+    "terms": {
+      "title": "Allgemeine Geschäftsbedingungen",
+      "lastUpdated": "Letzte Aktualisierung: Juli 2026",
+      "content": [
+        {
+          "heading": "1. Annahme der Bedingungen",
+          "body": "Durch den Zugriff auf und die Nutzung der Website megagis.ro erklären Sie sich mit der Einhaltung dieser Allgemeinen Geschäftsbedingungen einverstanden. Wenn Sie mit irgendeinem Teil dieser Bedingungen nicht einverstanden sind, nutzen Sie unsere Website bitte nicht."
+        },
+        {
+          "heading": "2. Leistungsbeschreibung",
+          "body": "Megagis bietet professionelle Kataster-, topografische und geografische Informationssysteme (GIS) sowie Stadtplanungsdienste sowohl für den öffentlichen Sektor (B2G) als auch für den privaten Sektor (B2B). Die Informationen auf dieser Website dienen Informationszwecken und können ohne vorherige Ankündigung geändert werden."
+        },
+        {
+          "heading": "3. Geistige Eigentumsrechte",
+          "body": "Der gesamte Inhalt dieser Website, einschließlich Text, Grafiken, Logos, Schaltflächen, Bilder und Software, ist Eigentum von Megagis oder seinen Inhaltslieferanten und durch nationale und internationale Urheberrechtsgesetze geschützt."
+        },
+        {
+          "heading": "4. Haftungsbeschränkung",
+          "body": "Megagis haftet nicht für direkte, indirekte, zufällige, besondere oder Folgeschäden, die sich aus der Nutzung oder Unmöglichkeit der Nutzung unserer Website oder unserer Dienste ergeben, selbst wenn Megagis über die Möglichkeit solcher Schäden informiert wurde."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Datenschutzrichtlinie",
+      "lastUpdated": "Letzte Aktualisierung: Juli 2026",
+      "content": [
+        {
+          "heading": "1. Informationssammlung",
+          "body": "Wir sammeln Informationen, wenn Sie Formulare auf unserer Website ausfüllen oder uns per E-Mail oder Telefon kontaktieren. Zu den gesammelten Informationen können Ihr Name, Ihre E-Mail-Adresse, Ihre Telefonnummer und spezifische Details zu Ihrem Projekt gehören."
+        },
+        {
+          "heading": "2. Nutzung der Informationen",
+          "body": "Die von uns gesammelten Informationen werden verwendet, um Ihre Bedürfnisse besser zu verstehen und Ihnen erstklassige Dienstleistungen anzubieten. Dazu gehören: Bereitstellung personalisierter Angebote, Verbesserung unserer Dienstleistungen, Kontaktaufnahme bezüglich Projektaktualisierungen."
+        },
+        {
+          "heading": "3. Datensicherheit",
+          "body": "Wir sind bestrebt, die Sicherheit Ihrer Daten zu gewährleisten. Um unbefugten Zugriff oder unbefugte Offenlegung zu verhindern, haben wir geeignete physische, elektronische und verwaltungstechnische Verfahren zum Schutz der von uns online gesammelten Informationen eingerichtet und sind nach ISO 27001 zertifiziert."
+        },
+        {
+          "heading": "4. Benutzerrechte",
+          "body": "Gemäß der DSGVO-Gesetzgebung (EU-Verordnung 2016/679) haben Sie das Recht, Zugang zu Ihren personenbezogenen Daten, deren Berichtigung oder Löschung, Einschränkung der Verarbeitung oder das Recht, der Verarbeitung zu widersprechen, zu verlangen."
+        }
+      ]
+    }
+  },
+  "contactPage": {
+    "badge": "TECHNISCHES ANGEBOT UND DIREKTEN KONTAKT ANFRAGEN",
+    "title": "Wir sind bereit für Ihr Projekt",
+    "subtitle": "ANCPI-Klasse-I-autorisiertes Team, spezialisiert auf systematisches Kataster, technische Topographie und WebGIS-Geodatensysteme.",
+    "stats": {
+      "experience": {
+        "title": "15 Jahre",
+        "subtitle": "Erfahrung"
+      },
+      "projects": {
+        "title": "500+",
+        "subtitle": "Projekte"
+      },
+      "ancpi": {
+        "title": "ANCPI",
+        "subtitle": "Klasse I"
+      },
+      "response": {
+        "title": "24 Stunden",
+        "subtitle": "Antwort"
+      }
+    },
+    "trustBadge": {
+      "title": "ANCPI-Klasse-I-Autorisierung",
+      "certNumber": "Serie RO-B-J, Nr. 2489/2022",
+      "description": "Offizielle Zertifizierung für Kataster-, Geodäsie- und Kartographiearbeiten auf höchstem technischen Niveau."
+    },
+    "details": {
+      "title": "Direkte Kontaktdaten",
+      "infoTitle": "Kontaktinformationen",
+      "addressLabel": "Adresse des Hauptsitzes",
+      "addressValue": "6 Răsăritului St., Târgoviște, Kreis Dâmbovița, Rumänien",
+      "phoneLabel": "Direktes Telefon",
+      "phoneValue": "+40 727 323 869",
+      "emailLabel": "Offizielle E-Mail",
+      "emailValue": "office@megagis.ro",
+      "hoursLabel": "Arbeitszeiten",
+      "hoursValue": "Montag - Freitag: 08:00 - 17:00",
+      "certLabel": "ANCPI-Autorisierung",
+      "certValue": "Serie RO-B-J, Nr. 2489/2022 (Klasse I)"
+    },
+    "form": {
+      "title": "Technisches Angebot anfordern",
+      "subtitle": "Füllen Sie das untenstehende Formular aus, um eine technische Bewertung und einen kostenlosen Kostenvoranschlag zu erhalten.",
+      "fullNameLabel": "Vollständiger Name",
+      "fullNamePlaceholder": "z.B. John Doe",
+      "orgLabel": "Organisation / Unternehmen / Lokale Behörde (UAT)",
+      "orgPlaceholder": "z.B. Stadtrat von Târgoviște / Build Corp SRL",
+      "emailLabel": "E-Mail-Adresse",
+      "emailPlaceholder": "name@domain.com",
+      "phoneLabel": "Telefonnummer",
+      "phonePlaceholder": "+40 7xx xxx xxx",
+      "serviceLabel": "Gewünschter Service",
+      "servicePlaceholder": "Dienst auswählen...",
+      "serviceOptions": {
+        "cadastru": "Systematisches Kataster (PNCCF)",
+        "topografie": "Topographie und Geodäsie",
+        "gis": "GIS und digitale Kartographie",
+        "rsv": "Grünflächenkataster (RSV)",
+        "consultanta": "Technische Beratung"
+      },
+      "messageLabel": "Nachricht/Projektdetails",
+      "messagePlaceholder": "Beschreiben Sie kurz den Projektumfang, den Standort oder spezifische Anforderungen ...",
+      "submitBtn": "Anfrage senden",
+      "submittingBtn": "Anfrage wird eingereicht...",
+      "successTitle": "Anfrage erfolgreich übermittelt!",
+      "successMessage": "Vielen Dank, dass Sie sich gemeldet haben. Ein MEGAGIS-Spezialist wird Ihre Anfrage prüfen und sich so schnell wie möglich mit Ihnen in Verbindung setzen.",
+      "newQuoteBtn": "Weitere Anfrage senden",
+      "errorRequired": "Dieses Feld ist erforderlich",
+      "errorEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
+    },
+    "map": {
+      "title": "Standort des Hauptsitzes",
+      "locationTitle": "MEGAGIS SRL - Târgoviște-Büro",
+      "address": "Răsăritului Str. 6, Târgoviște, Kreis Dâmbovița",
+      "openInMaps": "In Google Maps öffnen"
+    },
+    "teamSection": {
+      "badge": "UNSER TEAM",
+      "title": "Feldexperten und Geodäten",
+      "description": "Wir investieren kontinuierlich in hochpräzise Messtechnik und technische Teamschulung."
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "badge": "Firmenprofil und technische Expertise",
+      "title": "Digitale Topographie, systematische Kataster- und hochpräzise GIS-Lösungen",
+      "subtitle": "SC MEGAGIS SRL ist ein Unternehmen, das sich auf die Bereitstellung fortschrittlicher Geodatendienste für die öffentliche Verwaltung und den privaten Sektor spezialisiert hat.",
+      "description": "Unser Unternehmen wurde mit der Mission gegründet, Kataster- und Vermessungsprozesse in Rumänien zu digitalisieren und zu rationalisieren. Es kombiniert Erfahrung im Bereich Feldtechnik mit modernen Softwareplattformen und modernster Vermessungsausrüstung."
+    },
+    "stats": [
+      {
+        "value": "15+",
+        "label": "Ausrüstung und Feldfahrzeuge",
+        "description": "Geländewagenflotte und hochpräzise geodätische Leica/Topcon-Instrumente"
+      },
+      {
+        "value": "100 %",
+        "label": "Compliance und Lieferrate",
+        "description": "Pünktliche Lieferung und 100%ige Einhaltung der technischen Spezifikationen"
+      }
+    ],
+    "profile": {
+      "badge": "Identität und rechtliche Anmeldeinformationen",
+      "title": "MEGAGIS SRL – vertrauenswürdiger Partner für Geodatenprojekte",
+      "subtitle": "Bereitstellung umfassender Ingenieur-, Geodäsie-, Kataster- und technischer Beratungsdienste in ganz Rumänien.",
+      "description": [
+        "SC MEGAGIS SRL ist ein rumänisches Ingenieur- und technisches Beratungsunternehmen, das auf systematische Katasterregistrierung (PNCCF), hochpräzise topografische Vermessung, geografische Informationssysteme (GIS) und lokale Grünflächenregister spezialisiert ist.",
+        "Das Unternehmen verfügt über die technischen und personellen Ressourcen, die in der Lage sind, große nationale Projekte zu verwalten, von der Kartierung ganzer Verwaltungsgebietseinheiten (UAT) bis hin zur Vektorisierung städtischer Versorgungsnetze."
+      ],
+      "highlightTitle": "Qualitätssicherung und problemlose Lieferung",
+      "highlightDescription": "Mit der ANCPI-Klasse-I-Genehmigung unterliegen unsere systematischen Kataster- und Topographieprojekte strengen technischen Überprüfungsprozessen und halten gleichzeitig Lieferfristen und Begünstigtenspezifikationen ein.",
+      "legalStatus": "STATUS: AKTIV / ANCPI AUTORISIERT",
+      "legalDetailsTitle": "Firmenidentifikationsdaten",
+      "legalDetails": {
+        "companyNameLabel": "Offizieller Name",
+        "companyName": "SC MEGAGIS SRL",
+        "cuiLabel": "Steuerregistrierungscode (CUI)",
+        "cui": "RO 29574826",
+        "regComLabel": "Handelsregister-Nr.",
+        "regCom": "J2012000044153",
+        "caenLabel": "Haupt-CAEN-Code",
+        "caen": "7112 – Ingenieurtätigkeiten und damit verbundene technische Beratung",
+        "ancpiLabel": "Autorisierung",
+        "ancpi": "Serie RO-B-J, Nr. 2489/2022",
+        "addressLabel": "Eingetragener Firmensitz",
+        "address": "Str. Răsăritului nr. 6, Târgoviște, Kreis Dâmbovița, Rumänien",
+        "phoneLabel": "Kontakttelefon",
+        "phone": "+40 727 323 869",
+        "emailLabel": "Offizielle E-Mail",
+        "email": "office@megagis.ro"
+      }
+    },
+    "certifications": {
+      "badge": "Standards und Zertifizierungen",
+      "title": "Zertifizierte Qualität auf nationaler und internationaler Ebene",
+      "subtitle": "Wir arbeiten nach den strengsten Standards für Qualität, Umweltmanagement und Informationssicherheit.",
+      "items": [
+        {
+          "code": "KLASSE I",
+          "name": "Zulassung der Klasse I",
+          "issuer": "Nationale Agentur für Kataster- und Grundbucheintragung",
+          "description": "Serie RO-B-J Nr. 2489/2022 – Die höchste Genehmigungsstufe in Rumänien, die die Durchführung aller geodätischen, katastralen und kartografischen Projekte ohne Oberflächenbeschränkungen ermöglicht.",
+          "highlight": true
+        },
+        {
+          "code": "ISO 9001",
+          "name": "Qualitätsmanagementsystem",
+          "issuer": "Systema-Zertifizierungen / ISO 9001:2015",
+          "description": "Garantiert interne Prozessgenauigkeit, zweistufige Messdatenvalidierung und Kundenzufriedenheit für Kunden aus dem öffentlichen und privaten Sektor."
+        },
+        {
+          "code": "ISO 14001",
+          "name": "Umweltmanagement",
+          "issuer": "Systema-Zertifizierungen / ISO 14001:2015",
+          "description": "Bescheinigt unsere Umweltverantwortung bei Feldeinsätzen und den nachhaltigen Einsatz von Technologieressourcen."
+        },
+        {
+          "code": "ISO 27001",
+          "name": "Informationssicherheit",
+          "issuer": "Systema-Zertifizierungen / ISO/IEC 27001:2013",
+          "description": "Gewährleistet strikten Schutz und Vertraulichkeit von Geodaten, Grundstücksaufzeichnungen und verwalteten GIS-Geodatenbanken."
+        }
+      ]
+    },
+    "equipment": {
+      "badge": "Technische Ausrüstung und Software",
+      "title": "Geodätische Ausrüstung und Software-Suite der nächsten Generation",
+      "subtitle": "Messpräzision durch Leica- und Topcon-Hardware sowie professionelle Geodaten-Softwareplattformen (Seite 34, offizielle technische Präsentation).",
+      "categories": {
+        "totalStations": {
+          "title": "Totalstationen (robotisch und optisch)",
+          "items": [
+            "Leica TC 805 ultra",
+            "Leica TCR 1101 DR",
+            "TOPCON GPT 7005I",
+            "TOPCON OS-103 BG"
+          ]
+        },
+        "gnssGps": {
+          "title": "GNSS / GPS RTK-Systeme",
+          "items": [
+            "TOPCON HiPer HR",
+            "TOPCON GR5",
+            "TOPCON HiPer PRO"
+          ]
+        },
+        "digitalLevel": {
+          "title": "Hochpräzises digitales Nivellieren",
+          "items": [
+            "Topcon DL-101C Digitale Wasserwaage"
+          ]
+        },
+        "software": {
+          "title": "Geodaten- und CAD-Software",
+          "items": [
+            "ArcGIS Pro Standard 3.2",
+            "ArcGIS Enterprise 11.2",
+            "MapSys 10.0",
+            "TopoLT + ProfLT",
+            "Magnetfeld / Büro",
+            "AutoCAD LT",
+            "DocCad"
+          ]
+        },
+        "fleet": {
+          "title": "Geländewagenflotte",
+          "items": [
+            "Dacia Duster",
+            "Dacia Jogger",
+            "Dacia Logan MCV",
+            "Dacia Dokker",
+            "Ford Kuga",
+            "Ford Focus",
+            "Ford Mondeo"
+          ]
+        }
+      }
+    },
+    "teamGallery": {
+      "badge": "Team- und Feldarbeit",
+      "title": "Feldoperationen und technisches Fachwissen in Aktion",
+      "subtitle": "Unser Team aus zertifizierten Ingenieuren führt millimetergenaue Feldmessungen und fortschrittliche Büroverarbeitung durch.",
+      "images": [
+        {
+          "src": "/images/team/SNY09445.jpg",
+          "title": "Feld-GNSS-RTK-Vermessung",
+          "category": "Kataster & Topographie",
+          "description": "Koordinatenbestimmung in der nationalen Stereo 70-Projektion mittels Multikonstellations-Satellitenempfang."
+        },
+        {
+          "src": "/images/team/SNY09447.jpg",
+          "title": "Betriebseinrichtung der Totalstation",
+          "category": "Millimetergenauigkeit",
+          "description": "Optische Kalibrierung und geodätische Referenzkontrollausrichtung für Infrastrukturprojekte."
+        },
+        {
+          "src": "/images/team/SNY09452.jpg",
+          "title": "Detaillierte topografische Vermessung",
+          "category": "Lagepläne",
+          "description": "Felddatenerfassung zur Grenzkartierung und Querschnittsprofilerstellung."
+        },
+        {
+          "src": "/images/team/SNY09470.jpg",
+          "title": "GIS-Verarbeitung und Kartografie",
+          "category": "Geodatenbanken",
+          "description": "Vektorisierung, topologische Validierung und Vorbereitung von XML-Dateien entsprechend den technischen Anforderungen."
+        },
+        {
+          "src": "/images/team/SNY09477.jpg",
+          "title": "MEGAGIS-Feldvermessungsteam",
+          "category": "Geodätische Ingenieurwissenschaften",
+          "description": "Lizenzierte Spezialisten, die für den schnellen Einsatz in jeder Region Rumäniens bereit sind."
+        },
+        {
+          "src": "/images/team/SNY09458.jpg",
+          "title": "Lokales geodätisches Kontrollnetzwerk",
+          "category": "Angewandte Geodäsie",
+          "description": "Einrichtung von Bodenkontrollpunkten im Zusammenhang mit nationalen geodätischen Benchmarks."
+        }
+      ]
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "badge": "ANCPI Klasse I zertifiziert · ISO 9001/27001",
+      "title": "Technische Kataster-, Topographie- und GIS-Lösungen",
+      "subtitle": "Integriertes Geodatendienst-Portfolio",
+      "description": "Von groß angelegten systematischen Landregistrierungsprojekten (PNCCF/POR) und hochpräziser GNSS-Vermessung bis hin zu maßgeschneiderten WebGIS-Systemen und lokalen Grünflächenregistern gemäß Gesetz 24/2007.",
+      "stats": [
+        {
+          "label": "Katastergemeinden (UAT)",
+          "value": "15+"
+        }
+      ]
+    },
+    "navigation": {
+      "cadastral": "Systematisches Kataster (PNCCF)",
+      "topography": "Topographie und Geodäsie",
+      "gis": "GIS und digitale Kartierung",
+      "rsv": "Grünflächenregister",
+      "consulting": "Technische Beratung"
+    },
+    "categories": {
+      "cadastral": {
+        "id": "Katastersystematik",
+        "badge": "Nationale PNCCF/POR-Projekte",
+        "title": "Systematisches Kataster und kostenlose nationale Grundbucheintragung",
+        "subtitle": "End-to-End-Management der systematischen Grundbucheintragung auf Gemeinde- oder Sektorebene",
+        "description": "Wir führen systematische Grundbucheintragungen im Rahmen des Nationalen Kataster- und Grundbuchprogramms (PNCCF) und POR durch. Wir kümmern uns um die Identifizierung von Grundstücken und Eigentümern, die Vermessung vor Ort, die technische Dokumentation und die kostenlose Grundbucheintragung.",
+        "imagePath": "/images/team/SNY09445.jpg",
+        "features": [
+          "Identifizierung und Inventarisierung von Grundstücken, Gebäuden und rechtmäßigen Eigentümern",
+          "Katastervermessung vor Ort mit zentimetergenauen RTK-GNSS-Empfängern",
+          "Erstellung von Katasterkarten, Lageplänen und Liegenschaftsdatendateien",
+          "Direkte Zusammenarbeit und Unterstützung mit lokalen Landkommissionen",
+          "Öffentliche Konsultation der technischen Dokumentation und Lösung von Eigentümerbeschwerden"
+        ],
+        "deliverablesHeading": "Technische Leistungen und Dokumentation",
+        "deliverables": [
+          "Allgemeine und sektorale Katasterkarten",
+          "Grundstücksdateien, Katasterregister und Flurstücksindexlisten",
+          "Geodatendatenbank formatiert nach ANCPI DocCad (.xml)",
+          "Kostenlose Lieferung von Grundbuchauszügen an Immobilieneigentümer"
+        ],
+        "specsHeading": "Spezifikationen und Zertifizierungen",
+        "specs": [
+          {
+            "label": "Zertifizierung",
+            "value": "ANCPI-Klasse I"
+          },
+          {
+            "label": "Compliance",
+            "value": "DocCad ANCPI / E-Terra"
+          },
+          {
+            "label": "Koordinatengitter",
+            "value": "Stereo 70 / Schwarzes Meer 1975"
+          }
+        ],
+        "ctaText": "Fordern Sie ein Angebot für systematische Kataster an",
+        "heroStats": [
+          {
+            "label": "Registrierte Immobilien",
+            "value": "50.000+"
+          },
+          {
+            "label": "Abgeschlossene Gemeinden",
+            "value": "15+"
+          },
+          {
+            "label": "GNSS-Präzision",
+            "value": "±1 cm"
+          },
+          {
+            "label": "ANCPI-Konformität",
+            "value": "100 %"
+          }
+        ],
+        "bentoFeatures": [
+          {
+            "title": "Immobilienidentifizierung und Inventarisierung",
+            "description": "Feldscan, Sammlung von Eigentumsurkunden und direkte Zusammenarbeit mit örtlichen Landkommissionen.",
+            "badge": "Feld- und Titelprüfung",
+            "colSpan": "col-span-1 md:col-span-2"
+          },
+          {
+            "title": "Zentimeter-RTK-GNSS-Vermessungen",
+            "description": "Verwendung von Zweifrequenzgeräten von Leica und Topcon, die an das nationale ROMPOS-Netzwerk angeschlossen sind.",
+            "badge": "GNSS RTK",
+            "colSpan": "col-span-1"
+          },
+          {
+            "title": "DocCad XML-Geodatenbanken",
+            "description": "Automatisierte Generierung von Geodaten- und Attributdateien, die gemäß den technischen Spezifikationen von ANCPI strukturiert sind.",
+            "badge": "Bereit für E-Terra",
+            "colSpan": "col-span-1"
+          },
+          {
+            "title": "Veröffentlichung und Einspruchslösung",
+            "description": "Öffentliche Veröffentlichung in Gemeindeämtern, Entgegennahme von Berichtigungsanfragen und Klärung von Unstimmigkeiten vor Ort.",
+            "badge": "Rechtliche Werbung",
+            "colSpan": "col-span-1 md:col-span-2"
+          }
+        ],
+        "workflowHeading": "Engineering-Workflow und Ausführungsschritte",
+        "workflow": [
+          {
+            "step": "01",
+            "title": "Vorbereitung und öffentliche Information",
+            "description": "Abgrenzung des Katastersektors, Information der Grundstückseigentümer und Bildung eines gemeinsamen Teams mit Gemeindebeamten."
+          },
+          {
+            "step": "02",
+            "title": "Topografische Felduntersuchungen",
+            "description": "Kartierung von Grundstücksgrenzen, Zäunen und Gebäuden mithilfe zentimetergenauer GNSS-RTK-Empfänger."
+          },
+          {
+            "step": "03",
+            "title": "Datenverarbeitung und DocCad-XML-Generierung",
+            "description": "Erstellen von Katasterkarten, Liegenschaftsblättern, Indexdateien und ANCPI DocCad XML-Datenbanken."
+          },
+          {
+            "step": "04",
+            "title": "Öffentliche Ausstellung und Bearbeitung von Einsprüchen",
+            "description": "Anzeige der technischen Dokumentation für 60 Tage und Klärung von Schadensersatzansprüchen des Eigentümers."
+          },
+          {
+            "step": "05",
+            "title": "Eröffnung des Grundbuchamtes und Übergabe des Eigentumstitels",
+            "description": "Kostenlose Eröffnung von Grundbucheinträgen und Zustellung von Grundbuchbescheinigungen an Eigentümer."
+          }
+        ],
+        "useCasesHeading": "Zielgruppe und Anwendungsfälle",
+        "useCases": {
+          "b2gTitle": "Öffentlicher Sektor (B2G)",
+          "b2gItems": [
+            "Kommunen und UATs, die nationale systematische PNCCF/POR-Registrierungsverträge abschließen",
+            "Bezirksräte definieren öffentliche und private Verwaltungsdomänengrenzen",
+            "Lokale Landkommissionen für die Landverteilung und Besitzeintragung"
+          ],
+          "b2bTitle": "Privatsektor (B2B)",
+          "b2bItems": [
+            "Immobilienentwickler erwerben große landwirtschaftliche Parzellen",
+            "Unternehmen für erneuerbare Energien (Photovoltaik- und Windparkentwicklungen)",
+            "Agrarproduzenten benötigen zur Konsolidierung eindeutige Landtitel"
+          ]
+        }
+      },
+      "topography": {
+        "id": "topografie-geodäzie",
+        "badge": "Optische und GNSS-RTK-Vermessungen",
+        "title": "Topographie auf technischem Niveau und hochpräzise geodätische Vermessung",
+        "subtitle": "Topografische Vermessungen, Bauplanung, Profile und Verformungsüberwachung",
+        "description": "Wir liefern hochpräzise topografische und geodätische Dienstleistungen auf technischem Niveau für zivile Infrastruktur- und Industrieprojekte unter Verwendung robotischer Totalstationen (Leica/Topcon) und Zweifrequenz-GNSS-Empfängern für eine Genauigkeit im Subzentimeterbereich.",
+        "imagePath": "/images/team/SNY09449.jpg",
+        "secondaryImage": "/images/equipment/topcon-total-station.jpg",
+        "features": [
+          "Hochpräzise topografische Vermessungen für Lagepläne (PUG / PUZ / PAC)",
+          "GNSS-RTK-Vermessungen mit Anschluss an das nationale permanente Referenznetzwerk ROMPOS",
+          "Festlegung von Bauachsen, Rasterpunkten, Grundstücksgrenzen und Versorgungsleitungen",
+          "Längs- und Querschnittsprofile für Straßen, Schienen und Wasserläufe",
+          "Überwachung von Gebäudeverschiebungen und Strukturverformungen im Zeitverlauf",
+          "Bathymetrische Untersuchungen und topografische Kartierung von Flussbetten"
+        ],
+        "deliverablesHeading": "Topografische Ergebnisse",
+        "deliverables": [
+          "Digitale Lagepläne überprüft und genehmigt von OCPI",
+          "Vektor-CAD-Dateien (DWG/DXF) und digitale 3D-Geländemodelle (DTM/TIN)",
+          "Längs- und Querschnitts-Geländeprofile",
+          "Absteckungszertifikate und geodätische Präzisionsberichte"
+        ],
+        "specsHeading": "Feldausrüstung",
+        "specs": [
+          {
+            "label": "GPS-Empfänger",
+            "value": "Topcon HiPer HR / GR-5"
+          },
+          {
+            "label": "Totalstationen",
+            "value": "Topcon OS-103 BG / Leica TCR"
+          },
+          {
+            "label": "RTK-Genauigkeit",
+            "value": "±8mm Horiz. / ±15mm vertikal"
+          }
+        ],
+        "ctaText": "Fordern Sie eine topografische Vermessung an",
+        "heroStats": [
+          {
+            "label": "Instrumentenpräzision",
+            "value": "±1 mm"
+          },
+          {
+            "label": "ROMPOS-Netzwerk",
+            "value": "Zweifrequenz"
+          },
+          {
+            "label": "Von der OCPI genehmigte Pläne",
+            "value": "1.000+"
+          },
+          {
+            "label": "Leica/Topcon Optics",
+            "value": "100 % Roboter"
+          }
+        ],
+        "bentoFeatures": [
+          {
+            "title": "Topografische Vermessungen für PUG/PUZ/PAC",
+            "description": "Erstellung digitaler Lagepläne, die für Baugenehmigungen und städtebauliche Genehmigungen erforderlich sind.",
+            "badge": "OCPI-Zulassung",
+            "colSpan": "col-span-1 md:col-span-2"
+          },
+          {
+            "title": "Längs- und Querschnittsprofile",
+            "description": "Hochpräzise Höhenprofilierung für Straßen, Brücken und Versorgungsleitungen.",
+            "badge": "Infrastruktur",
+            "colSpan": "col-span-1"
+          },
+          {
+            "title": "Konstruktionsachsen- und Rasterabsteckung",
+            "description": "Kontinuierliche Unterstützung vor Ort, Achsenausrichtung, Fundamentabsteckung und Grundstücksgrenzenlayout.",
+            "badge": "Baustelle",
+            "colSpan": "col-span-1"
+          },
+          {
+            "title": "Strukturelle Verformungs- und Bewegungsüberwachung",
+            "description": "Verfolgung von Mikroverschiebungen und Gebäudesetzungen im Laufe der Zeit mithilfe hochpräziser Nivellierung.",
+            "badge": "Stabilitätsüberwachung",
+            "colSpan": "col-span-1 md:col-span-2"
+          }
+        ],
+        "workflowHeading": "Topografischer Engineering-Workflow",
+        "workflow": [
+          {
+            "step": "01",
+            "title": "Dokumentationsprüfung und ROMPOS-Einrichtung",
+            "description": "Überprüfung bestehender geodätischer Punkte und Kalibrierung von GNSS-Empfängern auf nationale Referenznetze."
+          },
+          {
+            "step": "02",
+            "title": "Optische und RTK-Datenerfassung",
+            "description": "Vor-Ort-Messungen mit robotischen Totalstationen und Dualfrequenz-GNSS-Empfängern."
+          },
+          {
+            "step": "03",
+            "title": "CAD-Verarbeitung und 3D-Geländemodellierung",
+            "description": "Zusammenstellen von Felddaten, Generieren von 3D-Geländeoberflächenmodellen (TIN/DTM) und Bereinigung von Bruchkanten."
+          },
+          {
+            "step": "04",
+            "title": "Qualitätskontrolle und geodätische Toleranzen",
+            "description": "Überprüfung von Schließungen anhand von Kontrollpunkten und Bestätigung gesetzlicher Präzisionsschwellenwerte."
+          },
+          {
+            "step": "05",
+            "title": "OCPI-Genehmigung und endgültige Lieferung",
+            "description": "Übermittlung der Dokumentation an OCPI und Bereitstellung verifizierter DWG-/PDF-Dateien."
+          }
+        ],
+        "useCasesHeading": "Topografische Anwendungsfälle (B2G & B2B)",
+        "useCases": {
+          "b2gTitle": "Öffentlicher Sektor (B2G)",
+          "b2gItems": [
+            "Infrastruktur und nationale/regionale Straßenbehörden",
+            "Regionale Wasser- und Abwasserversorger",
+            "Stadträte entwickeln städtebauliche Masterpläne (PUG/PUZ)"
+          ],
+          "b2bTitle": "Privatsektor (B2B)",
+          "b2bItems": [
+            "Allgemeine Bauunternehmer (Rasterplanung und Höhenkontrolle)",
+            "Architektur- und Bauingenieurbüros",
+            "Private Grundstückseigentümer benötigen eine genaue Grenzüberprüfung"
+          ]
+        }
+      },
+      "gis": {
+        "id": "GIS-Kartografie",
+        "badge": "Unternehmens-WebGIS und Geodaten",
+        "title": "GIS-Systeme und digitale Kartographie",
+        "subtitle": "Räumliches Datenbankdesign, ArcGIS Enterprise-Server und Multiformatkonvertierung",
+        "description": "Wir entwerfen und implementieren WebGIS-Plattformen für Kommunen, öffentliche Infrastrukturunternehmen und Entwicklungsprojekte. Unsere Lösungen integrieren und kombinieren räumliche Datenbanken, interaktive WebGIS-Karten und automatisierte Datenkonvertierungsdienste.",
+        "imagePath": "/images/team/SNY09470.jpg",
+        "features": [
+          "Design und Verwaltung der ArcGIS Enterprise 11.2-Serverarchitektur",
+          "Erstellung einer räumlichen Geodatenbank (PostGIS, Esri File GDB)",
+          "Digitale Kartographie, Digitalisierung historischer Karten und Georeferenzierung",
+          "Multiformat-Geodatenkonvertierung: CAD (DWG/DXF) <-> GIS (SHP/GPKG/GeoJSON)",
+          "Benutzerdefinierte WebGIS-Portalentwicklung mit interaktiven Dashboards",
+          "Topologiegenerierung und Korrektur von Topologiefehlern zwischen verschiedenen räumlichen Datensätzen: Strom-, Abwasser-, Erdgas- oder Wassernetze usw."
+        ],
+        "deliverablesHeading": "GIS-Komponenten und -Leistungen",
+        "deliverables": [
+          "Benutzerdefinierte WebGIS-Portale mit detaillierten rollenbasierten Berechtigungen",
+          "Strukturierte räumliche Geodatenbanken, die den ANCPI-/ANRE-Standards entsprechen",
+          "OGC-Standard-Webkartendienste (WMS / WFS / Vektorkacheln)",
+          "Räumliche Analyseberichte und Tools zur Überlappungserkennung"
+        ],
+        "specsHeading": "Kerntechnologie-Stack",
+        "specs": [
+          {
+            "label": "Serverplattform",
+            "value": "ArcGIS Enterprise 11.2"
+          },
+          {
+            "label": "Desktop-GIS",
+            "value": "ArcGIS Pro 3.2 / MapSys 10"
+          },
+          {
+            "label": "Exportformate",
+            "value": "SHP, GPKG, GeoJSON, DWG, KML"
+          }
+        ],
+        "ctaText": "Holen Sie sich ein Angebot für ein GIS-Projekt oder eine WebGIS-Plattform",
+        "heroStats": [
+          {
+            "label": "GIS-Server",
+            "value": "ArcGIS Enterprise 11"
+          },
+          {
+            "label": "Datenbanken",
+            "value": "PostGIS / FileGDB"
+          },
+          {
+            "label": "Exportformate",
+            "value": "SHP/DWG/GeoJSON"
+          },
+          {
+            "label": "Systemverfügbarkeit",
+            "value": "99,9 %"
+          }
+        ],
+        "bentoFeatures": [
+          {
+            "title": "WebGIS-Portale und interaktive Dashboards",
+            "description": "Entwicklung sicherer Geoportale mit granularen Benutzerrollen und interaktiven Webkarten.",
+            "badge": "Benutzerdefiniertes WebGIS",
+            "colSpan": "col-span-1 md:col-span-2"
+          },
+          {
+            "title": "Multiformat-CAD <-> GIS-Konvertierung",
+            "description": "Bidirektionale Datenmigration zwischen CAD-Dateien (DWG, DXF) und räumlichen Geodatenbanken (SHP, GPKG).",
+            "badge": "ETL-Interoperabilität",
+            "colSpan": "col-span-1"
+          },
+          {
+            "title": "Digitale Kartographie und Plandigitalisierung",
+            "description": "Georeferenzierung historischer Karten, Orthofotos und hochpräzise Vektordigitalisierung.",
+            "badge": "Kartografische Digitalisierung",
+            "colSpan": "col-span-1"
+          },
+          {
+            "title": "Smart-Utility-Netzwerktopologie",
+            "description": "Räumliche Modellierung und Erstellung sauberer Topologien für die Wasser-, Gas-, Strom- und Abwasserinfrastruktur.",
+            "badge": "Intelligentes Versorgungs-GIS",
+            "colSpan": "col-span-1 md:col-span-2"
+          }
+        ],
+        "workflowHeading": "GIS-Architektur und Implementierungsprozess",
+        "workflow": [
+          {
+            "step": "01",
+            "title": "Anforderungen und Datenschema-Design",
+            "description": "Definieren des räumlichen Datenmodells, der Feature-Classes, der Domänen und der Attributstrukturen."
+          },
+          {
+            "step": "02",
+            "title": "Datendigitalisierung und -konvertierung",
+            "description": "Vektorisieren von Papierkarten, Georeferenzieren von Rasterebenen und Konvertieren von CAD in das Geodatabase-Format."
+          },
+          {
+            "step": "03",
+            "title": "Topologievalidierung und Qualitätsregeln",
+            "description": "Durchführung automatisierter Integritätstests (dürfen sich nicht überschneiden, dürfen keine Lücken aufweisen)."
+          },
+          {
+            "step": "04",
+            "title": "Bereitstellung von WebGIS-Portalen und OGC-Diensten",
+            "description": "Veröffentlichen von OGC-kompatiblen Webdiensten (WMS/WFS) und Konfigurieren interaktiver Dashboards."
+          },
+          {
+            "step": "05",
+            "title": "Mitarbeiterschulung und fortlaufende Unterstützung",
+            "description": "Bereitstellung von Verwaltungsdokumentationen und Schulung des Benutzerpersonals."
+          }
+        ],
+        "useCasesHeading": "WebGIS und Geodatenanwendungen",
+        "useCases": {
+          "b2gTitle": "Öffentlicher Sektor (B2G)",
+          "b2gItems": [
+            "Städtische Stadtplanungs- und Katasterabteilungen",
+            "Einheiten für öffentliches Vermögens- und Infrastrukturmanagement",
+            "Öffentliche WebGIS-Portale für Bürgerbeteiligung und Transparenz"
+          ],
+          "b2bTitle": "Privatsektor (B2B)",
+          "b2bItems": [
+            "Betreiber von Versorgungsnetzen (Wasser, Gas, Strom, Telekommunikation)",
+            "Entwickler von Industrie- und Logistikparks",
+            "Bergbau- und Rohstoffexplorationsunternehmen"
+          ]
+        }
+      },
+      "rsv": {
+        "id": "Grünflächenverzeichnis",
+        "badge": "Einhaltung des Gesetzes 24/2007",
+        "title": "Örtliches Grünflächenkataster (RSV)",
+        "subtitle": "Bestandsaufnahme grüner Vermögenswerte, pflanzengesundheitliche Gesundheitsbewertung und WebGIS für Kommunen",
+        "description": "Wir erstellen das offizielle lokale Grünflächenregister gemäß dem Gesetz 24/2007 für Grünflächenmanagement. Unsere Lösung kombiniert die GIS-Digitalisierung von öffentlichem Eigentum, Feldbestandsaufnahme der Vegetation, individuelle Baumgesundheitsdiagnose und Datenintegration in ein kommunales WebGIS-Portal.",
+        "imagePath": "/images/team/SNY09477.jpg",
+        "features": [
+          "Bestandsaufnahme öffentlicher Grünflächen, Parks und städtischer Vegetationsflächen",
+          "Individuelle Baum- und Strauchpositionierung vor Ort mittels zentimetergenauem GNSS RTK oder hochauflösenden Orthomosaiken",
+          "Individuelle pflanzengesundheitliche Beurteilung und Risikoklassifizierung für jeden Baum",
+          "Technische Schnitt-, Wartungs- und Konservierungsempfehlungen",
+          "Gesetzliche Berechnung der Grünflächenquadratmeter pro Einwohner",
+          "Öffentliches interaktives WebGIS-Karten- und Suchportal."
+        ],
+        "deliverablesHeading": "Komplettes RSV-Paket für Kommunen",
+        "deliverables": [
+          "Offizielles technisches Register in physischer und digitaler Form (Gesetz 24/2007)",
+          "Individuelle phytosanitäre Inspektionsblätter für inventarisierte Bäume",
+          "Thematische GIS-Karten und städtischer Grünflächenatlas",
+          "Öffentliche und private WebGIS-Plattform für Verwaltung und Bürgersuche"
+        ],
+        "specsHeading": "Nachgewiesene Erfolgsbilanz",
+        "specs": [
+          {
+            "label": "Referenzprojekte",
+            "value": "Brașov, Timisoara, Ploiesti"
+          },
+          {
+            "label": "Pflanzengesundheitsstandard",
+            "value": "Individueller Baumgesundheitsindex"
+          },
+          {
+            "label": "Visualisierungs-Engine",
+            "value": "Öffentliches / privates WebGIS"
+          }
+        ],
+        "ctaText": "Fordern Sie ein kommunales RSV-Angebot an",
+        "heroStats": [
+          {
+            "label": "Einhaltung gesetzlicher Vorschriften",
+            "value": "Gesetz 24/2007"
+          },
+          {
+            "label": "Baumpositionierung",
+            "value": "Zentimeter RTK"
+          },
+          {
+            "label": "Pflanzengesundheitsaudit",
+            "value": "100 % Bäume"
+          },
+          {
+            "label": "Öffentliches WebGIS",
+            "value": "Im Lieferumfang enthalten"
+          }
+        ],
+        "bentoFeatures": [
+          {
+            "title": "Dendrologische Feldinventur",
+            "description": "GPS-RTK-Positionierung jedes einzelnen Baumes, Messung des Kronen-/Stammdurchmessers und Identifizierung der Art.",
+            "badge": "RTK-Mapping",
+            "colSpan": "col-span-1 md:col-span-2"
+          },
+          {
+            "title": "Pflanzengesundheits- und Gesundheitsbewertung",
+            "description": "Diagnose von Fäulnis, Hohlräumen, Schädlingsschäden und Kategorisierung mechanischer Risikostufen.",
+            "badge": "Baumgesundheitsaudit",
+            "colSpan": "col-span-1"
+          },
+          {
+            "title": "Berechnung der Grünfläche pro Kopf",
+            "description": "Berechnung von Umweltbenchmarks gemäß EU-Richtlinien und nationalem Gesetz 24/2007.",
+            "badge": "Öko-Kennzahlen",
+            "colSpan": "col-span-1"
+          },
+          {
+            "title": "Dedizierte RSV-WebGIS-Plattform",
+            "description": "Online-Verwaltungssystem mit Suche nach Baum-ID, Art, Grünzone und Schnittpflegeprotokollen.",
+            "badge": "RSV-WebGIS",
+            "colSpan": "col-span-1 md:col-span-2"
+          }
+        ],
+        "workflowHeading": "Arbeitsablauf bei der Grünflächenregistrierung",
+        "workflow": [
+          {
+            "step": "01",
+            "title": "Abgrenzung des Parks und der Grünzone",
+            "description": "Feldkartierung städtischer Grünflächengrenzen innerhalb der Gemeindegrenzen."
+          },
+          {
+            "step": "02",
+            "title": "Feldvermessung und RTK-Protokollierung",
+            "description": "Erfassung exakter Baumstandorte und Ausfüllen elektronischer dendrologischer Datenblätter."
+          },
+          {
+            "step": "03",
+            "title": "Pflanzengesundheitliche Analyse und Empfehlungen",
+            "description": "Beurteilung der strukturellen Gesundheit und Empfehlung von Beschneidungs- oder Sicherheitsentfernungsmaßnahmen."
+          },
+          {
+            "step": "04",
+            "title": "Produktion von physischen Registern und Kartenatlas",
+            "description": "Zusammenstellung von gedruckten Verzeichnissen und kartografischen Kartenatlanten nach Grünflächenkategorien."
+          },
+          {
+            "step": "05",
+            "title": "Start des WebGIS RSV-Portals",
+            "description": "Bereitstellung der Datenbank im öffentlichen Portal der Gemeinde und Schulung des Personals."
+          }
+        ],
+        "useCasesHeading": "Interessengruppen des Grünflächenregisters",
+        "useCases": {
+          "b2gTitle": "Öffentlicher Sektor (B2G)",
+          "b2gItems": [
+            "Stadt, Kleinstadt und lokale Gemeinden (Einhaltung der gesetzlichen Bestimmungen gemäß Gesetz 24/2007)",
+            "Öffentliche Parks und Umweltmanagementdienste",
+            "National Environmental Guard & Protection Agencies (APM)"
+          ],
+          "b2bTitle": "Privatsektor (B2B)",
+          "b2bItems": [
+            "Immobilienentwickler erstellen Umweltverträglichkeitsprüfungen",
+            "Campusmanager privater Universitäten oder Krankenhäuser",
+            "Landschaftsbauunternehmen benötigen genaue Bauminventuren"
+          ]
+        }
+      },
+      "consulting": {
+        "id": "Consultanta-Tehnica",
+        "badge": "B2G- und B2B-Engineering-Beratung",
+        "title": "Spezialisierte technische und rechtliche Beratung",
+        "subtitle": "Institutionelle Verbindung, ANCPI/OCPI-Genehmigungsunterstützung und öffentliche Verwaltungsunterstützung",
+        "description": "Wir bieten umfassende technische Unterstützung für Behörden, Immobilienentwickler und Infrastrukturunternehmer. Wir gewährleisten die Prüfung der Dokumentation, die institutionelle Vertretung mit ANCPI/OCPI und die Lösung komplexer Katasterprobleme.",
+        "imagePath": "/images/team/SNY09458.jpg",
+        "features": [
+          "Technische Unterstützung bei der Vorbereitung von Dokumenten für öffentliche Ausschreibungen",
+          "Technische Prüfung vorhandener Kataster- und Topographiedateien",
+          "Institutionelle Verbindung und Vertretung mit ANCPI, OCPI und Kommunen",
+          "Qualitätskontrolle und Überwachung systematischer Grundbuchprojekte",
+          "Außergerichtliche topografische Gutachten und Grenzüberschneidungslösung",
+          "Beratung zum Landerwerb und zur Enteignung öffentlicher Versorgungsunternehmen"
+        ],
+        "deliverablesHeading": "Beratungsergebnisse",
+        "deliverables": [
+          "Technische Audit- und Kataster-Compliance-Berichte",
+          "Technische Lösungshinweise für Überschneidungen und Abweichungen",
+          "Vollständige Dokumentationspakete für die ANCPI-/OCPI-Genehmigung",
+          "Kommunale GIS- und Kataster-Implementierungsstrategien"
+        ],
+        "specsHeading": "Wichtige Kundenvorteile",
+        "specs": [
+          {
+            "label": "Zeitersparnis",
+            "value": "Schnellere OCPI-Genehmigungen"
+          },
+          {
+            "label": "Null Risiko",
+            "value": "100 % Rechtskonformität"
+          },
+          {
+            "label": "Fachwissen",
+            "value": "Autorisierte ANCPI-Ingenieure"
+          }
+        ],
+        "ctaText": "Kontaktieren Sie einen technischen Spezialisten",
+        "heroStats": [
+          {
+            "label": "ANCPI-Zertifizierung",
+            "value": "Klasse I"
+          },
+          {
+            "label": "B2G-/B2B-Erfahrung",
+            "value": "15+ Jahre"
+          },
+          {
+            "label": "Überschneidungen behoben",
+            "value": "100 %"
+          },
+          {
+            "label": "ISO-Standard",
+            "value": "9001 / 27001"
+          }
+        ],
+        "bentoFeatures": [
+          {
+            "title": "Katasterprüfung und Aktenüberprüfung",
+            "description": "Gründliche Analyse der vorhandenen Katasterdokumentation zur Erkennung von Rechts- oder Lagefehlern.",
+            "badge": "Technisches Audit",
+            "colSpan": "col-span-1 md:col-span-2"
+          },
+          {
+            "title": "Auflösung von Landparzellenüberschneidungen",
+            "description": "Von der OCPI genehmigte außergerichtliche topografische Gutachten und technische Berichtigungsberichte.",
+            "badge": "OCPI-Berichtigung",
+            "colSpan": "col-span-1"
+          },
+          {
+            "title": "Ausschreibungsspezifikationen und Beschaffungsunterstützung",
+            "description": "Fachliche Beratung für Kommunen bei der Ausarbeitung von GIS- und Katasterausschreibungsspezifikationen.",
+            "badge": "B2G-Beratung",
+            "colSpan": "col-span-1"
+          },
+          {
+            "title": "Technische ANCPI/OCPI-Vertretung",
+            "description": "Vertretung komplexer technischer Akten vor Grundbuchausschüssen und Gemeindeverwaltungen.",
+            "badge": "Rechtsvertretung",
+            "colSpan": "col-span-1 md:col-span-2"
+          }
+        ],
+        "workflowHeading": "Technischer Beratungs- und Beratungsprozess",
+        "workflow": [
+          {
+            "step": "01",
+            "title": "Anforderungsaufnahme und Dokumentenprüfung",
+            "description": "Durchsicht von Grundbuchauszügen, Eigentumsurkunden und historischen Karten."
+          },
+          {
+            "step": "02",
+            "title": "Feldprüfung und E-Terra-Überlappungsprüfung",
+            "description": "Durchführung von Umfragen vor Ort und Vergleich mit der offiziellen OCPI-Datenbank."
+          },
+          {
+            "step": "03",
+            "title": "Technischer Hinweis und Lösungsbericht",
+            "description": "Erstellung umfassender Auditberichte und technischer Korrekturhinweise."
+          },
+          {
+            "step": "04",
+            "title": "OCPI- und Gemeinderatsanhörungen",
+            "description": "Vertretung des Kunden in technischen Landkommissionen zur Einholung erforderlicher Genehmigungen."
+          },
+          {
+            "step": "05",
+            "title": "Genehmigung und Lieferung",
+            "description": "Bereitstellung genehmigter technischer Unterlagen und aktualisierter Grundbuchbescheinigungen."
+          }
+        ],
+        "useCasesHeading": "Technische Beratungsfelder",
+        "useCases": {
+          "b2gTitle": "Öffentlicher Sektor (B2G)",
+          "b2gItems": [
+            "Gemeinden, die eine technische Aufsicht über systematische Registrierungsarbeiten erfordern",
+            "Rechtsabteilungen der öffentlichen Verwaltung",
+            "Enteignungskommissionen für öffentliche Versorgungsunternehmen"
+          ],
+          "b2bTitle": "Privatsektor (B2B)",
+          "b2bItems": [
+            "Auf Immobilienrechtsstreitigkeiten spezialisierte Anwaltskanzleien",
+            "Immobilieninvestmentfonds (Kataster Due Diligence)",
+            "Private Grundbesitzer stehen vor ungelösten Parzellenüberschneidungen"
+          ]
+        }
+      }
+    },
+    "compatibility": {
+      "title": "Technische Technologie und Standards",
+      "subtitle": "100 % Integration mit den Plattformen E-Terra, ANCPI DocCad und Esri ArcGIS",
+      "badges": [
+        "Zweifrequenz-GNSS-RTK",
+        "Leica & Topcon Optics",
+        "ArcGIS Enterprise 11.2",
+        "Stereo 70 National Grid",
+        "ISO 9001 und 27001"
+      ]
+    },
+    "cta": {
+      "title": "Haben Sie ein Projekt, das erstklassige topografische oder GIS-Dienste erfordert?",
+      "description": "Sprechen Sie direkt mit unseren autorisierten ANCPI-Klasse-I-Ingenieuren für eine technische Bewertung und ein individuelles kommerzielles Angebot.",
+      "primaryBtn": "Kostenloses Angebot anfordern",
+      "secondaryBtn": "Rufen Sie +40 766 548 764"
+    }
+  },
+  "faqPage": {
+    "badge": "an Megagis-Hilfecenter",
+    "title": "Häufig gestellte Fragen und technischer Leitfaden",
+    "subtitle": "Antworten zu Katasterverfahren, Grünflächeninventur, topografischen Erhebungen und GIS-Lösungen für öffentliche Einrichtungen (B2G) und Privatkunden (B2B).",
+    "searchPlaceholder": "Suche nach Schlüsselwörtern (z. B. PNCCF, Gesetz 24/2007, RTK, Grundbuchamt, SEAP)...",
+    "categoriesLabel": "Lösungsbereiche",
+    "allCategoriesTab": "Alle Kategorien",
+    "noResultsTitle": "Keine Ergebnisse gefunden",
+    "noResultsSubtitle": "Versuchen Sie, Ihre Suchbegriffe zu ändern oder den aktiven Kategoriefilter zurückzusetzen.",
+    "clearSearch": "Suche zurücksetzen",
+    "audienceFilter": {
+      "all": "Alle Projekte",
+      "b2g": "B2G / Öffentlicher Sektor",
+      "b2b": "B2B & Privat"
+    },
+    "contactCta": {
+      "badge": "Megagis engagierter Support",
+      "title": "Haben Sie die gesuchte Antwort nicht gefunden?",
+      "description": "Unser Team aus Topografieingenieuren und GIS-Spezialisten steht Ihnen für kostenlose technische Beratung und individuelle Vorschläge zur Verfügung.",
+      "buttonText": "Kontaktieren Sie das Megagis-Team",
+      "phoneLabel": "Telefonische Beratung",
+      "phoneValue": "+40 727 323 869",
+      "emailLabel": "E-Mail-Support",
+      "emailValue": "office@megagis.ro"
+    },
+    "categories": [
+      {
+        "id": "Kataster",
+        "name": "Systematisches Kataster & PNCCF",
+        "description": "Kostenlose Grundbucheintragung auf kommunaler Ebene, technische Schritte, Dokumentensammlung und Berichtigungen.",
+        "iconName": "Gebäude2",
+        "items": [
+          {
+            "id": "cad-1",
+            "question": "Was ist das Systematische Kataster (PNCCF) und was sind kommunale Pflichten?",
+            "answer": "Das Nationale Kataster- und Grundbuchprogramm (PNCCF) ist eine nationale Initiative zur kostenlosen Vermessung und Registrierung aller Grundstücke und Bauwerke in Rumänien im Grundbuch. Stadtverwaltungen (UATs) können auf nicht erstattungsfähige Mittel der ANCPI für die Katasterregistrierung städtischer und ländlicher Sektoren zugreifen. Megagis SRL führt umfassende systematische Katasterprojekte durch – von zentimetergenauen Feldvermessungen bis hin zu öffentlichen Konsultationen und der endgültigen OCPI-Landregistrierung.",
+            "takeaway": "PNCCF ermöglicht Kommunen die kostenlose Digitalisierung und Registrierung von Grundstücken durch ANCPI-Mittel, die vollständig von Megagis SRL verwaltet werden.",
+            "audience": "b2g",
+            "tags": [
+              "PNCCF",
+              "ANCPI",
+              "UAT",
+              "Kostenloses Kataster",
+              "e-Erde"
+            ]
+          },
+          {
+            "id": "cad-2",
+            "question": "Ist die Grundbucheintragung für Grundstückseigentümer im systematischen Kataster zu 100 % kostenlos?",
+            "answer": "Ja, die systematische Registrierung ist für Grundstückseigentümer und -besitzer völlig kostenlos. Alle Kosten für Felduntersuchungen, die Erstellung von Katasterplänen und die Ausstellung von Grundbuchauszügen werden durch ANCPI-Mittel gedeckt, die der Gemeinde zugewiesen werden. Grundstückseigentümer müssen lediglich Zutritt für Messungen gewähren und Kopien der Eigentumsurkunden vorlegen.",
+            "takeaway": "Immobilieneigentümer zahlen nichts; Der Prozess wird vollständig von ANCPI und der lokalen Regierung finanziert.",
+            "audience": "alle",
+            "tags": [
+              "Kostenlos",
+              "Immobilieneigentümer",
+              "Grundbuchamt",
+              "Taten"
+            ]
+          },
+          {
+            "id": "CAD-3",
+            "question": "Was sind die Hauptphasen eines systematischen Katasterprojekts?",
+            "answer": "Ein von Megagis verwaltetes systematisches Katasterprojekt folgt fünf strengen Phasen: 1) Öffentliche Informationskampagne und Sammlung von Eigentumsdokumenten; 2) Präzisionsfeldvermessungen (GNSS RTK Stereo 70) und Grenzidentifizierung; 3) GIS-Datenverarbeitung und technische Dokumentenvorbereitung; 4) Öffentliche Konsultation der technischen Unterlagen im Rathaus und eine 60-tägige Korrekturfrist; 5) Endgültiger OCPI-Empfang und Lieferung des Grundbuchauszugs.",
+            "takeaway": "Der Prozess umfasst Felduntersuchungen, GIS-Verarbeitung, ein 60-tägiges öffentliches Bekanntmachungsfenster und die offizielle OCPI-Registrierung.",
+            "audience": "alle",
+            "tags": [
+              "Stufen",
+              "Umfragen",
+              "Berichtigungen",
+              "OCPI",
+              "Stereo 70"
+            ]
+          },
+          {
+            "id": "cad-4",
+            "question": "Was passiert, wenn es während der öffentlichen Konsultation zu flächendeckenden Abweichungen oder Überschneidungen kommt?",
+            "answer": "Während der offiziellen 60-tägigen öffentlichen Konsultationsfrist kann jeder Immobilieneigentümer einen Berichtigungsantrag stellen. Die Ingenieure von Megagis überprüfen die Feldmessungen erneut, analysieren die ursprünglichen Eigentumsurkunden und führen vor dem endgültigen Projektabschluss technische Korrekturen in der räumlichen Datenbank durch.",
+            "takeaway": "Unstimmigkeiten werden auf der Grundlage von innerhalb der 60-Tage-Frist eingereichten Berichtigungsanträgen kostenlos behoben.",
+            "audience": "alle",
+            "tags": [
+              "Berichtigungen",
+              "Einsprüche",
+              "Überlappungen",
+              "Öffentliche Anzeige"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "RSV",
+        "name": "Grünflächenkataster (RSV)",
+        "description": "Einhaltung des Inventars des Grünen Erbes gemäß Gesetz 24/2007, individuellen Pflanzenschutzakten und GIS.",
+        "iconName": "Bäume",
+        "items": [
+          {
+            "id": "rsv-1",
+            "question": "Warum ist das örtliche Grünflächenregister gemäß Gesetz 24/2007 obligatorisch?",
+            "answer": "Gemäß dem rumänischen Gesetz 24/2007 über die städtische Grünflächenverwaltung sind alle lokalen öffentlichen Behörden (Rathäuser, Gemeinderäte) gesetzlich verpflichtet, ein lokales Grünflächenregister einzurichten und zu führen. Die Nichteinhaltung führt zu Geldstrafen der National Environmental Guard und blockiert städtebauliche Genehmigungen (PUG/PUZ).",
+            "takeaway": "Die Erstellung eines RSV ist eine strenge gesetzliche Verpflichtung für alle Kommunalbehörden in Rumänien.",
+            "audience": "b2g",
+            "tags": [
+              "Gesetz 24/2007",
+              "Umweltschützer",
+              "UAT",
+              "Prüfung",
+              "MOPS"
+            ]
+          },
+          {
+            "id": "rsv-2",
+            "question": "Was ist in der Baumfeldinventur und den einzelnen Pflanzengesundheitskarten enthalten?",
+            "answer": "Megagis georeferenziert jeden öffentlichen Baum im nationalen Stereo-70-Koordinatengitter mithilfe von Zentimeter-GNSS-RTK. Für jeden Baum wird eine detaillierte Pflanzengesundheitskarte erstellt, die Folgendes enthält: botanischen und gebräuchlichen Artennamen, Stammdurchmesser (bei 1,30 m), Höhe, Kronenausbreitung, Gesundheitszustand und Managementempfehlungen (Schnitt, Behandlung oder Entfernung).",
+            "takeaway": "Jeder Baum erhält genaue RTK-Positionskoordinaten und eine umfassende Gesundheitsbewertungskarte.",
+            "audience": "b2g",
+            "tags": [
+              "Pflanzengesundheitskarte",
+              "Bäume",
+              "Stereo 70",
+              "GNSS RTK",
+              "Inventar"
+            ]
+          },
+          {
+            "id": "rsv-3",
+            "question": "Wie werden RSV-Daten an Rathäuser geliefert und welche Softwareformate werden verwendet?",
+            "answer": "Die Daten werden sowohl als gedruckte Karten/Paketkarten als auch als raumbezogene digitale Datenbanken (ESRI Shapefile, PostGIS, GeoJSON, DXF) geliefert. Darüber hinaus bieten wir Cloud-Zugriff auf die Megagis WebGIS RSV-Plattform für Echtzeitabfragen und Stadtplanungsaktualisierungen.",
+            "takeaway": "Wir liefern Standard-GIS-Geodatenbanken und stellen eine dedizierte WebGIS-Cloud-Plattform bereit.",
+            "audience": "b2g",
+            "tags": [
+              "WebGIS",
+              "PostGIS",
+              "Shapefile",
+              "DXF",
+              "Datenlieferung"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Topografie",
+        "name": "Topographie und hochpräzise Vermessungen",
+        "description": "Topografische Vermessungen, robotische Totalstationen, Landregistrierung, Unterteilung und Absteckung.",
+        "iconName": "Kompass",
+        "items": [
+          {
+            "id": "Top-1",
+            "question": "Welche Präzision bieten die topografischen Vermessungsinstrumente von Megagis?",
+            "answer": "Megagis SRL betreibt Mehrfrequenz-GNSS-RTK-Empfänger, die an das nationale ROMPOS-Netzwerk angeschlossen sind und eine hohe Positionierungsgenauigkeit im Zentimeterbereich erreichen. Für detaillierte Struktur-, Ingenieur- und Baustellenvermessungen verwenden wir robotische Totalstationen von Leica und Topcon, die eine Entfernung im Millimeterbereich und eine hohe Winkelgenauigkeit ermöglichen.",
+            "takeaway": "Zentimetergenauigkeit mit GNSS RTK ROMPOS und Millimetergenauigkeit mit Leica/Topcon-Totalstationen.",
+            "audience": "alle",
+            "tags": [
+              "ROMPOS",
+              "GNSS RTK",
+              "Leica",
+              "Totalstation",
+              "Zentimetergenauigkeit"
+            ]
+          },
+          {
+            "id": "Top-2",
+            "question": "Was ist der Unterschied zwischen einem Lageplan und einer topografischen Vermessung?",
+            "answer": "Eine topografische Vermessung ist der physikalische Feldprozess zur Messung von Koordinaten und Punkthöhen. Ein Lageplan (Plan de Situație) ist die offizielle technische Zeichnung, die aus Vermessungsdaten erstellt, von OCPI validiert und für Baugenehmigungen (PAC), Stadtplanungszertifikate und Versorgungsanschlussprojekte erforderlich ist.",
+            "takeaway": "Die Vermessung ist die Feldmessung; Der Lageplan ist das von der OCPI genehmigte technische Dokument.",
+            "audience": "alle",
+            "tags": [
+              "Lageplan",
+              "OCPI",
+              "Baugenehmigung",
+              "PAC",
+              "Höhenkonturen"
+            ]
+          },
+          {
+            "id": "Top-3",
+            "question": "Wie erfolgt die erste Grundbucheintragung bzw. Grundstücksaufteilung (Unterteilung)?",
+            "answer": "Für die Grundbucheintragung oder Parzellenaufteilung vermisst unser Team die Parzellengrenzen, bereitet den Site & Demarkation Plan (PAD) vor und generiert e-Terra-Dateien (.xml / .cgml). Wir reichen das Dossier beim örtlichen OCPI-Grundbuchamt ein und überwachen die Genehmigung, bis neue Katasterausweise ausgestellt werden.",
+            "takeaway": "Wir kümmern uns um alle Schritte: Feldbesichtigung, PAD-Entwurf, OCPI-Einreichung und Lieferung von Grundbuchauszügen.",
+            "audience": "b2b",
+            "tags": [
+              "Registrierung",
+              "Unterteilung",
+              "PAD",
+              "e-Terra",
+              "Grundbuchamt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "gis",
+        "name": "GIS- und Geoinformatik-Softwarelösungen",
+        "description": "Benutzerdefinierte WebGIS-Anwendungen, ArcGIS Enterprise-Server, MapSys und Multiformat-Exporte.",
+        "iconName": "Karte",
+        "items": [
+          {
+            "id": "gis-1",
+            "question": "Was ist eine WebGIS-Plattform und welche Vorteile bietet sie öffentlichen Einrichtungen oder privaten Unternehmen?",
+            "answer": "Eine WebGIS-Plattform wandelt CAD- und Katasterdaten in eine interaktive Online-Karte um, auf die in jedem Webbrowser zugegriffen werden kann. Autorisierte Mitarbeiter können Kataster-IDs durchsuchen, hochauflösende Orthofotos überlagern, Versorgungsleitungen überprüfen und Berichte in Sekundenschnelle erstellen, ohne dass eine komplexe Desktop-CAD-Software erforderlich ist.",
+            "takeaway": "Sofortiger, sicherer browserbasierter Zugriff auf interaktive räumliche Karten und Datenbanken auf jedem Gerät.",
+            "audience": "alle",
+            "tags": [
+              "WebGIS",
+              "Cloud-GIS",
+              "Interaktive Karten",
+              "Datenbanken",
+              "Orthofoto"
+            ]
+          },
+          {
+            "id": "gis-2",
+            "question": "Mit welchen professionellen GIS-Softwaresystemen sind Megagis-Leistungen kompatibel?",
+            "answer": "Megagis SRL liefert nativ formatierte Geodaten für die wichtigsten Softwareplattformen: Esri ArcGIS (ArcGIS Online, ArcGIS Enterprise 11.2, ArcGIS Pro), MapSys 10.x, QGIS und OGC-Standards (PostGIS, GeoServer). Wir generieren auch XML/CGML-Dateien, die mit ANCPI e-Terra 3 kompatibel sind.",
+            "takeaway": "Garantiert 100 % Kompatibilität mit Esri ArcGIS, MapSys, QGIS und offiziellen ANCPI-Standards.",
+            "audience": "alle",
+            "tags": [
+              "ArcGIS Enterprise",
+              "MapSys",
+              "QGIS",
+              "e-Terra 3",
+              "PostGIS"
+            ]
+          },
+          {
+            "id": "gis-3",
+            "question": "In welchen Dateiformaten können GIS-Projektdaten exportiert werden?",
+            "answer": "Wir exportieren Geodaten in CAD-Vektorformaten (.DXF, .DWG), GIS-Formaten (.SHP, .GeoJSON, File Geodatabase .GDB), ANCPI-Austauschformaten (.XML, .CGML) und druckbaren hochauflösenden PDF-Plänen (.PDF, .TIFF).",
+            "takeaway": "Flexible Exportoptionen in DXF, DWG, SHP, GeoJSON, XML, CGML und PDF.",
+            "audience": "alle",
+            "tags": [
+              "DXF",
+              "SHP",
+              "CGML",
+              "XML",
+              "PDF",
+              "Datenexport"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "preturi",
+        "name": "Preise, Zeitpläne und Beratung",
+        "description": "Öffentliche Beschaffung nach SEAP/SICAP, Genehmigungen, Lieferzeiten und maßgeschneiderte Angebote.",
+        "iconName": "Kreditkarte",
+        "items": [
+          {
+            "id": "pret-1",
+            "question": "Wie werden Kataster- und GIS-Dienstleistungen über SEAP/SICAP erworben?",
+            "answer": "MEGAGIS SRL ist im rumänischen öffentlichen Beschaffungsportal (SEAP/SICAP) registriert. Für öffentliche Auftraggeber bieten wir technische Beratung bei der Ausarbeitung von Leistungsbeschreibungen, Kostenschätzungen und der direkten Veröffentlichung von Verträgen.",
+            "takeaway": "Aktiv im Bereich SEAP/SICAP mit kostenloser technischer Unterstützung bei der Erstellung öffentlicher Ausschreibungsspezifikationen.",
+            "audience": "b2g",
+            "tags": [
+              "SEAP",
+              "SICAP",
+              "Öffentliche Ausschreibungen",
+              "Leistungsbeschreibung",
+              "Vertragsabschluss"
+            ]
+          },
+          {
+            "id": "gegen-2",
+            "question": "Was sind die typischen Bearbeitungszeiten für Vermessungs- und große GIS-Projekte?",
+            "answer": "Individuelle topografische Vermessungen und Lagepläne dauern vor Ort 1–3 Werktage, die OCPI-Prüfung 7–15 Werktage (gemäß den offiziellen ANCPI-Bedingungen). Kommunale systematische Kataster- (PNCCF) oder Grünflächenkataster-Projekte dauern je nach Vertragsmeilensteinen 3 bis 12 Monate.",
+            "takeaway": "Individuelle Umfragen: 2–5 Tage + OCPI-Überprüfung; Große kommunale Projekte: 3-12 Monate.",
+            "audience": "alle",
+            "tags": [
+              "Bearbeitungszeit",
+              "OCPI-Zulassung",
+              "Projektdauer",
+              "Meilensteine"
+            ]
+          },
+          {
+            "id": "gegen-3",
+            "question": "Wie kann ich ein Angebot und eine erste technische Beratung anfordern?",
+            "answer": "Sie können ein maßgeschneidertes Angebot anfordern, indem Sie uns unter +40 727 323 869 anrufen, eine E-Mail an office@megagis.ro senden oder das Kontaktformular auf unserer Website ausfüllen. Die Erstprüfung der Dokumente und die technische Beratung sind kostenlos.",
+            "takeaway": "Die Erstberatung ist kostenlos. Kontaktieren Sie uns per Telefon, E-Mail oder Online-Webformular.",
+            "audience": "alle",
+            "tags": [
+              "Preisangebot",
+              "Kostenlose Beratung",
+              "Kontakt",
+              "Dokumentenprüfung"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "projectsPage": {
+    "hero": {
+      "badge": "Projektportfolio",
+      "title": "Portfolio und wichtige Referenzen",
+      "subtitle": "Nachgewiesene Erfolgsbilanz in großen systematischen Kataster-, Grünflächenkataster- und Ingenieurvermessungsarbeiten",
+      "description": "Unser Portfolio umfasst über 60 landesweit ausgeführte Aufträge für zentrale und lokale öffentliche Verwaltungen, internationale Ingenieurbüros und private Bauträger.",
+      "featuredPartnersTitle": "Empfohlene Partner"
+    },
+    "filter": {
+      "all": "Alle Projekte",
+      "cadastru": "Systematisches Kataster",
+      "rsv": "Grünflächenkataster",
+      "utilities": "Versorgungsnetze",
+      "infrastructure": "Ingenieurvermessung und Umwelt",
+      "searchPlaceholder": "Projekt oder Gemeinde suchen...",
+      "noResultsTitle": "Keine Projekte gefunden",
+      "noResultsSubtitle": "Versuchen Sie, Ihre Suchanfrage anzupassen oder eine andere Kategorie auszuwählen.",
+      "resetSearch": "Suche zurücksetzen"
+    },
+    "modal": {
+      "closeBtn": "Schließen",
+      "clientLabel": "Begünstigter",
+      "locationLabel": "Standort",
+      "yearLabel": "Zeitraum",
+      "categoryLabel": "Kategorie",
+      "scopeTitle": "Beschreibung und technischer Umfang",
+      "deliverablesTitle": "Georäumliche Leistungen"
+    },
+    "items": [
+      {
+        "id": "S. 1",
+        "title": "Hochwasserschutzpläne für die Becken Ialomița, Mostistea und Calmătui",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Infrastruktur",
+        "categoryLabel": "Ingenieurvermessung und Umwelt",
+        "year": "2012",
+        "location": "Ialomița-, Mostistea- und Calmătui-Becken",
+        "county": "Multi-County",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Realisierung der topografischen Pläne, die zur Vorbeugung, zum Schutz und zur Reduzierung der Auswirkungen von Überschwemmungen in den hydrografischen Einzugsgebieten erforderlich sind. Durchführung detaillierter topografischer Vermessungen, hydrotechnischer Bauvermessungen und Lagepläne.",
+        "deliverables": [
+          "Lagepläne im Maßstab 1:1000 / 1:5000",
+          "Betten mit Quer- und Längsprofilen",
+          "Digitale Geländemodelle (DTM)"
+        ],
+        "logoPath": "/logos/counties/stema_ialomita.svg",
+        "logoAlt": "Wappen des Landkreises Ialomita"
+      },
+      {
+        "id": "p-2",
+        "title": "Katastervermessungen von Măgura Ilvei",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2012",
+        "location": "Magura Ilvei, Kreis. Bistrita-Năsăud",
+        "county": "Bistrita-Năsăud",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Erstellung des Katasters auf dem Gebiet der Gemeinde Măgura Ilvei: topografische Vermessungen, die für die Erstellung von Katasterplänen erforderlich sind.",
+        "deliverables": [
+          "Topografische Katasterpläne",
+          "Geodätisches Hebenetz",
+          "Unterricht in Technischer Dokumentation"
+        ],
+        "logoPath": "/logos/municipalities/bistrita.svg",
+        "logoAlt": "Wappen der Gemeinde Bistrita"
+      },
+      {
+        "id": "p-3",
+        "title": "Topokadastrale und Bathymetrische Messungen der Flüsse Strei und Crivadia",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Infrastruktur",
+        "categoryLabel": "Ingenieurvermessung und Umwelt",
+        "year": "2012",
+        "location": "Fluss Strei, Fluss Crivadia, Jud. Hunedoara",
+        "county": "Hunedoara",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Durchführung topokadastraler undbathymetrischer Arbeiten unter Verwendung klassischer topografischer Methoden für die Flüsse Strei und Crivadia im Rahmen des Plans zur Vorbeugung und Reduzierung der Auswirkungen von Überschwemmungen im Einzugsgebiet des Flusses Mureș.",
+        "deliverables": [
+          "Bathymetrische Profile Nebenbett",
+          "Wichtige Notfallpläne für Flussbetten",
+          "Geodätische Unterstützungsnetzwerke"
+        ],
+        "logoPath": "/logos/counties/stema_hunedoara.png",
+        "logoAlt": "Wappen des Kreises Hunedoara"
+      },
+      {
+        "id": "S. 4",
+        "title": "Netzwerk des Grundbuchamtes Ilva Mare",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2012",
+        "location": "Ilva Mare, Kreis Bistrita-Năsăud",
+        "county": "Bistrita-Năsăud",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Erstellung des Katasters auf dem Gebiet der Gemeinde Ilva Mare: Grenzmarkierung, GNSS-RTK-Bestimmungen und Erstellung einer dichten Netzwerkdokumentation.",
+        "deliverables": [
+          "Terminals landen Sehenswürdigkeiten",
+          "Geodätische Bestimmungen GNSS",
+          "Von der OCPI genehmigte Dokumentation"
+        ],
+        "logoPath": "/logos/municipalities/bistrita.svg",
+        "logoAlt": "Wappen der Gemeinde Bistrita"
+      },
+      {
+        "id": "S. 5",
+        "title": "Erhebungen Topo GIS Wassernetze/Kanal Jud. Dolj",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Versorgungsunternehmen",
+        "categoryLabel": "Versorgungsnetze",
+        "year": "2012-2013",
+        "location": "Craiova, Filiași, Calafat, Jud. Dolj",
+        "county": "Dolj",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Erweiterung und Modernisierung der Wasser- und Abwasserinfrastruktur im Kreis Dolj: topografische Untersuchungen zur Implementierung des GIS-Systems, des Füllnetzes und der Sammlung beschreibender Attribute vor Ort.",
+        "deliverables": [
+          "Lagepläne zum Aufbau von Netzwerken",
+          "Datenbank-GIS-Attribute",
+          "Nivellierprofile"
+        ],
+        "logoPath": "/logos/municipalities/iasi.svg",
+        "logoAlt": "Wappen der Gemeinde Iași"
+      },
+      {
+        "id": "S. 6",
+        "title": "Dokumentationsnetzwerk Densire Măgura Ilvei & Lunca Ilvei",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2013",
+        "location": "Măgura Ilvei & Lunca Ilvei, Bezirk. Bistrita-Năsăud",
+        "county": "Bistrita-Năsăud",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Netzwerkdesign, Materialisierung im Feld, GNSS-Bestimmungen, Datenverarbeitung und Erstellung von OCPI-zugelassener Dokumentation.",
+        "deliverables": [
+          "Von der OCPI genehmigte geodätische Netzwerkdokumentation",
+          "Stereokoordinatendateien 70"
+        ],
+        "logoPath": "/logos/municipalities/bistrita.svg",
+        "logoAlt": "Wappen der Gemeinde Bistrita"
+      },
+      {
+        "id": "S. 7",
+        "title": "Topografische technische Hilfe Wasser/Kanal Jud. Arges",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Infrastruktur",
+        "categoryLabel": "Ingenieurvermessung und Umwelt",
+        "year": "2013",
+        "location": "Jud. Arges",
+        "county": "Arges",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Ausarbeitung topografischer Messungen gemäß der geltenden Gesetzgebung für technische Projekte, Ausführungsdetails und Einholung von Baugenehmigungen.",
+        "deliverables": [
+          "Situationspläne im DWG-Format",
+          "Linienprofile",
+          "Dokumentationshinweise"
+        ],
+        "logoPath": "/logos/counties/stema_arges.png",
+        "logoAlt": "Wappen des Kreises Arges"
+      },
+      {
+        "id": "S. 8",
+        "title": "Aufzüge Topo Integrierte Abfallwirtschaft Jud. Weiß",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Infrastruktur",
+        "categoryLabel": "Ingenieurvermessung und Umwelt",
+        "year": "2014",
+        "location": "Jud. Weiß",
+        "county": "Weiß",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Technische Unterstützung bei der Überprüfung der Vergabeunterlagen im Rahmen des Projekts „Integrated Waste Management System“ im Kreis Alba.",
+        "deliverables": [
+          "Topografische Höhen des Landes",
+          "Wohnpläne in der Region"
+        ],
+        "logoPath": "/logos/counties/stema_alba.svg",
+        "logoAlt": "Wappen des Kreises Alba"
+      },
+      {
+        "id": "S. 9",
+        "title": "Landstudien Sicherheit Akkumulation Luncavita",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Infrastruktur",
+        "categoryLabel": "Ingenieurvermessung und Umwelt",
+        "year": "2014",
+        "location": "Luncavita, Grafschaft Tulcea",
+        "county": "Tulcea",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Feldstudien zur Sicherung des Stauseeprojekts Luncavița: Erstellung eines Lageplans, eines GNSS-Netzwerks und Erhebungen.",
+        "deliverables": [
+          "Stauseelageplan",
+          "Geodätisches GNSS-Netzwerk",
+          "Gutachten über wassertechnische Bauwerke"
+        ],
+        "logoPath": "/logos/counties/stema_tulcea.svg",
+        "logoAlt": "Wappen des Kreises Tulcea"
+      },
+      {
+        "id": "S. 10",
+        "title": "Grünflächenkataster der Gemeinde Bistrita",
+        "client": "SC Ramboll South East Europe SRL / Gemeinde Bistrita",
+        "category": "RSV",
+        "categoryLabel": "Grünflächenkataster",
+        "year": "2014",
+        "location": "Bistrita, Kreis Bistrita-Năsăud",
+        "county": "Bistrita-Nasaud",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Sammlung von Felddaten, die für die Erstellung der Inventarblätter der Bäume und Grünflächen im Stadtgebiet der Gemeinde Bistrița erforderlich sind.",
+        "deliverables": [
+          "Bauminventurblätter",
+          "GIS-Datenbank für Grünflächen"
+        ],
+        "logoPath": "/logos/municipalities/bistrita.svg",
+        "logoAlt": "Wappen der Gemeinde Bistrita"
+      },
+      {
+        "id": "S. 11",
+        "title": "Kartierung der Grenzen von 5 Schutzgebieten Jud. Suceava",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Infrastruktur",
+        "categoryLabel": "Ingenieurvermessung und Umwelt",
+        "year": "2014",
+        "location": "Schutzgebiete, Jud. Suceava",
+        "county": "Suceava",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Überprüfung und Kartierung der Grenzen für fünf Schutzgebiete im Kreis Suceava: topografische Untersuchungen, pro Standort aufgenommene Fotos und Erstellung von GIS-Datenbanken.",
+        "deliverables": [
+          "GIS-Datenbanken Schutzgebiete",
+          "Georeferenzierte Fotodokumentation",
+          "Offizielle Grenzkarten"
+        ],
+        "logoPath": "/logos/counties/stema_suceava.png",
+        "logoAlt": "Wappen des Kreises Suceava"
+      },
+      {
+        "id": "S. 12",
+        "title": "Generalkataster Măgura Ilvai & Ilva Mare",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2014-2015",
+        "location": "Măgura Ilvai & Ilva Mare, Bezirk. Bistrita-Năsăud",
+        "county": "Bistrita-Năsăud",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Durchführung topografischer Vermessungen, Erstellung von Katasterplänen und Erstellung von Befragungsbögen mit den Eigentümern.",
+        "deliverables": [
+          "Allgemeiner Katasterplan",
+          "Interviewblätter für Eigentümer",
+          "OCPI-Lehrdateien"
+        ],
+        "logoPath": "/logos/municipalities/bistrita.svg",
+        "logoAlt": "Wappen der Gemeinde Bistrita"
+      },
+      {
+        "id": "S. 13",
+        "title": "Topografische Messungen Wasser/Kanal Jud. Hunedoara",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Infrastruktur",
+        "categoryLabel": "Ingenieurvermessung und Umwelt",
+        "year": "2014",
+        "location": "Jud. Hunedoara",
+        "county": "Hunedoara",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Vorläufige Datenverarbeitung, Felddatenerfassung, Netzausführung und GNSS-RTK-Messungen für die Wasserinfrastruktur.",
+        "deliverables": [
+          "Netzwerk-GNSS-Messungen",
+          "Erstellen von Topoplänen"
+        ],
+        "logoPath": "/logos/counties/stema_hunedoara.png",
+        "logoAlt": "Wappen des Kreises Hunedoara"
+      },
+      {
+        "id": "S. 14",
+        "title": "Topografische Studien Wasserinfrastruktur Jud. Ilfov",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Versorgungsunternehmen",
+        "categoryLabel": "Versorgungsnetze",
+        "year": "2015-2016",
+        "location": "Jud. Ilfov",
+        "county": "Ilfov",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Topografische Studien zur Erweiterung und Sanierung von Wasserversorgungs- und Abwassernetzen für die SF- und PT-Phasen im Kreis Ilfov.",
+        "deliverables": [
+          "Topografische Pläne Phase SF/PT",
+          "Längsprofile Wasser-/Kanalnetz"
+        ],
+        "logoPath": "/logos/counties/stema_ilfov.svg",
+        "logoAlt": "Wappen des Kreises Ilfov"
+      },
+      {
+        "id": "S. 15",
+        "title": "Umfragen Topo Straßenausbeutung Gemeinde Băleni",
+        "client": "SC Euro-Audit Service SRL",
+        "category": "Versorgungsunternehmen",
+        "categoryLabel": "Versorgungsnetze",
+        "year": "2015",
+        "location": "Baleni, Kreis Dâmbovița",
+        "county": "Dâmbovița",
+        "beneficiaryLogoText": "EAS",
+        "scopeDetails": "Topografische Messungen der Ausbeutungsstraße in der Gemeinde Băleni für das Projekt zur Erweiterung des Stromnetzes.",
+        "deliverables": [
+          "Topografischer Straßennutzungsplan",
+          "Längsprofil der elektrischen Trasse"
+        ],
+        "logoPath": "/logos/counties/stema_dambovita.svg",
+        "logoAlt": "Wappen des Dambovita County"
+      },
+      {
+        "id": "S. 16",
+        "title": "Topografische Höhen LEA 400 KV Medgidia - Bărăganu",
+        "client": "SC Geonet Systems SRL",
+        "category": "Infrastruktur",
+        "categoryLabel": "Ingenieurvermessung und Umwelt",
+        "year": "2014",
+        "location": "Medgidia - Bărăganu, Jud. Konstanz",
+        "county": "Konstanz",
+        "beneficiaryLogoText": "GEO",
+        "scopeDetails": "Topografische Messungen und Erstellung eines topografischen Plans für die LEA 400 KV-Freileitung Medgidia – Bărăganu.",
+        "deliverables": [
+          "Topografischer Plan LEA 400KV-Korridor",
+          "Achsenprofil des elektrischen Netzwerks"
+        ],
+        "logoPath": "/logos/counties/stema_constanta.png",
+        "logoAlt": "Wappen des Kreises Constanta"
+      },
+      {
+        "id": "S. 17",
+        "title": "Hochpräzise geometrische Nivellierung ±1 mm",
+        "client": "SC Rondocarton SRL Cluj",
+        "category": "Infrastruktur",
+        "categoryLabel": "Ingenieurvermessung und Umwelt",
+        "year": "2015",
+        "location": "Cluj-Napoca, Kreis Cluj",
+        "county": "Klausenburg",
+        "beneficiaryLogoText": "RON",
+        "scopeDetails": "Geometrische Nivelliermessungen mit einer Genauigkeit von +/- 1 mm zur Verfolgung der zeitlichen Setzung der technologischen Plattform und der Entstehung von Nivelliermarkierungen.",
+        "deliverables": [
+          "Zeitabrechnungsverfolgungsmatrix",
+          "Bulletin der Füllstandsmessungen Klasse A",
+          "Level-Benchmark-Blätter"
+        ],
+        "logoPath": "/logos/counties/stema_cluj.png",
+        "logoAlt": "Wappen des Kreises Cluj"
+      },
+      {
+        "id": "S. 18",
+        "title": "Inventar der Wohngebäude & GIS Bistrita",
+        "client": "SC North Topocad SRL / Gemeinde Bistrita",
+        "category": "Versorgungsunternehmen",
+        "categoryLabel": "Versorgungsnetze",
+        "year": "2015",
+        "location": "Bistrita, Kreis Bistrita-Năsăud",
+        "county": "Bistrita-Năsăud",
+        "beneficiaryLogoText": "GIS",
+        "scopeDetails": "Durchführung von Inventarisierungsarbeiten von Gebäudenetzwerken: Sammlung von Daten von Gebäudegebäuden vor Ort und GIS-Strukturierung.",
+        "deliverables": [
+          "Digitale Blätter der städtischen Wohnheime",
+          "Vektorisierte Datenbank-Dienstprogramme"
+        ],
+        "logoPath": "/logos/municipalities/bistrita.svg",
+        "logoAlt": "Wappen der Gemeinde Bistrita"
+      },
+      {
+        "id": "S. 19",
+        "title": "Topo- und GIS-Vermessungen von Erdgasverteilungsnetzen",
+        "client": "Pipe Technology SRL / Megaconstruct SA",
+        "category": "Versorgungsunternehmen",
+        "categoryLabel": "Versorgungsnetze",
+        "year": "2015-heute",
+        "location": "Mangalia, Afumati, Balotești, Lehliu, Şirna, Kreis. CT, IF, CL, PH",
+        "county": "Multi-County",
+        "beneficiaryLogoText": "GAS",
+        "scopeDetails": "Topografische Höhen der Trassierung von Verteilernetzen und Erdgaszweigen in operationellen Ortschaften. Optimierung des GIS-Systems.",
+        "deliverables": [
+          "Lagepläne der Gasrouten (.dwg)",
+          "ANRE-GIS-Datenbank des Versorgungsunternehmens",
+          "Georeferenzierte Dateien Stereo 70"
+        ],
+        "logoPath": "/logos/counties/stema_constanta.png",
+        "logoAlt": "Wappen des Kreises Constanta"
+      },
+      {
+        "id": "S. 20",
+        "title": "Natura 2000 GIS-Datenbank Candești Piemont",
+        "client": "Rumänische Beratungsagentur",
+        "category": "Infrastruktur",
+        "categoryLabel": "Ingenieurvermessung und Umwelt",
+        "year": "2015",
+        "location": "Candești Piemont, Kreis. Dâmbovița",
+        "county": "Dâmbovița",
+        "beneficiaryLogoText": "ARC",
+        "scopeDetails": "Erstellung der notwendigen Datenbank für das Natura-2000-Gebietmanagementprojekt – Die Wälder des südlichen Piemont Cândêști.",
+        "deliverables": [
+          "GIS-Datenbank zur biologischen Vielfalt",
+          "Georeferenzierte Sitemaps"
+        ],
+        "logoPath": "/logos/counties/stema_dambovita.svg",
+        "logoAlt": "Wappen des Dambovita County"
+      },
+      {
+        "id": "S. 21",
+        "title": "Natura 2000 GIS-Karten Cotmeana-Plattform",
+        "client": "Rumänische Beratungsagentur",
+        "category": "Infrastruktur",
+        "categoryLabel": "Ingenieurvermessung und Umwelt",
+        "year": "2015",
+        "location": "Cotmeana, Grafschaft Arges",
+        "county": "Arges",
+        "beneficiaryLogoText": "ARC",
+        "scopeDetails": "Sammeln von Daten vor Ort und Erstellen der Datenbank und GIS-Karten, die für das Natura-2000-Gebietmanagementprojekt – Cotmeana-Plattform – erforderlich sind.",
+        "deliverables": [
+          "Mittlere GIS-Datenbank",
+          "Thematische INSPIRE-Karten"
+        ],
+        "logoPath": "/logos/counties/stema_arges.png",
+        "logoAlt": "Wappen des Kreises Arges"
+      },
+      {
+        "id": "S. 22",
+        "title": "Natura 2000 GIS-Karten Fluss Olt Mărunței – Turnu Măgurele",
+        "client": "Rumänische Beratungsagentur",
+        "category": "Infrastruktur",
+        "categoryLabel": "Ingenieurvermessung und Umwelt",
+        "year": "2015",
+        "location": "Mărunței - Turnu Măgurele, Kreis. Olt / Teleorman",
+        "county": "Olt",
+        "beneficiaryLogoText": "ARC",
+        "scopeDetails": "Erstellung der Datenbank und GIS-Karten für die Bewirtschaftung und Biodiversität des Natura-2000-Flussgebiets Olt.",
+        "deliverables": [
+          "GIS-Datenbank des Olt-Sektors",
+          "Georeferenzierte Umgebungskarten"
+        ],
+        "logoPath": "/logos/counties/stema_olt.svg",
+        "logoAlt": "Wappen des Kreises Olt"
+      },
+      {
+        "id": "S. 23",
+        "title": "Topomessungen DJ 719 Târgoviște - Valea Voievozilor",
+        "client": "Kreisrat Dâmbovița",
+        "category": "Infrastruktur",
+        "categoryLabel": "Ingenieurvermessung und Umwelt",
+        "year": "2015",
+        "location": "Târgoviște - Valea Voivozilor, Kreis. Dâmbovița",
+        "county": "Dâmbovița",
+        "beneficiaryLogoText": "CJ",
+        "scopeDetails": "Vorbereitung der spezialisierten technisch-wirtschaftlichen Dokumentation (PT+DE-Phase) für den Bitumenteppich DJ719 Ziel Târgoviște-Valea Voievozilor.",
+        "deliverables": [
+          "Straßentopografische Pläne",
+          "Ausführung Straßenprofile"
+        ],
+        "logoPath": "/logos/counties/stema_dambovita.svg",
+        "logoAlt": "Wappen des Dambovita County"
+      },
+      {
+        "id": "S. 24",
+        "title": "Topografischer Plan PUG Ilva Mare Gemeinde",
+        "client": "Das Rathaus der Gemeinde Ilva Mare",
+        "category": "Infrastruktur",
+        "categoryLabel": "Ingenieurvermessung und Umwelt",
+        "year": "2015",
+        "location": "Ilva Mare, Kreis Bistrita-Năsăud",
+        "county": "Bistrita-Nasaud",
+        "beneficiaryLogoText": "UAT",
+        "scopeDetails": "Durchführung von Bauleistungen zur Durchführung topografischer Messungen für den Topografischen Plan der PUG Ilva Mare.",
+        "deliverables": [
+          "Topografischer Plan PUG im Maßstab 1:1000",
+          "Lokales geodätisches Netzwerk"
+        ],
+        "logoPath": "/logos/municipalities/bistrita.svg",
+        "logoAlt": "Wappen der Gemeinde Bistrita"
+      },
+      {
+        "id": "S. 25",
+        "title": "Topografische Studien Wassernetze Jud. Galater",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Versorgungsunternehmen",
+        "categoryLabel": "Versorgungsnetze",
+        "year": "2015-2016",
+        "location": "Jud. Galater",
+        "county": "Galater",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Topografische Studien, die für den Ausbau und die Sanierung der Wasserversorgungs- und Abwassernetze für die SF-Phase im Kreis Galati erforderlich sind.",
+        "deliverables": [
+          "Topografische Pläne der Bauwege",
+          "SF-Phasen-Geländeprofile"
+        ],
+        "logoPath": "/logos/counties/stema_galati.svg",
+        "logoAlt": "Wappen des Kreises Galati"
+      },
+      {
+        "id": "S. 26",
+        "title": "Wassernetz-Erweiterungsstr. Nicolae Bălcescu Moreni",
+        "client": "Rathaus von Moreni",
+        "category": "Versorgungsunternehmen",
+        "categoryLabel": "Versorgungsnetze",
+        "year": "2015",
+        "location": "Moreni, Kreis Dâmbovița",
+        "county": "Dâmbovița",
+        "beneficiaryLogoText": "UAT",
+        "scopeDetails": "Topografische Messungen und Erstellung eines topografischen Plans für den Ausbau des Wasserversorgungsnetzes in der Nicolae-Bălcescu-Straße (Bezirk Pleașa).",
+        "deliverables": [
+          "Topografischer Plan für OCPI",
+          "Längsprofil Wassernetz"
+        ],
+        "logoPath": "/logos/municipalities/moreni.png",
+        "logoAlt": "Wappen der Gemeinde Moreni"
+      },
+      {
+        "id": "S. 27",
+        "title": "Systematisches Registrierungs- und Baublatt UAT Șotânga",
+        "client": "SC North Topocad SRL / Rathaus von Șotânga",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2016",
+        "location": "Sotânga, Jud. Dâmbovița",
+        "county": "Dâmbovița",
+        "beneficiaryLogoText": "NORDEN",
+        "scopeDetails": "Topo-Katastermessungen innerhalb des Dorfes/außerhalb des Dorfes, Zwischenkatasterplan, digitales Baublatt und geodätisches Netzwerk auf dem Gebiet der UAT Șotânga.",
+        "deliverables": [
+          "Vorläufiger Katasterplan",
+          "Digitaler Bauplan",
+          "Lokales geodätisches Netzwerk"
+        ],
+        "logoPath": "/logos/counties/stema_dambovita.svg",
+        "logoAlt": "Wappen des Dambovita County"
+      },
+      {
+        "id": "S. 28",
+        "title": "Topographie Straßensanierung DJ 714 Glod - Moroeni",
+        "client": "Kreisrat Dâmbovița",
+        "category": "Infrastruktur",
+        "categoryLabel": "Ingenieurvermessung und Umwelt",
+        "year": "2015-2016",
+        "location": "Moroeni / Glod, Kreis Dâmbovița",
+        "county": "Dâmbovița",
+        "beneficiaryLogoText": "CJ",
+        "scopeDetails": "Planungsleistungen (DALI-Phase + PT + DDE) mit dem Ziel der Sanierung von DJ 714 Glod – Moroeni Sanatorium.",
+        "deliverables": [
+          "Topografischer Straßendetailplan",
+          "Längs- und Querprofile",
+          "Straßenroutenstudie"
+        ],
+        "logoPath": "/logos/counties/stema_dambovita.svg",
+        "logoAlt": "Wappen des Dambovita County"
+      },
+      {
+        "id": "S. 29",
+        "title": "Topo-Vermessungen Allgemeines Kataster UAT Mărăcineni",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2016",
+        "location": "Mărăcineni, Jud. Arges",
+        "county": "Arges",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Topografische Vermessungsdienste für das allgemeine Kataster im Stadtgebiet der UAT Mărăcineni.",
+        "deliverables": [
+          "Städtischer Katasterplan",
+          "Grundstückseigentumsblätter"
+        ],
+        "logoPath": "/logos/counties/stema_arges.png",
+        "logoAlt": "Wappen des Kreises Arges"
+      },
+      {
+        "id": "S. 30",
+        "title": "Lokales Grünflächenregister, Gemeinde Iași",
+        "client": "Rathaus von Iași",
+        "category": "RSV",
+        "categoryLabel": "Grünflächenkataster",
+        "year": "2016-2017",
+        "location": "Iasi, Jud. Iasi",
+        "county": "Iasi",
+        "beneficiaryLogoText": "IST",
+        "scopeDetails": "Erstellung des örtlichen Grünflächenregisters für die Gemeinde Iași. Erstellung einer GIS-Datenbank mit grundlegenden topografischen Schichten und Grünflächen, Identifizierung, Positionierung und Inventarisierung von Bäumen.",
+        "deliverables": [
+          "GIS-Datenbank für Grünflächen",
+          "Kommunales Bauminventar",
+          "GIS-Verwaltungsanwendung"
+        ],
+        "logoPath": "/logos/municipalities/iasi.svg",
+        "logoAlt": "Wappen der Gemeinde Iași"
+      },
+      {
+        "id": "S. 31",
+        "title": "Lokales Grünflächenregister der Gemeinde Moreni",
+        "client": "Rathaus von Moreni",
+        "category": "RSV",
+        "categoryLabel": "Grünflächenkataster",
+        "year": "2016",
+        "location": "Moreni, Kreis Dambovita",
+        "county": "Dâmbovița",
+        "beneficiaryLogoText": "UAT",
+        "scopeDetails": "Erstellung des örtlichen Grünflächenkatasters in der Gemeinde Moreni. GIS-Datenbank, Vegetationsidentifizierung und Inventarisierung.",
+        "deliverables": [
+          "Mehrschichtige GIS-Datenbank",
+          "Grünflächenplatten gemäß Gesetz 24/2007"
+        ],
+        "logoPath": "/logos/municipalities/moreni.png",
+        "logoAlt": "Wappen der Gemeinde Moreni"
+      },
+      {
+        "id": "S. 32",
+        "title": "Systematische Registrierung UAT Dragodana",
+        "client": "Rathaus Dragodana",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2016-2017",
+        "location": "Dragodana, Jud. Dâmbovița",
+        "county": "Dâmbovița",
+        "beneficiaryLogoText": "UAT",
+        "scopeDetails": "Systematische Registrierungsarbeiten von UAT Dragodana: öffentliche Informationen, Identifizierung von UAT- und Dorfgrenzen, topografische Messungen und Datenintegration.",
+        "deliverables": [
+          "Allgemeiner Katasterplan",
+          "OCPI-Unterrichtsdokumentation"
+        ],
+        "logoPath": "/logos/counties/stema_dambovita.svg",
+        "logoAlt": "Wappen des Dambovita County"
+      },
+      {
+        "id": "S. 33",
+        "title": "Topo Studies Wassernetze/Kanal Jud. Arges",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Versorgungsunternehmen",
+        "categoryLabel": "Versorgungsnetze",
+        "year": "2016-2017",
+        "location": "Jud. Arges",
+        "county": "Arges",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Topografische Studien, die für den Ausbau und die Sanierung der Wasserversorgungs- und Abwassernetze für die SF-Phase im Kreis Argeș erforderlich sind.",
+        "deliverables": [
+          "Topografische Pläne Wasserausrichtung",
+          "Längsprofile"
+        ],
+        "logoPath": "/logos/counties/stema_arges.png",
+        "logoAlt": "Wappen des Kreises Arges"
+      },
+      {
+        "id": "S. 34",
+        "title": "Topo hebt digitales Fernsehnetzwerk und Internet-UPC auf",
+        "client": "Taledi Telecom SRL / UPC Rumänien SRL",
+        "category": "Versorgungsunternehmen",
+        "categoryLabel": "Versorgungsnetze",
+        "year": "2017",
+        "location": "Bukarest / Multi-County",
+        "county": "Bukarest",
+        "beneficiaryLogoText": "UPC",
+        "scopeDetails": "Durchführung der topografischen Untersuchungen im Zusammenhang mit dem Ziel Bau eines digitalen Fernseh-, Internet- und Telefonnetzes zur Erlangung der Baugenehmigung.",
+        "deliverables": [
+          "LWL-Streckenlageplan",
+          "Gezielte Pläne AC"
+        ],
+        "logoPath": "/logos/counties/stema_ilfov.svg",
+        "logoAlt": "Wappen des Kreises Ilfov"
+      },
+      {
+        "id": "S. 35",
+        "title": "Topo & Trasare Schlachthof Agricover Niculăști",
+        "client": "SC Derom Total SRL / Agricover",
+        "category": "Infrastruktur",
+        "categoryLabel": "Ingenieurvermessung und Umwelt",
+        "year": "2017",
+        "location": "Niculesti / Periș, Kreis. Dâmbovița / Ilfov",
+        "county": "Dâmbovița",
+        "beneficiaryLogoText": "AGR",
+        "scopeDetails": "Einzeichnen der Achsen neuer Körper, Einzeichnen von Gebäudenetzen (technische Kanalisation, Haushalt, Regenwasser), Niveauhöhen und Berechnung des Aushub-/Füllvolumens.",
+        "deliverables": [
+          "Minuten der Plotachsen",
+          "3D-DTM-Volumenberechnung für Aushub/Auffüllung",
+          "Bestandsplan"
+        ],
+        "logoPath": "/logos/counties/stema_dambovita.svg",
+        "logoAlt": "Wappen des Dambovita County"
+      },
+      {
+        "id": "S. 36",
+        "title": "Innerdorf-Generalkataster UAT Movila Miresii",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2017",
+        "location": "Movila Miresii, Jud. Braila",
+        "county": "Braila",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Topografische Vermessungsdienste für das allgemeine Kataster im innerörtlichen UAT Movila Miresii.",
+        "deliverables": [
+          "Städtischer Katasterplan",
+          "Grundstücks-Immobilienblätter"
+        ],
+        "logoPath": "/logos/counties/stema_braila.svg",
+        "logoAlt": "Wappen des Kreises Brăila"
+      },
+      {
+        "id": "S. 37",
+        "title": "PNCCF UAT Tudor Vladimirescu",
+        "client": "SC Ramboll South East Europe SRL",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2017",
+        "location": "Tudor Vladimirescu, Jud. Galater",
+        "county": "Galater",
+        "beneficiaryLogoText": "RAM",
+        "scopeDetails": "Systematische Katasterarbeiten innerhalb der PNCCF für UAT Tudor Vladimirescu.",
+        "deliverables": [
+          "Katasterplan nach Sektoren",
+          "Immobilienkataster"
+        ],
+        "logoPath": "/logos/counties/stema_galati.svg",
+        "logoAlt": "Wappen des Kreises Galati"
+      },
+      {
+        "id": "S. 38",
+        "title": "PNCCF UAT Poiana Ilvei",
+        "client": "Gemeinde Poiana Ilvei",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2017-2022",
+        "location": "Poiana Ilvei, Jud. Bistrita-Năsăud",
+        "county": "Bistrita-Nasaud",
+        "beneficiaryLogoText": "BN",
+        "scopeDetails": "Systematische Katasterarbeit: Feldmessungen, Datenerfassung, Integration und kostenlose OCPI-Tabelle.",
+        "deliverables": [
+          "Katasterplan erhalten",
+          "Ausgestellte Landtitel"
+        ],
+        "logoPath": "/logos/municipalities/bistrita.svg",
+        "logoAlt": "Wappen der Gemeinde Bistrita"
+      },
+      {
+        "id": "S. 39",
+        "title": "PNCCF UAT Bordei Verde",
+        "client": "Gemeinde Bordei Verde",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2018-2022",
+        "location": "Bordei Verde, Jud. Braila",
+        "county": "Braila",
+        "beneficiaryLogoText": "BR",
+        "scopeDetails": "Systematische Kataster-Facharbeiten zu Katastersektoren auf dem Gebiet der UAT Bordei Verde.",
+        "deliverables": [
+          "Technischer Katasterplan",
+          "OCPI-Tabellendateien"
+        ],
+        "logoPath": "/logos/counties/stema_braila.svg",
+        "logoAlt": "Wappen des Kreises Brăila"
+      },
+      {
+        "id": "S. 40",
+        "title": "PNCCF UAT Bordușani",
+        "client": "Gemeinde Borduşani",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2019",
+        "location": "Bordușani, Kreis Ialomita",
+        "county": "Ialomita",
+        "beneficiaryLogoText": "IL",
+        "scopeDetails": "Systematische Registrierung von Immobilien nach Katastersektoren in UAT Bordușani.",
+        "deliverables": [
+          "Katasterplan erhalten",
+          "Geodatendatenbank"
+        ],
+        "logoPath": "/logos/counties/stema_ialomita.svg",
+        "logoAlt": "Wappen des Landkreises Ialomita"
+      },
+      {
+        "id": "S. 41",
+        "title": "PNCCF UAT Cireșu",
+        "client": "Gemeinde Cireșu",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2019",
+        "location": "Cireșu, Kreis Braila",
+        "county": "Braila",
+        "beneficiaryLogoText": "BR",
+        "scopeDetails": "Systematische Katasterdienste und Erstellung technischer Dokumente auf dem Gebiet der UAT Cireșu.",
+        "deliverables": [
+          "Allgemeiner Katasterplan",
+          "Eigenschaftsblätter"
+        ],
+        "logoPath": "/logos/counties/stema_braila.svg",
+        "logoAlt": "Wappen des Kreises Brăila"
+      },
+      {
+        "id": "S. 42",
+        "title": "PNCCF UAT Surdila Găiseanca",
+        "client": "Gemeinde Surdila Găiseanca",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2019-2020",
+        "location": "Surdila Găiseanca, Jud. Braila",
+        "county": "Braila",
+        "beneficiaryLogoText": "BR",
+        "scopeDetails": "Durchführung systematischer Katasterarbeiten auf dem Gebiet der Gemeinde Surdila Găiseanca.",
+        "deliverables": [
+          "Sektorisierter Katasterplan",
+          "Landtitel ausgestellt"
+        ],
+        "logoPath": "/logos/counties/stema_braila.svg",
+        "logoAlt": "Wappen des Kreises Brăila"
+      },
+      {
+        "id": "S. 43",
+        "title": "PNCCF UAT Unirea",
+        "client": "Gemeinde Unirea",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2019-2022",
+        "location": "Unirea, Jud. Braila",
+        "county": "Braila",
+        "beneficiaryLogoText": "BR",
+        "scopeDetails": "Systematische Katasterdienste, öffentliche Informationen und Eintragung von Immobilien in das Grundbuch.",
+        "deliverables": [
+          "Katasterpläne erhalten",
+          "GIS-Datenbank"
+        ],
+        "logoPath": "/logos/counties/stema_braila.svg",
+        "logoAlt": "Wappen des Kreises Brăila"
+      },
+      {
+        "id": "S. 44",
+        "title": "PNCCF UAT Kindergarten",
+        "client": "Gemeinde Grădiștea",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2019-2022",
+        "location": "Grădistea, Jud. Braila",
+        "county": "Braila",
+        "beneficiaryLogoText": "BR",
+        "scopeDetails": "Systematische Registrierung von Immobilien nach Katastersektoren in UAT Grădiștea.",
+        "deliverables": [
+          "Ausgestellte Landtitel",
+          "Katasterplan erhalten"
+        ],
+        "logoPath": "/logos/counties/stema_braila.svg",
+        "logoAlt": "Wappen des Kreises Brăila"
+      },
+      {
+        "id": "S. 45",
+        "title": "Register der Grünflächen der Gemeinde Arad",
+        "client": "Gemeinde Arad",
+        "category": "RSV",
+        "categoryLabel": "Grünflächenkataster",
+        "year": "2021-2022",
+        "location": "Arad, Jud. Arad",
+        "county": "Arad",
+        "beneficiaryLogoText": "AR",
+        "scopeDetails": "Bestandsaufnahme von Grünflächen und Grundstücken, Bestandsaufnahme der Baum- und Strauchvegetation, Datenbankerstellung und Einbindung in die kommunale öffentliche Website.",
+        "deliverables": [
+          "GIS-Datenbank für Grünflächen",
+          "Rathaus-Benutzeranwendung",
+          "Integriert auf der städtischen öffentlichen Website"
+        ],
+        "logoPath": "/logos/municipalities/arad.svg",
+        "logoAlt": "Wappen der Gemeinde Arad"
+      },
+      {
+        "id": "S. 46",
+        "title": "Register der Grünflächen der Gemeinde Oradea",
+        "client": "Gemeinde Oradea",
+        "category": "RSV",
+        "categoryLabel": "Grünflächenkataster",
+        "year": "2021-2022",
+        "location": "Oradea, Kreis Bihor",
+        "county": "Bihor",
+        "beneficiaryLogoText": "BH",
+        "scopeDetails": "Abgrenzung von Immobilien und Grünflächen im Stadtgebiet der Gemeinde Oradea, Bestandsaufnahme der Baum- und Strauchvegetation.",
+        "deliverables": [
+          "Georeferenzierte Grünflächenblätter",
+          "Kommunale GIS-Karten"
+        ],
+        "logoPath": "/logos/municipalities/oradea.svg",
+        "logoAlt": "Wappen der Gemeinde Oradea"
+      },
+      {
+        "id": "S. 47",
+        "title": "POR UAT Dragodana",
+        "client": "ANCPI",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2020-2022",
+        "location": "Dragodana, Jud. Dâmbovița",
+        "county": "Dâmbovița",
+        "beneficiaryLogoText": "ANCPI",
+        "scopeDetails": "Durchführung systematischer Kataster-Facharbeiten im Rahmen des ANCPI ROP-Projekts für UAT Dragodana.",
+        "deliverables": [
+          "Katasterplan erhielt OCPI",
+          "Ausgestellte Landtitel"
+        ],
+        "logoPath": "/logos/counties/stema_dambovita.svg",
+        "logoAlt": "Wappen des Dambovita County"
+      },
+      {
+        "id": "S. 48",
+        "title": "POR UAT Măicănești",
+        "client": "ANCPI",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2020-2022",
+        "location": "Maicanesti, Jud. Vrancea",
+        "county": "Vrancea",
+        "beneficiaryLogoText": "ANCPI",
+        "scopeDetails": "Systematische Registrierung von Gebäuden UAT Măicănești finanziert durch ROP.",
+        "deliverables": [
+          "Allgemeiner Katasterplan",
+          "Immobilienkataster"
+        ],
+        "logoPath": "/logos/counties/stema_vrancea.svg",
+        "logoAlt": "Wappen des Kreises Vrancea"
+      },
+      {
+        "id": "S. 49",
+        "title": "POR UAT Cojocna",
+        "client": "ANCPI",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2021-2023",
+        "location": "Cojocna, Kreis Cluj",
+        "county": "Klausenburg",
+        "beneficiaryLogoText": "ANCPI",
+        "scopeDetails": "Systematische Katasterdienste auf dem Gebiet der UAT Cojocna innerhalb der POR.",
+        "deliverables": [
+          "Sektorisierte Katasterpläne",
+          "OCPI-Eigenschaftsdateien"
+        ],
+        "logoPath": "/logos/counties/stema_cluj.png",
+        "logoAlt": "Wappen des Kreises Cluj"
+      },
+      {
+        "id": "p-50",
+        "title": "POR UAT Gura Ocniței",
+        "client": "ANCPI",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2021-2023",
+        "location": "Gura Ocniței, Jud. Dâmbovița",
+        "county": "Dâmbovița",
+        "beneficiaryLogoText": "ANCPI",
+        "scopeDetails": "Systematische Katasterarbeiten der UAT Gura Ocniței, finanziert von ROP.",
+        "deliverables": [
+          "Katasterplan erhalten",
+          "Ausgestellte Landtitel"
+        ],
+        "logoPath": "/logos/counties/stema_dambovita.svg",
+        "logoAlt": "Wappen des Dambovita County"
+      },
+      {
+        "id": "S. 51",
+        "title": "POR UAT Vad",
+        "client": "ANCPI",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2021-2023",
+        "location": "Vad, Jud. Klausenburg",
+        "county": "Klausenburg",
+        "beneficiaryLogoText": "ANCPI",
+        "scopeDetails": "Systematische Katasterdienste auf dem Gebiet der UAT Vad im Rahmen des ROP-Projekts.",
+        "deliverables": [
+          "Sektorisierter Katasterplan",
+          "Geodatendatenbank"
+        ],
+        "logoPath": "/logos/counties/stema_cluj.png",
+        "logoAlt": "Wappen des Kreises Cluj"
+      },
+      {
+        "id": "S. 52",
+        "title": "Lokales Grünflächenregister der Gemeinde Ploiesti",
+        "client": "Gemeinde Ploiești",
+        "category": "RSV",
+        "categoryLabel": "Grünflächenkataster",
+        "year": "2021-2024",
+        "location": "Ploiesti, Kreis Prahova",
+        "county": "Prahova",
+        "beneficiaryLogoText": "PH",
+        "scopeDetails": "Bestandsaufnahme innerstädtischer Grünflächen, Parzellenabgrenzung und Baum-/Strauchvegetationsinventur. Geodatenproduktion und Integration von Rathausanwendungen.",
+        "deliverables": [
+          "Kommunale GIS-Datenbank",
+          "Thematische Vektorkarten",
+          "Statistischer Bericht zum Grünen Erbe"
+        ],
+        "logoPath": "/logos/municipalities/ploiesti.png",
+        "logoAlt": "Wappen der Gemeinde Ploiești"
+      },
+      {
+        "id": "S. 53",
+        "title": "Lokales Grünflächenregister der Gemeinde Brașov",
+        "client": "Gemeinde Brasov",
+        "category": "RSV",
+        "categoryLabel": "Grünflächenkataster",
+        "year": "2021-2023",
+        "location": "Brașov, Kreis Brasov",
+        "county": "Brasov",
+        "beneficiaryLogoText": "BV",
+        "scopeDetails": "Abgrenzung und Bestandsaufnahme von Immobilien/Grünflächen in der Innenstadt der Gemeinde Brașov. Baumdatenerfassung vor Ort, pflanzengesundheitliche Bewertung und GIS-Strukturierung.",
+        "deliverables": [
+          "Digitaler Lageplan Grünflächen",
+          "GIS-Datenbank mit Vegetationsattributen",
+          "Grünflächenplatten gemäß Gesetz 24/2007"
+        ],
+        "logoPath": "/logos/municipalities/brasov.svg",
+        "logoAlt": "Wappen der Gemeinde Brașov"
+      },
+      {
+        "id": "S. 54",
+        "title": "POR UAT Almaj",
+        "client": "ANCPI",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2022-2024",
+        "location": "Almaj, Jud. Dolj",
+        "county": "Dolj",
+        "beneficiaryLogoText": "ANCPI",
+        "scopeDetails": "Systematische Immobilienregistrierung im Rahmen des ROP-Projekts für UAT Almaj.",
+        "deliverables": [
+          "Katasterplan erhielt OCPI",
+          "Ausgestellte Landtitel"
+        ],
+        "logoPath": "/logos/counties/stema_dolj.svg",
+        "logoAlt": "Wappen des Kreises Dolj"
+      },
+      {
+        "id": "S. 55",
+        "title": "POR UAT Amaraștii de Jos",
+        "client": "ANCPI",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2022-2024",
+        "location": "Amaraștii de Jos, Jud. Dolj",
+        "county": "Dolj",
+        "beneficiaryLogoText": "ANCPI",
+        "scopeDetails": "Systematische Katasterarbeiten der UAT Amarăștii de Jos, finanziert von ROP.",
+        "deliverables": [
+          "Allgemeiner Katasterplan",
+          "Ausgestellte Landtitel"
+        ],
+        "logoPath": "/logos/counties/stema_dolj.svg",
+        "logoAlt": "Wappen des Kreises Dolj"
+      },
+      {
+        "id": "S. 56",
+        "title": "POR UAT angefordert",
+        "client": "ANCPI",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2022-2024",
+        "location": "Cerat, Jud. Dolj",
+        "county": "Dolj",
+        "beneficiaryLogoText": "ANCPI",
+        "scopeDetails": "Systematische Registrierung von Immobilien auf dem Gebiet der UAT Cerăt.",
+        "deliverables": [
+          "Sektorisierter Katasterplan",
+          "Immobilienkataster"
+        ],
+        "logoPath": "/logos/counties/stema_dolj.svg",
+        "logoAlt": "Wappen des Kreises Dolj"
+      },
+      {
+        "id": "S. 57",
+        "title": "Lokales Grünflächenverzeichnis der Gemeinde Timișoara",
+        "client": "Gemeinde Timișoara",
+        "category": "RSV",
+        "categoryLabel": "Grünflächenkataster",
+        "year": "2023-2025",
+        "location": "Timisoara, Kreis Timis",
+        "county": "Timis",
+        "beneficiaryLogoText": "TM",
+        "scopeDetails": "Erstellung des örtlichen Grünflächenregisters gemäß Gesetz 24/2007. Inventarisierung städtischer Grünflächen, Abgrenzung von Parzellen, Baum- und Strauchinventur mit Artenbestimmung und Pflanzengesundheitsstatus, GIS-Datenbankerstellung.",
+        "deliverables": [
+          "Räumliche GIS-Datenbank",
+          "Bauminventurblätter mit QR-Code",
+          "Spezifische thematische Karten",
+          "Öffentliche WebGIS-Integration"
+        ],
+        "logoPath": "/logos/municipalities/timisoara.svg",
+        "logoAlt": "Wappen der Gemeinde Timișoara"
+      },
+      {
+        "id": "S. 58",
+        "title": "POR UAT Coțofenii in Față",
+        "client": "ANCPI",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2024-2026",
+        "location": "Coțofenii aus Față, Jud. Dolj",
+        "county": "Dolj",
+        "beneficiaryLogoText": "ANCPI",
+        "scopeDetails": "Systematische Immobilienregistrierungsdienste UAT Coțofenii din Față innerhalb der POR.",
+        "deliverables": [
+          "Allgemeiner Katasterplan",
+          "Branchendokumentation"
+        ],
+        "logoPath": "/logos/counties/stema_dolj.svg",
+        "logoAlt": "Wappen des Kreises Dolj"
+      },
+      {
+        "id": "S. 59",
+        "title": "POR UAT Balteni",
+        "client": "ANCPI / Gemeinde Bălteni",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2024-2026",
+        "location": "Balteni, Jud. Olt",
+        "county": "Olt",
+        "beneficiaryLogoText": "OLT",
+        "scopeDetails": "Abschluss spezialisierter Arbeiten zur systematischen Registrierung von Immobilien im gesamten Gebiet der UAT Bălteni. Öffentliche Informationen, GNSS-RTK-Messungen vor Ort, Erstellung von Katasterplänen und kostenlose Eintragung im Grundbuch.",
+        "deliverables": [
+          "Allgemeiner Katasterplan",
+          "Objektdatenblätter",
+          "Veröffentlichtes Katasterregister",
+          "Geodatendatenbank Stereo 70"
+        ],
+        "logoPath": "/logos/counties/stema_olt.svg",
+        "logoAlt": "Wappen des Kreises Olt"
+      },
+      {
+        "id": "p-60",
+        "title": "POR UAT Bujoreni",
+        "client": "ANCPI / Gemeinde Bujoreni",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2024-2026",
+        "location": "Bujoreni, Kreis Vâlcea",
+        "county": "Vâlcea",
+        "beneficiaryLogoText": "VL",
+        "scopeDetails": "Systematische Registrierungsdienste für Gebäude im Integrierten Kataster- und Grundbuchsystem. Topo-Kataster-Landvermessungen, Identifizierung der Eigentümer und Übergabe der Dokumentation an OCPI Vâlcea.",
+        "deliverables": [
+          "Sektorisierte Katasterpläne",
+          "Gebäude- und Grundstücksregister",
+          "GIS-Datenbank nach ANCPI"
+        ],
+        "logoPath": "/logos/counties/stema_valcea.svg",
+        "logoAlt": "Wappen des Landkreises Valcea"
+      },
+      {
+        "id": "S. 61",
+        "title": "POR UAT Wiese",
+        "client": "ANCPI",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2024-2026",
+        "location": "Lunca, Jud. Bihor",
+        "county": "Bihor",
+        "beneficiaryLogoText": "ANCPI",
+        "scopeDetails": "Systematische Registrierung von Gebäuden auf dem Gebiet der UAT Lunca im Rahmen des ROP-Projekts.",
+        "deliverables": [
+          "Sektorale Katasterdokumentation",
+          "Feldblätter"
+        ],
+        "logoPath": "/logos/counties/stema_bihor.png",
+        "logoAlt": "Wappen des Kreises Bihor"
+      },
+      {
+        "id": "S. 62",
+        "title": "POR UAT Chilenen",
+        "client": "ANCPI",
+        "category": "Kataster",
+        "categoryLabel": "Systematisches Kataster",
+        "year": "2024-2026",
+        "location": "Ciliani, Jud. Olt",
+        "county": "Olt",
+        "beneficiaryLogoText": "ANCPI",
+        "scopeDetails": "Topografische Messungen und systematisches Kataster auf dem Gebiet der Ciliani UAT.",
+        "deliverables": [
+          "GIS-Datenbank",
+          "Katastersektorale Pläne"
+        ],
+        "logoPath": "/logos/counties/stema_olt.svg",
+        "logoAlt": "Wappen des Kreises Olt"
+      }
+    ]
+  },
+  "notFound": {
+    "badge": "Fehler 404",
+    "code": "404",
+    "title": "Seite nicht gefunden",
+    "description": "Die von Ihnen gesuchte Seite existiert nicht auf unserer Website, wurde verschoben oder die URL ist falsch. Bitte überprüfen Sie die URL oder kehren Sie zur Startseite zurück.",
+    "backHome": "Zurück zur Startseite",
+    "contactSupport": "Kontaktieren Sie uns",
+    "quickLinksTitle": "Schnelle Website-Navigation",
+    "servicesLink": "Kataster- und Topographiedienste",
+    "projectsLink": "UAT-Projekte und -Portfolio",
+    "aboutLink": "Über das Unternehmen MEGAGIS"
+  },
+  "errorPage": {
+    "badge": "Fehler 500",
+    "code": "500",
+    "title": "Es ist ein unerwarteter Fehler aufgetreten",
+    "description": "Beim Laden dieser Seite auf unserer Website ist ein Fehler aufgetreten. Bitte versuchen Sie erneut, die Seite zu laden, oder kehren Sie zur Startseite zurück.",
+    "retryButton": "Versuchen Sie es erneut",
+    "backHome": "Zurück zur Startseite",
+    "supportNotice": "Sollte das Problem weiterhin bestehen, wenden Sie sich bitte an unser Support-Team.",
+    "technicalDetailsTitle": "Technische Fehlerdetails"
+  }
+}

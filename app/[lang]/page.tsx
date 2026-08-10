@@ -26,31 +26,23 @@ export async function generateMetadata({
   ) as Locale;
   const dict = await getDictionary(locale);
 
-  const keywords =
-    locale === "ro"
-      ? [
-          "cadastru",
-          "topografie",
-          "GIS",
-          "intabulare",
-          "cadastru sistematic",
-          "PNCCF",
-          "registrul spatiilor verzi",
-          "masuratori topografice",
-          "geodezie",
-          "Megagis",
-        ]
-      : [
-          "cadastre",
-          "topography",
-          "GIS",
-          "land registration",
-          "systematic cadastre",
-          "green space register",
-          "topographical survey",
-          "geodesy",
-          "Megagis",
-        ];
+  let keywords: string[] = [];
+  if (locale === "ro") {
+    keywords = [
+      "cadastru", "topografie", "GIS", "intabulare", "cadastru sistematic",
+      "PNCCF", "registrul spatiilor verzi", "masuratori topografice", "geodezie", "Megagis",
+    ];
+  } else if (locale === "de") {
+    keywords = [
+      "Kataster", "Topographie", "GIS", "Grundbuch", "systematisches Kataster",
+      "Grünflächenkataster", "topographische Vermessung", "Geodäsie", "Megagis",
+    ];
+  } else {
+    keywords = [
+      "cadastre", "topography", "GIS", "land registration", "systematic cadastre",
+      "green space register", "topographical survey", "geodesy", "Megagis",
+    ];
+  }
 
   return {
     title: dict.metadata.home.title,
@@ -61,6 +53,7 @@ export async function generateMetadata({
       languages: {
         "ro-RO": "/ro",
         "en-US": "/en",
+        "de-DE": "/de",
         "x-default": "/ro",
       },
     },

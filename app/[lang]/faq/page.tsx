@@ -45,6 +45,7 @@ export async function generateMetadata({
       languages: {
         "ro-RO": "/ro/faq",
         "en-US": "/en/faq",
+        "de-DE": "/de/faq",
         "x-default": "/ro/faq",
       },
     },

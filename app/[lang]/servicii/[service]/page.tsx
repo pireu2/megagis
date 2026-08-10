@@ -66,6 +66,8 @@ export async function generateMetadata({
       languages: {
         "ro-RO": `/ro/servicii/${mapped.canonical}`,
         "en-US": `/en/servicii/${mapped.canonical}`,
+        "de-DE": `/de/servicii/${mapped.canonical}`,
+        "x-default": `/ro/servicii/${mapped.canonical}`,
       },
     },
     openGraph: {

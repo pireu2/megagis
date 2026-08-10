@@ -115,13 +115,9 @@ export function MobileNav({ lang, dict }: MobileNavProps) {
         </div>
 
         {/* Footer row with language switcher */}
-        <div className="relative z-10 mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
-          <span className="text-xs font-medium text-slate-500">
-            {lang.toUpperCase()} / {lang === "ro" ? "EN" : "RO"}
-          </span>
+        <div className="relative z-10 mt-auto pt-4 border-t border-slate-100 flex items-center justify-end">
           <LanguageSwitcher
             currentLang={lang}
-            label={dict.common.languageSwitch}
           />
         </div>
       </SheetContent>

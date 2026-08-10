@@ -34,6 +34,19 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env
 
+# AI agents
+.agents/
+.agent/
+.claude/
+.codex/
+.gemini/
+.ollama/
+.openai/
+.replicate/
+.summit/
+.qwen/
+
+
 # vercel
 .vercel
 

@@ -24,38 +24,26 @@ export async function generateMetadata({
   ) as Locale;
   const dict = await getDictionary(locale);
 
-  const keywords =
-    locale === "ro"
-      ? [
-          "cadastru",
-          "topografie",
-          "GIS",
-          "intabulare",
-          "cadastru sistematic",
-          "PNCCF",
-          "registrul spatiilor verzi",
-          "masuratori topografice",
-          "geodezie",
-          "urbanism",
-          "Megagis",
-          "Targoviste",
-          "Dambovita",
-          "Romania",
-        ]
-      : [
-          "cadastre",
-          "topography",
-          "GIS",
-          "land registration",
-          "systematic cadastre",
-          "PNCCF",
-          "green space register",
-          "topographical survey",
-          "geodesy",
-          "urban planning",
-          "Megagis",
-          "Romania",
-        ];
+  let keywords: string[] = [];
+  if (locale === "ro") {
+    keywords = [
+      "cadastru", "topografie", "GIS", "intabulare", "cadastru sistematic",
+      "PNCCF", "registrul spatiilor verzi", "masuratori topografice", "geodezie",
+      "urbanism", "Megagis", "Targoviste", "Dambovita", "Romania",
+    ];
+  } else if (locale === "de") {
+    keywords = [
+      "Kataster", "Topographie", "GIS", "Grundbuch", "systematisches Kataster",
+      "PNCCF", "Grünflächenkataster", "topographische Vermessung", "Geodäsie",
+      "Stadtplanung", "Megagis", "Rumänien",
+    ];
+  } else {
+    keywords = [
+      "cadastre", "topography", "GIS", "land registration", "systematic cadastre",
+      "PNCCF", "green space register", "topographical survey", "geodesy",
+      "urban planning", "Megagis", "Romania",
+    ];
+  }
 
   return {
     title: {
@@ -70,6 +58,7 @@ export async function generateMetadata({
       languages: {
         "ro-RO": "/ro",
         "en-US": "/en",
+        "de-DE": "/de",
         "x-default": "/ro",
       },
     },

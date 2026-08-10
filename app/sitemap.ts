@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 const baseUrl = "https://megagis.ro";
 
-const locales = ["ro", "en"] as const;
+const locales = ["ro", "en", "de"] as const;
 
 const staticRoutes = [
   "",
@@ -60,6 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
           languages: {
             "ro-RO": `${baseUrl}/ro${route}`,
             "en-US": `${baseUrl}/en${route}`,
+            "de-DE": `${baseUrl}/de${route}`,
             "x-default": `${baseUrl}/ro${route}`,
           },
         },
@@ -81,6 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
           languages: {
             "ro-RO": `${baseUrl}/ro${servicePath}`,
             "en-US": `${baseUrl}/en${servicePath}`,
+            "de-DE": `${baseUrl}/de${servicePath}`,
             "x-default": `${baseUrl}/ro${servicePath}`,
           },
         },

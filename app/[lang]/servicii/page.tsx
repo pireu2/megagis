@@ -49,6 +49,7 @@ export async function generateMetadata({
       languages: {
         "ro-RO": "/ro/servicii",
         "en-US": "/en/servicii",
+        "de-DE": "/de/servicii",
         "x-default": "/ro/servicii",
       },
     },

@@ -45,6 +45,7 @@ export async function generateMetadata({
       languages: {
         "ro-RO": "/ro/proiecte",
         "en-US": "/en/proiecte",
+        "de-DE": "/de/proiecte",
         "x-default": "/ro/proiecte",
       },
     },

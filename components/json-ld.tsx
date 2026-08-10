@@ -9,13 +9,16 @@ export function JsonLd({ lang }: JsonLdProps) {
 
   const organizationSchema = {
     "@context": "https://schema.org",
-    "@type": ["ProfessionalService", "LocalBusiness"],
+    "@type": ["Organization", "ProfessionalService", "LocalBusiness"],
     "@id": "https://megagis.ro/#organization",
     name: "MEGAGIS S.R.L.",
     alternateName: isRo
       ? "Megagis Topografie Digitală & Cadastru"
       : "Megagis Digital Topography & GIS",
     url: "https://megagis.ro",
+    sameAs: [
+      "https://www.facebook.com/megagis/?locale=ro_RO"
+    ],
     logo: {
       "@type": "ImageObject",
       url: "https://megagis.ro/icon.png",

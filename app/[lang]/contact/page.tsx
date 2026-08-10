@@ -43,6 +43,7 @@ export async function generateMetadata({
       languages: {
         "ro-RO": "/ro/contact",
         "en-US": "/en/contact",
+        "de-DE": "/de/contact",
         "x-default": "/ro/contact",
       },
     },

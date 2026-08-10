@@ -28,6 +28,7 @@ export async function generateMetadata({
       languages: {
         "ro-RO": "/ro/privacy",
         "en-US": "/en/privacy",
+        "de-DE": "/de/privacy",
         "x-default": "/ro/privacy",
       },
     },

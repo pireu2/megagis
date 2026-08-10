@@ -15,7 +15,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ lang, dict, bgVideoSrc }: HeroSectionProps) {
   return (
-    <section className="relative overflow-hidden bg-slate-50 mt-14 min-h-[calc(100vh-3.5rem)] pt-6 md:pt-12 pb-6 md:pb-12 flex flex-col justify-between">
+    <section className="relative overflow-hidden bg-slate-50 mt-14 min-h-[calc(100vh-3.5rem)] pt-6 md:pt-12 pb-6 md:pb-30 flex flex-col justify-center">
       {/* Background Image / Video Layer */}
       {bgVideoSrc ? (
         <video
@@ -53,7 +53,7 @@ export function HeroSection({ lang, dict, bgVideoSrc }: HeroSectionProps) {
         }}
       />
 
-      <div className="container relative z-10 mx-auto px-4 md:px-6 flex flex-col justify-between h-full">
+      <div className="container relative z-10 mx-auto px-4 md:px-6 flex flex-col justify-center h-full">
         {/* Main Content Area */}
         <div className="max-w-5xl text-flush-left">
           {/* Subtle Overline badge */}

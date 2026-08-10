@@ -46,6 +46,7 @@ export async function generateMetadata({
       languages: {
         "ro-RO": "/ro/despre-noi",
         "en-US": "/en/despre-noi",
+        "de-DE": "/de/despre-noi",
         "x-default": "/ro/despre-noi",
       },
     },
